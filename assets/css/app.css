@@ -5147,6 +5147,9 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   height: 600px; }
+  @media (max-width: 890px) {
+    .first-block {
+      background-size: 230%; } }
 
 .nav {
   margin: auto;
@@ -5214,6 +5217,9 @@ body {
     margin: auto;
     margin-top: 150px;
     width: 575px; }
+    @media (max-width: 620px) {
+      .third-block .album-covers {
+        width: 90%; } }
     .third-block .album-covers h1 {
       padding-top: 75px;
       font-size: 45px;
@@ -5234,6 +5240,9 @@ body {
     margin: auto;
     margin-top: 150px;
     width: 575px; }
+    @media (max-width: 575px) {
+      .third-block .rods_cones {
+        width: 90%; } }
     .third-block .rods_cones h1 {
       padding-top: 75px;
       font-size: 45px;
