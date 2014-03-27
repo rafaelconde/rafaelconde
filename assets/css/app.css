@@ -5141,6 +5141,13 @@ body {
   background-color: white;
   width: 100%; }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
 .first-block {
   background: url("../images/header-photo@2x.jpg");
   background-size: 100%;
@@ -5150,6 +5157,9 @@ body {
   @media (max-width: 890px) {
     .first-block {
       background-size: 230%; } }
+  @media (max-width: 340px) {
+    .first-block {
+      background-size: 300%; } }
 
 .nav {
   margin: auto;
@@ -5173,6 +5183,8 @@ body {
 
 .second-block, .forth-block {
   padding: 60px;
+  padding-left: 8%;
+  padding-right: 8%;
   background: #2f81b7;
   text-align: center; }
   .second-block h1, .second-block h2, .forth-block h1, .forth-block h2 {
@@ -5180,20 +5192,35 @@ body {
     font-weight: 400;
     font-size: 30px;
     color: #fff; }
+    @media (max-width: 480px) {
+      .second-block h1, .second-block h2, .forth-block h1, .forth-block h2 {
+        font-size: 26px; } }
   .second-block h2, .forth-block h2 {
     font-size: 27px; }
   .second-block .separator, .forth-block .separator {
     margin: auto;
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
     border-bottom: 5px solid #fff; }
 
 .third-block {
   text-align: center;
   margin-bottom: 100px; }
+  @media (max-width: 300px) {
+    .third-block {
+      margin-bottom: 30px; } }
   .third-block .sketchcasts {
     margin: auto;
     margin-top: 50px;
-    width: 355px; }
+    width: 90%;
+    max-width: 355px; }
+    .third-block .sketchcasts svg {
+      width: 365px;
+      height: 360px; }
+      @media (max-width: 350px) {
+        .third-block .sketchcasts svg {
+          width: 300px;
+          height: 300px; } }
     .third-block .sketchcasts h1 {
       padding-top: 75px;
       font-size: 45px;
@@ -5216,10 +5243,11 @@ body {
   .third-block .album-covers {
     margin: auto;
     margin-top: 150px;
-    width: 575px; }
-    @media (max-width: 620px) {
+    width: 90%;
+    max-width: 575px; }
+    @media (max-width: 480px) {
       .third-block .album-covers {
-        width: 90%; } }
+        margin-top: 30px; } }
     .third-block .album-covers h1 {
       padding-top: 75px;
       font-size: 45px;
@@ -5239,20 +5267,28 @@ body {
   .third-block .rods_cones {
     margin: auto;
     margin-top: 150px;
-    width: 575px; }
-    @media (max-width: 575px) {
+    width: 100%;
+    max-width: 575px; }
+    @media (max-width: 480px) {
       .third-block .rods_cones {
-        width: 90%; } }
+        margin-top: 30px; } }
     .third-block .rods_cones h1 {
       padding-top: 75px;
       font-size: 45px;
       color: #2f81b7; }
+      @media (max-width: 400px) {
+        .third-block .rods_cones h1 {
+          font-size: 34px; } }
     .third-block .rods_cones h3 {
       font-size: 18px;
       color: #3f3f3f; }
+      @media (max-width: 480px) {
+        .third-block .rods_cones h3 {
+          padding-left: 5%;
+          padding-right: 5%; } }
     .third-block .rods_cones img {
-      height: 300px;
-      width: 300px;
+      height: 340px;
+      width: 340px;
       margin-top: 35px;
       margin-bottom: 10px; }
 
@@ -5262,20 +5298,25 @@ body {
   padding-bottom: 50px;
   text-align: center;
   color: white; }
+  @media (max-width: 480px) {
+    .footer {
+      margin-top: 50px; } }
   .footer .social-icons {
     width: 250px; }
     .footer .social-icons img {
       width: 50px; }
-    .footer .social-icons .twitter {
-      fill: blue; }
-  .footer .separator {
-    width: 250px;
-    margin: 40px auto 40px auto; }
   .footer p a {
     color: white;
     text-decoration: underline; }
   .footer .dream {
-    margin-top: 100px; }
+    margin-top: 50px; }
+    @media (max-width: 480px) {
+      .footer .dream {
+        margin-top: 50px; }
+        .footer .dream p {
+          font-size: 14px; } }
   .footer .polite {
     color: white;
-    text-decoration: none; }
+    padding-top: 50px; }
+    .footer .polite a {
+      text-decoration: none; }
