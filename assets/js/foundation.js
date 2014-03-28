@@ -8,10 +8,7 @@
 
 (function ($, window, document, undefined) {
   'use strict';
-<<<<<<< HEAD
-=======
   new WOW().init();
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
 
   // Used to retrieve Foundation media queries from CSS.
   if($('head').has('.foundation-mq-small').length === 0) {
@@ -124,7 +121,7 @@
     requestAnimationFrame = window[ vendors[lastTime] + "RequestAnimationFrame" ];
     cancelAnimationFrame = cancelAnimationFrame ||
 <<<<<<< HEAD
-      window[ vendors[lastTime] + "CancelAnimationFrame" ] || 
+      window[ vendors[lastTime] + "CancelAnimationFrame" ] ||
 =======
       window[ vendors[lastTime] + "CancelAnimationFrame" ] ||
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -168,7 +165,7 @@
       clearTimeout(id);
     };
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -355,7 +352,7 @@
           var query = Foundation.media_queries[media];
           if(query !== undefined) {
 <<<<<<< HEAD
-            Foundation.stylesheet.insertRule('@media ' + 
+            Foundation.stylesheet.insertRule('@media ' +
 =======
             Foundation.stylesheet.insertRule('@media ' +
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -579,8 +576,8 @@
             // if clearing is open and the current image is
             // clicked, go to the next image in sequence
 <<<<<<< HEAD
-            if (target.hasClass('visible') && 
-              current[0] === target[0] && 
+            if (target.hasClass('visible') &&
+              current[0] === target[0] &&
 =======
             if (target.hasClass('visible') &&
               current[0] === target[0] &&
@@ -1108,7 +1105,7 @@
         return [el, new RegExp(pattern), required];
       }
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -1257,11 +1254,11 @@
 
           var settings = target.data('dropdown-init') || self.settings;
 <<<<<<< HEAD
-          
+
           if($(e.target).data('dropdown') && settings.is_hover) {
             self.closeall.call(self);
           }
-          
+
 =======
 
           if($(e.target).data('dropdown') && settings.is_hover) {
@@ -1291,8 +1288,8 @@
             return;
           }
 <<<<<<< HEAD
-          if (!($(e.target).data('revealId')) && 
-            (parent.length > 0 && ($(e.target).is('[data-dropdown-content]') || 
+          if (!($(e.target).data('revealId')) &&
+            (parent.length > 0 && ($(e.target).is('[data-dropdown-content]') ||
 =======
           if (!($(e.target).data('revealId')) &&
             (parent.length > 0 && ($(e.target).is('[data-dropdown-content]') ||
@@ -1451,11 +1448,11 @@
         landscape : 'only screen and (orientation: landscape)',
         portrait : 'only screen and (orientation: portrait)',
 <<<<<<< HEAD
-        retina : 'only screen and (-webkit-min-device-pixel-ratio: 2),' + 
-          'only screen and (min--moz-device-pixel-ratio: 2),' + 
-          'only screen and (-o-min-device-pixel-ratio: 2/1),' + 
-          'only screen and (min-device-pixel-ratio: 2),' + 
-          'only screen and (min-resolution: 192dpi),' + 
+        retina : 'only screen and (-webkit-min-device-pixel-ratio: 2),' +
+          'only screen and (min--moz-device-pixel-ratio: 2),' +
+          'only screen and (-o-min-device-pixel-ratio: 2/1),' +
+          'only screen and (min-device-pixel-ratio: 2),' +
+          'only screen and (min-resolution: 192dpi),' +
 =======
         retina : 'only screen and (-webkit-min-device-pixel-ratio: 2),' +
           'only screen and (min--moz-device-pixel-ratio: 2),' +
@@ -1541,9 +1538,9 @@
             this.settings.directives[passed
               .scenario[1]](passed.el, passed.scenario[0], function () {
 <<<<<<< HEAD
-                if (arguments[0] instanceof Array) { 
+                if (arguments[0] instanceof Array) {
                   var args = arguments[0];
-                } else { 
+                } else {
 =======
                 if (arguments[0] instanceof Array) {
                   var args = arguments[0];
@@ -2802,7 +2799,7 @@
       container = slides_container.parent();
       slides_container.addClass(settings.slides_container_class);
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2860,7 +2857,7 @@
         next_idx = slides.length - 1;
       }
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2875,7 +2872,7 @@
       settings.before_slide_change();
       self.update_active_link(next_idx);
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2900,7 +2897,7 @@
       var start_animation = function() {
         if (dir === 'next') {animate.next(current, next, callback);}
 <<<<<<< HEAD
-        if (dir === 'prev') {animate.prev(current, next, callback);}        
+        if (dir === 'prev') {animate.prev(current, next, callback);}
 =======
         if (dir === 'prev') {animate.prev(current, next, callback);}
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2913,7 +2910,7 @@
       }
     };
 <<<<<<< HEAD
-    
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2923,7 +2920,7 @@
       self._goto(idx + 1);
     };
 <<<<<<< HEAD
-    
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2943,7 +2940,7 @@
     };
 
 <<<<<<< HEAD
-    self.link_bullet = function(e) {    
+    self.link_bullet = function(e) {
 =======
     self.link_bullet = function(e) {
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2966,7 +2963,7 @@
       self._goto(idx + 1, true);
     }
 <<<<<<< HEAD
-    
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -2984,8 +2981,8 @@
     self.create_timer = function() {
       var t = new Timer(
 <<<<<<< HEAD
-        container.find('.'+settings.timer_container_class), 
-        settings, 
+        container.find('.'+settings.timer_container_class),
+        settings,
 =======
         container.find('.'+settings.timer_container_class),
         settings,
@@ -3004,7 +3001,7 @@
       if (t.hasClass(settings.timer_paused_class)) {
         if (typeof timer === 'undefined') {timer = self.create_timer();}
 <<<<<<< HEAD
-        timer.start();     
+        timer.start();
 =======
         timer.start();
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3019,8 +3016,8 @@
       if (settings.timer) {timer = self.create_timer(); timer.start();}
       animate = new FadeAnimation(settings, slides_container);
 <<<<<<< HEAD
-      if (settings.animation === 'slide') 
-        animate = new SlideAnimation(settings, slides_container);        
+      if (settings.animation === 'slide')
+        animate = new SlideAnimation(settings, slides_container);
 =======
       if (settings.animation === 'slide')
         animate = new SlideAnimation(settings, slides_container);
@@ -3079,7 +3076,7 @@
         }
       });
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3100,7 +3097,7 @@
         duration = settings.timer_speed,
         progress = el.find('.'+settings.timer_progress_class),
 <<<<<<< HEAD
-        start, 
+        start,
 =======
         start,
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3147,7 +3144,7 @@
     };
   };
 <<<<<<< HEAD
-  
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3261,7 +3258,7 @@
   };
 
 <<<<<<< HEAD
-    
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3336,7 +3333,7 @@
       $(this.scope)
         .off('.reveal');
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3673,7 +3670,7 @@
             siblings = tab.siblings(),
             settings = tabs.data('tab-init');
 <<<<<<< HEAD
-        
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3682,7 +3679,7 @@
           target = $('#' + $(this).data('tab-content').split('#')[1]);
         }
 <<<<<<< HEAD
-        
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3716,8 +3713,8 @@
       disable_for_touch: false,
       tip_template : function (selector, content) {
 <<<<<<< HEAD
-        return '<span data-selector="' + selector + '" class="' 
-          + Foundation.libs.tooltip.settings.tooltip_class.substring(1) 
+        return '<span data-selector="' + selector + '" class="'
+          + Foundation.libs.tooltip.settings.tooltip_class.substring(1)
 =======
         return '<span data-selector="' + selector + '" class="'
           + Foundation.libs.tooltip.settings.tooltip_class.substring(1)
@@ -3739,7 +3736,7 @@
         $(this.scope)
           .off('.tooltip')
 <<<<<<< HEAD
-          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip', 
+          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
 =======
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3752,7 +3749,7 @@
             }
           })
 <<<<<<< HEAD
-          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip', 
+          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
 =======
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3764,7 +3761,7 @@
         $(this.scope)
           .off('.tooltip')
 <<<<<<< HEAD
-          .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip', 
+          .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip',
 =======
           .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip',
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -3835,7 +3832,7 @@
       nubHeight = nub.outerHeight();
       nubWidth = nub.outerHeight();
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
@@ -4122,7 +4119,7 @@
           }
         });
 <<<<<<< HEAD
-      
+
 =======
 
 >>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
