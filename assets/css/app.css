@@ -5138,6 +5138,7 @@ a {
     text-decoration: underline; }
 
 body {
+<<<<<<< HEAD
   background-color: white;
   width: 100%; }
 
@@ -5149,6 +5150,16 @@ html, body {
   overflow-x: hidden;
   overflow-y: scroll;
   /* has to be scroll, not auto */
+=======
+  background-color: white; }
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+>>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
   -webkit-overflow-scrolling: touch; }
 
 .first-block {
@@ -5225,7 +5236,11 @@ html, body {
           width: 300px;
           height: 300px; } }
     .third-block .sketchcasts h1 {
+<<<<<<< HEAD
       padding-top: 75px;
+=======
+      padding-top: 80px;
+>>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       font-size: 45px;
       color: #2f81b7; }
     .third-block .sketchcasts a .sketch {
@@ -5305,14 +5320,23 @@ html, body {
     .footer {
       margin-top: 50px; } }
   .footer .social-icons {
+<<<<<<< HEAD
     width: 250px; }
+=======
+    width: 250px;
+    height: 100px; }
+>>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     .footer .social-icons img {
       width: 50px; }
   .footer p a {
     color: white;
     text-decoration: underline; }
   .footer .dream {
+<<<<<<< HEAD
     margin-top: 50px; }
+=======
+    margin-top: 20px; }
+>>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     @media (max-width: 480px) {
       .footer .dream {
         margin-top: 50px; }
@@ -5323,3 +5347,27 @@ html, body {
     padding-top: 50px; }
     .footer .polite a {
       text-decoration: none; }
+<<<<<<< HEAD
+=======
+
+.social-icons img, .social-links img {
+  -webkit-transition: width 0.2s ease;
+  -moz-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  transition: width 0.2s ease; }
+  .social-icons img:hover, .social-links img:hover {
+    width: 100%; }
+
+.path {
+  stroke-dasharray: 9999;
+  stroke-dashoffset: 9999;
+  -webkit-animation: dash 100s linear forwards;
+  animation: dash 100s linear forwards; }
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+>>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
