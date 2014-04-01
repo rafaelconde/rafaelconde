@@ -3,16 +3,21 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimal-ui">
 		<title>This website is still a work in progress</title>
   		<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
       <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" media="all"/>
-
       <script type="text/javascript" src="//use.typekit.net/bpb6fye.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   		<script src="assets/js/vendor/modernizr.min.js"></script>
 	</head>
 	<body>
 	<div class="first-block">
+    <div class="video-div">
+      <video id="background-video" preload="auto" muted="true" loop="loop" autoplay="true" poster="assets/images/poster.png">
+        <source src="assets/images/video.mp4" type="video/mp4">
+      </video>
+    </div>
 		<div class="nav animated fadeInUp">
       <h2>Hi, my name is</h2>
       <h1>Rafael Conde</h1>
@@ -52,7 +57,8 @@
     </div>
 
     <div class="album-covers-container row">
-      <div class="small-6 medium-3 columns  slideInRight"
+
+      <div class="small-6 medium-3 columns wow slideInRight"
         data-wow-delay="0s"
         data-wow-duration="0.7s">
         <a class = " bounceInRight" href="http://rd.io/x/QRzr2SIf0FA/"><img class = "cover1" src="assets/images/five_knives.png" alt=""></a></div>
@@ -67,13 +73,13 @@
       <div class="small-6 medium-3 columns  slideInRight"
         data-wow-delay="0.6s"
         data-wow-duration="0.7s">
-        <a class = " bounceInRight" href="http://rd.io/x/QRzr2SJo4jE/"><img class = "cover2" src="assets/images/because_because.png" alt=""></a></div>
+        <a class = "wow bounceInRight" href="http://rd.io/x/QRzr2SJo4jE/"><img class = "cover2" src="assets/images/because_because.png" alt=""></a></div>
     </div>
 
     <div class="rods_cones">
       <h1><span class="trio">&#60;/trio&#62;_</span><span class="rods">rods&#38;cones</span></h1>
       <h3>My band <a class="trio tk-futura-pt" href="http://triomusic.net">&#60;/trio&#62;</a> and I just released our first single and I couldn't be more proud. It would mean a lot to me if you could give it a listen.</h3>
-      <img src="assets/images/rods_cones.png" alt="Rods &#38; Cones Single Cover" class=" fadeInUp" data-wow-delay="0.3s">
+      <img src="assets/images/rods_cones.png" alt="Rods &#38; Cones Single Cover" class="wow fadeInUp" data-wow-delay="0.3s">
       <div class="rods-links">
         <a class="tk-adelle" href="#">iTunes</a>
         <a class="tk-adelle" href="#">&#124; Rdio &#124;</a>
@@ -86,15 +92,15 @@
     <div class="forth-block">
       <h2>Designer and Developer at <a href="http://thinkorange.pt" class="orange">Think Orange</a></h2>
       <div class="separator"></div>
-     </div>
+    </div>
     <div class="social-icons row">
       <div class="small-4 columns"><a href="http://twitter.com/rafahari"><img class = "twitter" src="assets/images/twitter_icon.png" alt="Twitter Logo Icon rafahari"></a></div>
       <div class="small-4 columns"><a href="http://github.com/rafaelconde"><img class = "github" src="assets/images/github_icon.svg" alt="Github Logo Icon rafaelconde"></a></div>
-      <div class="small-4 columns"><a href="http://www.rdio.com/people/rafahari/"><img class = "rdio" src="assets/images/rdio_icon.svg" alt="Rdio Logo Icon rafahari"></a></div>
+      <div class="small-4 columns"><a href="http://www.rdio.com/people/rafahari/"><img class = "rdio" src="assets/images/rdio_icon.png" alt="Rdio Logo Icon rafahari"></a></div>
     </div>
 
     <div class="dream">
-      <p>I have a dream &#8211; to work &#38; play in San Francisco <br> if you can help <a href="mailto:rafahari@me.com?Subject=Hey%20Rafa!" target="_top">send me an email</a></p>
+      <p>I have a dream &#8211; <br class="line-break"> to work &#38; play in San Francisco <br> if you can help <a href="mailto:rafahari@me.com?Subject=Hey%20Rafa!" target="_top">send me an email</a></p>
       <div class="polite">
         <p><a href="http://en.wikipedia.org/wiki/Politeness">Please, be polite</a></p>
       </div>
@@ -107,6 +113,19 @@
 <script>
   $(document).foundation();
 </script>
-<script>new WOW().init();</script>
+
+<script>
+  new WOW().init();
+</script>
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35780715-1', 'rafaelconde.net');
+      ga('send', 'pageview');
+  </script>
 	</body>
 </html>

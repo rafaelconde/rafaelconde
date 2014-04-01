@@ -8,7 +8,10 @@
 
 (function ($, window, document, undefined) {
   'use strict';
+<<<<<<< HEAD
   new WOW().init();
+=======
+>>>>>>> gh-pages
 
   // Used to retrieve Foundation media queries from CSS.
   if($('head').has('.foundation-mq-small').length === 0) {
@@ -121,10 +124,12 @@
     requestAnimationFrame = window[ vendors[lastTime] + "RequestAnimationFrame" ];
     cancelAnimationFrame = cancelAnimationFrame ||
 <<<<<<< HEAD
+<<<<<<< HEAD
       window[ vendors[lastTime] + "CancelAnimationFrame" ] ||
 =======
+=======
+>>>>>>> gh-pages
       window[ vendors[lastTime] + "CancelAnimationFrame" ] ||
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       window[ vendors[lastTime] + "CancelRequestAnimationFrame" ];
   }
 
@@ -165,10 +170,12 @@
       clearTimeout(id);
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
   }
 
   }( jQuery ));
@@ -352,10 +359,12 @@
           var query = Foundation.media_queries[media];
           if(query !== undefined) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Foundation.stylesheet.insertRule('@media ' +
 =======
+=======
+>>>>>>> gh-pages
             Foundation.stylesheet.insertRule('@media ' +
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
               Foundation.media_queries[media] + '{ ' + rule + ' }');
           }
         }
@@ -576,12 +585,14 @@
             // if clearing is open and the current image is
             // clicked, go to the next image in sequence
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (target.hasClass('visible') &&
               current[0] === target[0] &&
 =======
+=======
+>>>>>>> gh-pages
             if (target.hasClass('visible') &&
               current[0] === target[0] &&
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
               next.length > 0 && self.is_open(current)) {
               target = next;
               image = $('img', target);
@@ -1105,10 +1116,12 @@
         return [el, new RegExp(pattern), required];
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       if (this.settings.patterns.hasOwnProperty(type)) {
         return [el, this.settings.patterns[type], required];
       }
@@ -1254,18 +1267,20 @@
 
           var settings = target.data('dropdown-init') || self.settings;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
           if($(e.target).data('dropdown') && settings.is_hover) {
             self.closeall.call(self);
           }
 
 =======
+=======
+>>>>>>> gh-pages
 
           if($(e.target).data('dropdown') && settings.is_hover) {
             self.closeall.call(self);
           }
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
           if (settings.is_hover) self.open.apply(self, [dropdown, target]);
         })
         .on('mouseleave.fndtn.dropdown', '[data-dropdown], [data-dropdown-content]', function (e) {
@@ -1288,12 +1303,14 @@
             return;
           }
 <<<<<<< HEAD
+<<<<<<< HEAD
           if (!($(e.target).data('revealId')) &&
             (parent.length > 0 && ($(e.target).is('[data-dropdown-content]') ||
 =======
+=======
+>>>>>>> gh-pages
           if (!($(e.target).data('revealId')) &&
             (parent.length > 0 && ($(e.target).is('[data-dropdown-content]') ||
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
               $.contains(parent.first()[0], e.target)))) {
             e.stopPropagation();
             return;
@@ -1448,18 +1465,20 @@
         landscape : 'only screen and (orientation: landscape)',
         portrait : 'only screen and (orientation: portrait)',
 <<<<<<< HEAD
+<<<<<<< HEAD
         retina : 'only screen and (-webkit-min-device-pixel-ratio: 2),' +
           'only screen and (min--moz-device-pixel-ratio: 2),' +
           'only screen and (-o-min-device-pixel-ratio: 2/1),' +
           'only screen and (min-device-pixel-ratio: 2),' +
           'only screen and (min-resolution: 192dpi),' +
 =======
+=======
+>>>>>>> gh-pages
         retina : 'only screen and (-webkit-min-device-pixel-ratio: 2),' +
           'only screen and (min--moz-device-pixel-ratio: 2),' +
           'only screen and (-o-min-device-pixel-ratio: 2/1),' +
           'only screen and (min-device-pixel-ratio: 2),' +
           'only screen and (min-resolution: 192dpi),' +
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
           'only screen and (min-resolution: 2dppx)'
       },
 
@@ -1538,14 +1557,16 @@
             this.settings.directives[passed
               .scenario[1]](passed.el, passed.scenario[0], function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (arguments[0] instanceof Array) {
                   var args = arguments[0];
                 } else {
 =======
+=======
+>>>>>>> gh-pages
                 if (arguments[0] instanceof Array) {
                   var args = arguments[0];
                 } else {
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
                   var args = Array.prototype.slice.call(arguments, 0);
                 }
 
@@ -2799,10 +2820,12 @@
       container = slides_container.parent();
       slides_container.addClass(settings.slides_container_class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       if (settings.navigation_arrows) {
         container.append($('<a href="#"><span></span></a>').addClass(settings.prev_class));
         container.append($('<a href="#"><span></span></a>').addClass(settings.next_class));
@@ -2857,10 +2880,12 @@
         next_idx = slides.length - 1;
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       var current = $(slides.get(idx));
       var next = $(slides.get(next_idx));
 
@@ -2872,10 +2897,12 @@
       settings.before_slide_change();
       self.update_active_link(next_idx);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       var callback = function() {
         var unlock = function() {
           idx = next_idx;
@@ -2897,10 +2924,12 @@
       var start_animation = function() {
         if (dir === 'next') {animate.next(current, next, callback);}
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (dir === 'prev') {animate.prev(current, next, callback);}
 =======
+=======
+>>>>>>> gh-pages
         if (dir === 'prev') {animate.prev(current, next, callback);}
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       };
 
       if (next.height() > slides_container.height() && settings.variable_height) {
@@ -2910,20 +2939,24 @@
       }
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     self.next = function(e) {
       e.stopImmediatePropagation();
       e.preventDefault();
       self._goto(idx + 1);
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     self.prev = function(e) {
       e.stopImmediatePropagation();
       e.preventDefault();
@@ -2940,10 +2973,12 @@
     };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     self.link_bullet = function(e) {
 =======
+=======
+>>>>>>> gh-pages
     self.link_bullet = function(e) {
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       var index = $(this).attr('data-orbit-slide');
       if ((typeof index === 'string') && (index = $.trim(index)) != "") {
         if(isNaN(parseInt(index)))
@@ -2963,10 +2998,12 @@
       self._goto(idx + 1, true);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     self.compute_dimensions = function() {
       var current = $(slides_container.children().get(idx));
       var h = current.height();
@@ -2981,12 +3018,14 @@
     self.create_timer = function() {
       var t = new Timer(
 <<<<<<< HEAD
+<<<<<<< HEAD
         container.find('.'+settings.timer_container_class),
         settings,
 =======
+=======
+>>>>>>> gh-pages
         container.find('.'+settings.timer_container_class),
         settings,
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         self.timer_callback
       );
       return t;
@@ -3001,10 +3040,12 @@
       if (t.hasClass(settings.timer_paused_class)) {
         if (typeof timer === 'undefined') {timer = self.create_timer();}
 <<<<<<< HEAD
+<<<<<<< HEAD
         timer.start();
 =======
+=======
+>>>>>>> gh-pages
         timer.start();
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       }
       else {
         if (typeof timer === 'object') {timer.stop();}
@@ -3016,12 +3057,14 @@
       if (settings.timer) {timer = self.create_timer(); timer.start();}
       animate = new FadeAnimation(settings, slides_container);
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (settings.animation === 'slide')
         animate = new SlideAnimation(settings, slides_container);
 =======
+=======
+>>>>>>> gh-pages
       if (settings.animation === 'slide')
         animate = new SlideAnimation(settings, slides_container);
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       container.on('click', '.'+settings.next_class, self.next);
       container.on('click', '.'+settings.prev_class, self.prev);
       container.on('click', '[data-orbit-slide]', self.link_bullet);
@@ -3076,10 +3119,12 @@
         }
       });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       $(document).on('click', '[data-orbit-link]', self.link_custom);
       $(window).on('resize', self.compute_dimensions);
       $(window).on('load', self.compute_dimensions);
@@ -3097,10 +3142,12 @@
         duration = settings.timer_speed,
         progress = el.find('.'+settings.timer_progress_class),
 <<<<<<< HEAD
+<<<<<<< HEAD
         start,
 =======
+=======
+>>>>>>> gh-pages
         start,
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         timeout,
         left = -1;
 
@@ -3144,10 +3191,12 @@
     };
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
   var SlideAnimation = function(settings, container) {
     var duration = settings.animation_speed;
     var is_rtl = ($('html[dir=rtl]').length === 1);
@@ -3258,10 +3307,12 @@
   };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
 }(jQuery, this, this.document));
 
 ;(function ($, window, document, undefined) {
@@ -3333,10 +3384,12 @@
       $(this.scope)
         .off('.reveal');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       $(document)
         .on('click.fndtn.reveal', this.close_targets(), function (e) {
 
@@ -3670,19 +3723,23 @@
             siblings = tab.siblings(),
             settings = tabs.data('tab-init');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         // allow usage of data-tab-content attribute instead of href
         if ($(this).data('tab-content')) {
           target = $('#' + $(this).data('tab-content').split('#')[1]);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         tab.addClass(settings.active_class).trigger('opened');
         siblings.removeClass(settings.active_class);
         target.siblings().removeClass(settings.active_class).end().addClass(settings.active_class);
@@ -3713,12 +3770,14 @@
       disable_for_touch: false,
       tip_template : function (selector, content) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return '<span data-selector="' + selector + '" class="'
           + Foundation.libs.tooltip.settings.tooltip_class.substring(1)
 =======
+=======
+>>>>>>> gh-pages
         return '<span data-selector="' + selector + '" class="'
           + Foundation.libs.tooltip.settings.tooltip_class.substring(1)
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
           + '">' + content + '<span class="nub"></span></span>';
       }
     },
@@ -3736,10 +3795,12 @@
         $(this.scope)
           .off('.tooltip')
 <<<<<<< HEAD
+<<<<<<< HEAD
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
 =======
+=======
+>>>>>>> gh-pages
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
             '[data-tooltip]', function (e) {
             var settings = $.extend({}, self.settings, self.data_options($(this)));
             if (!settings.disable_for_touch) {
@@ -3749,10 +3810,12 @@
             }
           })
 <<<<<<< HEAD
+<<<<<<< HEAD
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
 =======
+=======
+>>>>>>> gh-pages
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
             this.settings.tooltip_class, function (e) {
             e.preventDefault();
             $(this).fadeOut(150);
@@ -3761,10 +3824,12 @@
         $(this.scope)
           .off('.tooltip')
 <<<<<<< HEAD
+<<<<<<< HEAD
           .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip',
 =======
+=======
+>>>>>>> gh-pages
           .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip',
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
             '[data-tooltip]', function (e) {
             var $this = $(this);
 
@@ -3832,10 +3897,12 @@
       nubHeight = nub.outerHeight();
       nubWidth = nub.outerHeight();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       tip.css({'width' : (width) ? width : 'auto'});
 
       objPos = function (obj, top, right, bottom, left, width) {
@@ -4119,10 +4186,12 @@
           }
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> gh-pages
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       $(window).off('.topbar').on('resize.fndtn.topbar', self.throttle(function () {
         self.resize.call(self);
       }, 50)).trigger('resize');
