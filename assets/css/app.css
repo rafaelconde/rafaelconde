@@ -5138,19 +5138,6 @@ a {
     text-decoration: underline; }
 
 body {
-<<<<<<< HEAD
-  background-color: white;
-  width: 100%; }
-
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  /* has to be scroll, not auto */
-=======
   background-color: white; }
 
 html, body {
@@ -5159,21 +5146,43 @@ html, body {
   padding: 0px;
   overflow-x: hidden;
   overflow-y: auto;
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
   -webkit-overflow-scrolling: touch; }
 
-.first-block {
+.no-touch .first-block {
+  background: none; }
+
+.touch .first-block {
   background: url("../images/header-photo@2x.jpg");
   background-size: 100%;
   background-position: center center;
-  background-repeat: no-repeat;
-  height: 600px; }
+  background-repeat: no-repeat; }
   @media (max-width: 890px) {
-    .first-block {
+    .touch .first-block {
       background-size: 230%; } }
   @media (max-width: 340px) {
-    .first-block {
+    .touch .first-block {
       background-size: 300%; } }
+  .touch .first-block .video-div {
+    display: none; }
+
+.first-block {
+  height: 600px; }
+  .first-block .video-div {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 600px; }
+  .first-block #background-video {
+    position: absolute;
+    width: 100%;
+    min-width: 1080px;
+    height: auto;
+    text-align: center; }
+
+.touch .nav h1 {
+  color: #fafafa; }
+.touch .nav h2 {
+  color: #B8B8B8; }
 
 .nav {
   margin: auto;
@@ -5185,10 +5194,10 @@ html, body {
     margin: -10px;
     font-weight: 400;
     font-size: 55px;
-    color: white; }
+    color: #3f3f3f; }
   .nav h2 {
     font-size: 22px;
-    color: #d4d4d4; }
+    color: #777; }
   .nav hr {
     margin: auto;
     margin-top: 40px;
@@ -5236,13 +5245,12 @@ html, body {
           width: 300px;
           height: 300px; } }
     .third-block .sketchcasts h1 {
-<<<<<<< HEAD
-      padding-top: 75px;
-=======
       padding-top: 80px;
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       font-size: 45px;
       color: #2f81b7; }
+      @media (max-width: 320px) {
+        .third-block .sketchcasts h1 {
+          padding-top: 65px; } }
     .third-block .sketchcasts a .sketch {
       font-weight: 200;
       letter-spacing: 4px; }
@@ -5320,35 +5328,29 @@ html, body {
     .footer {
       margin-top: 50px; } }
   .footer .social-icons {
-<<<<<<< HEAD
-    width: 250px; }
-=======
     width: 250px;
     height: 100px; }
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     .footer .social-icons img {
       width: 50px; }
   .footer p a {
     color: white;
     text-decoration: underline; }
   .footer .dream {
-<<<<<<< HEAD
-    margin-top: 50px; }
-=======
     margin-top: 20px; }
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
+    .footer .dream .line-break {
+      display: none; }
     @media (max-width: 480px) {
       .footer .dream {
-        margin-top: 50px; }
+        margin-top: 20px; }
         .footer .dream p {
-          font-size: 14px; } }
+          font-size: 16px; }
+        .footer .dream .line-break {
+          display: inline; } }
   .footer .polite {
     color: white;
     padding-top: 50px; }
     .footer .polite a {
       text-decoration: none; }
-<<<<<<< HEAD
-=======
 
 .social-icons img, .social-links img {
   -webkit-transition: width 0.2s ease;
@@ -5370,4 +5372,3 @@ html, body {
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a

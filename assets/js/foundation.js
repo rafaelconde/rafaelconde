@@ -8,10 +8,6 @@
 
 (function ($, window, document, undefined) {
   'use strict';
-<<<<<<< HEAD
-=======
-  new WOW().init();
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
 
   // Used to retrieve Foundation media queries from CSS.
   if($('head').has('.foundation-mq-small').length === 0) {
@@ -123,11 +119,7 @@
   for(; lastTime < vendors.length && !requestAnimationFrame; lastTime++) {
     requestAnimationFrame = window[ vendors[lastTime] + "RequestAnimationFrame" ];
     cancelAnimationFrame = cancelAnimationFrame ||
-<<<<<<< HEAD
-      window[ vendors[lastTime] + "CancelAnimationFrame" ] || 
-=======
       window[ vendors[lastTime] + "CancelAnimationFrame" ] ||
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       window[ vendors[lastTime] + "CancelRequestAnimationFrame" ];
   }
 
@@ -167,11 +159,7 @@
     window.cancelAnimationFrame = function(id) {
       clearTimeout(id);
     };
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
   }
 
   }( jQuery ));
@@ -354,11 +342,7 @@
         } else {
           var query = Foundation.media_queries[media];
           if(query !== undefined) {
-<<<<<<< HEAD
-            Foundation.stylesheet.insertRule('@media ' + 
-=======
             Foundation.stylesheet.insertRule('@media ' +
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
               Foundation.media_queries[media] + '{ ' + rule + ' }');
           }
         }
@@ -578,13 +562,8 @@
 
             // if clearing is open and the current image is
             // clicked, go to the next image in sequence
-<<<<<<< HEAD
-            if (target.hasClass('visible') && 
-              current[0] === target[0] && 
-=======
             if (target.hasClass('visible') &&
               current[0] === target[0] &&
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
               next.length > 0 && self.is_open(current)) {
               target = next;
               image = $('img', target);
@@ -1107,11 +1086,7 @@
       } else if (pattern.length > 0) {
         return [el, new RegExp(pattern), required];
       }
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       if (this.settings.patterns.hasOwnProperty(type)) {
         return [el, this.settings.patterns[type], required];
       }
@@ -1256,19 +1231,11 @@
           }
 
           var settings = target.data('dropdown-init') || self.settings;
-<<<<<<< HEAD
-          
-          if($(e.target).data('dropdown') && settings.is_hover) {
-            self.closeall.call(self);
-          }
-          
-=======
 
           if($(e.target).data('dropdown') && settings.is_hover) {
             self.closeall.call(self);
           }
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
           if (settings.is_hover) self.open.apply(self, [dropdown, target]);
         })
         .on('mouseleave.fndtn.dropdown', '[data-dropdown], [data-dropdown-content]', function (e) {
@@ -1290,13 +1257,8 @@
           if ($(e.target).data('dropdown') || $(e.target).parent().data('dropdown')) {
             return;
           }
-<<<<<<< HEAD
-          if (!($(e.target).data('revealId')) && 
-            (parent.length > 0 && ($(e.target).is('[data-dropdown-content]') || 
-=======
           if (!($(e.target).data('revealId')) &&
             (parent.length > 0 && ($(e.target).is('[data-dropdown-content]') ||
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
               $.contains(parent.first()[0], e.target)))) {
             e.stopPropagation();
             return;
@@ -1450,19 +1412,11 @@
         xxlarge: Foundation.media_queries.xxlarge,
         landscape : 'only screen and (orientation: landscape)',
         portrait : 'only screen and (orientation: portrait)',
-<<<<<<< HEAD
-        retina : 'only screen and (-webkit-min-device-pixel-ratio: 2),' + 
-          'only screen and (min--moz-device-pixel-ratio: 2),' + 
-          'only screen and (-o-min-device-pixel-ratio: 2/1),' + 
-          'only screen and (min-device-pixel-ratio: 2),' + 
-          'only screen and (min-resolution: 192dpi),' + 
-=======
         retina : 'only screen and (-webkit-min-device-pixel-ratio: 2),' +
           'only screen and (min--moz-device-pixel-ratio: 2),' +
           'only screen and (-o-min-device-pixel-ratio: 2/1),' +
           'only screen and (min-device-pixel-ratio: 2),' +
           'only screen and (min-resolution: 192dpi),' +
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
           'only screen and (min-resolution: 2dppx)'
       },
 
@@ -1540,15 +1494,9 @@
           if (passed) {
             this.settings.directives[passed
               .scenario[1]](passed.el, passed.scenario[0], function () {
-<<<<<<< HEAD
-                if (arguments[0] instanceof Array) { 
-                  var args = arguments[0];
-                } else { 
-=======
                 if (arguments[0] instanceof Array) {
                   var args = arguments[0];
                 } else {
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
                   var args = Array.prototype.slice.call(arguments, 0);
                 }
 
@@ -2801,11 +2749,7 @@
       slides_container.wrap('<div class="'+settings.container_class+'"></div>');
       container = slides_container.parent();
       slides_container.addClass(settings.slides_container_class);
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       if (settings.navigation_arrows) {
         container.append($('<a href="#"><span></span></a>').addClass(settings.prev_class));
         container.append($('<a href="#"><span></span></a>').addClass(settings.next_class));
@@ -2859,11 +2803,7 @@
         if (!settings.circular) return false;
         next_idx = slides.length - 1;
       }
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       var current = $(slides.get(idx));
       var next = $(slides.get(next_idx));
 
@@ -2874,11 +2814,7 @@
       slides_container.trigger('before-slide-change.fndtn.orbit');
       settings.before_slide_change();
       self.update_active_link(next_idx);
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       var callback = function() {
         var unlock = function() {
           idx = next_idx;
@@ -2899,11 +2835,7 @@
 
       var start_animation = function() {
         if (dir === 'next') {animate.next(current, next, callback);}
-<<<<<<< HEAD
-        if (dir === 'prev') {animate.prev(current, next, callback);}        
-=======
         if (dir === 'prev') {animate.prev(current, next, callback);}
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       };
 
       if (next.height() > slides_container.height() && settings.variable_height) {
@@ -2912,21 +2844,13 @@
         start_animation();
       }
     };
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     self.next = function(e) {
       e.stopImmediatePropagation();
       e.preventDefault();
       self._goto(idx + 1);
     };
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     self.prev = function(e) {
       e.stopImmediatePropagation();
       e.preventDefault();
@@ -2942,11 +2866,7 @@
       }
     };
 
-<<<<<<< HEAD
-    self.link_bullet = function(e) {    
-=======
     self.link_bullet = function(e) {
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       var index = $(this).attr('data-orbit-slide');
       if ((typeof index === 'string') && (index = $.trim(index)) != "") {
         if(isNaN(parseInt(index)))
@@ -2965,11 +2885,7 @@
     self.timer_callback = function() {
       self._goto(idx + 1, true);
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
     self.compute_dimensions = function() {
       var current = $(slides_container.children().get(idx));
       var h = current.height();
@@ -2983,13 +2899,8 @@
 
     self.create_timer = function() {
       var t = new Timer(
-<<<<<<< HEAD
-        container.find('.'+settings.timer_container_class), 
-        settings, 
-=======
         container.find('.'+settings.timer_container_class),
         settings,
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         self.timer_callback
       );
       return t;
@@ -3003,11 +2914,7 @@
       var t = container.find('.'+settings.timer_container_class);
       if (t.hasClass(settings.timer_paused_class)) {
         if (typeof timer === 'undefined') {timer = self.create_timer();}
-<<<<<<< HEAD
-        timer.start();     
-=======
         timer.start();
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       }
       else {
         if (typeof timer === 'object') {timer.stop();}
@@ -3018,13 +2925,8 @@
       self.build_markup();
       if (settings.timer) {timer = self.create_timer(); timer.start();}
       animate = new FadeAnimation(settings, slides_container);
-<<<<<<< HEAD
-      if (settings.animation === 'slide') 
-        animate = new SlideAnimation(settings, slides_container);        
-=======
       if (settings.animation === 'slide')
         animate = new SlideAnimation(settings, slides_container);
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       container.on('click', '.'+settings.next_class, self.next);
       container.on('click', '.'+settings.prev_class, self.prev);
       container.on('click', '[data-orbit-slide]', self.link_bullet);
@@ -3078,11 +2980,7 @@
           timer.start();
         }
       });
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       $(document).on('click', '[data-orbit-link]', self.link_custom);
       $(window).on('resize', self.compute_dimensions);
       $(window).on('load', self.compute_dimensions);
@@ -3099,11 +2997,7 @@
     var self = this,
         duration = settings.timer_speed,
         progress = el.find('.'+settings.timer_progress_class),
-<<<<<<< HEAD
-        start, 
-=======
         start,
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         timeout,
         left = -1;
 
@@ -3146,11 +3040,7 @@
       el.trigger('timer-stopped.fndtn.orbit');
     };
   };
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
   var SlideAnimation = function(settings, container) {
     var duration = settings.animation_speed;
     var is_rtl = ($('html[dir=rtl]').length === 1);
@@ -3260,11 +3150,7 @@
     }
   };
 
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
 }(jQuery, this, this.document));
 
 ;(function ($, window, document, undefined) {
@@ -3335,11 +3221,7 @@
 
       $(this.scope)
         .off('.reveal');
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       $(document)
         .on('click.fndtn.reveal', this.close_targets(), function (e) {
 
@@ -3672,20 +3554,12 @@
             target = $('#' + this.href.split('#')[1]),
             siblings = tab.siblings(),
             settings = tabs.data('tab-init');
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         // allow usage of data-tab-content attribute instead of href
         if ($(this).data('tab-content')) {
           target = $('#' + $(this).data('tab-content').split('#')[1]);
         }
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
         tab.addClass(settings.active_class).trigger('opened');
         siblings.removeClass(settings.active_class);
         target.siblings().removeClass(settings.active_class).end().addClass(settings.active_class);
@@ -3715,13 +3589,8 @@
       touch_close_text: 'Tap To Close',
       disable_for_touch: false,
       tip_template : function (selector, content) {
-<<<<<<< HEAD
-        return '<span data-selector="' + selector + '" class="' 
-          + Foundation.libs.tooltip.settings.tooltip_class.substring(1) 
-=======
         return '<span data-selector="' + selector + '" class="'
           + Foundation.libs.tooltip.settings.tooltip_class.substring(1)
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
           + '">' + content + '<span class="nub"></span></span>';
       }
     },
@@ -3738,11 +3607,7 @@
       if (Modernizr.touch) {
         $(this.scope)
           .off('.tooltip')
-<<<<<<< HEAD
-          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip', 
-=======
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
             '[data-tooltip]', function (e) {
             var settings = $.extend({}, self.settings, self.data_options($(this)));
             if (!settings.disable_for_touch) {
@@ -3751,11 +3616,7 @@
               self.showOrCreateTip($(this));
             }
           })
-<<<<<<< HEAD
-          .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip', 
-=======
           .on('click.fndtn.tooltip touchstart.fndtn.tooltip touchend.fndtn.tooltip',
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
             this.settings.tooltip_class, function (e) {
             e.preventDefault();
             $(this).fadeOut(150);
@@ -3763,11 +3624,7 @@
       } else {
         $(this.scope)
           .off('.tooltip')
-<<<<<<< HEAD
-          .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip', 
-=======
           .on('mouseenter.fndtn.tooltip mouseleave.fndtn.tooltip',
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
             '[data-tooltip]', function (e) {
             var $this = $(this);
 
@@ -3834,11 +3691,7 @@
       nub = tip.children('.nub');
       nubHeight = nub.outerHeight();
       nubWidth = nub.outerHeight();
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       tip.css({'width' : (width) ? width : 'auto'});
 
       objPos = function (obj, top, right, bottom, left, width) {
@@ -4121,11 +3974,7 @@
             topbar.css('height', $this.siblings('ul').outerHeight(true) + topbar.data('height'));
           }
         });
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> 94ba1deb97c0ba562fcabd591ce8b59a7bffec3a
       $(window).off('.topbar').on('resize.fndtn.topbar', self.throttle(function () {
         self.resize.call(self);
       }, 50)).trigger('resize');
