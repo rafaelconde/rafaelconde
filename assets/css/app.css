@@ -5152,6 +5152,8 @@ html, body {
   background: none; }
 
 .touch .first-block {
+  overflow-x: hidden;
+  overflow-y: hidden;
   background: url("../images/header-photo@2x.jpg");
   background-size: 100%;
   background-position: center center;
