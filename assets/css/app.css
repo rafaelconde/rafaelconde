@@ -5180,7 +5180,7 @@ html, body {
     min-width: 1080px;
     height: auto;
     text-align: center; }
-    @media (max-width: 1500px) {
+    @media (min-width: 1500px) {
       .first-block #background-video {
         top: -150px; } }
 
