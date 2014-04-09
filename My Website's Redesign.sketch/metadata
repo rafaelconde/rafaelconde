@@ -30,9 +30,21 @@
 		<string>FuturaLight</string>
 		<string>FuturaLight</string>
 		<string>Futura-Medium</string>
+		<string>AppleColorEmoji</string>
+		<string>AppleColorEmoji</string>
+		<string>FuturaLight</string>
+		<string>Avenir-Book</string>
+		<string>FuturaLight</string>
+		<string>FuturaLight</string>
+		<string>Futura-Medium</string>
+		<string>FuturaLight</string>
+		<string>Avenir-Book</string>
+		<string>FuturaLight</string>
+		<string>FuturaLight</string>
+		<string>Futura-Medium</string>
 	</array>
 	<key>length</key>
-	<integer>33879380</integer>
+	<integer>101180909</integer>
 	<key>version</key>
 	<integer>18</integer>
 </dict>
