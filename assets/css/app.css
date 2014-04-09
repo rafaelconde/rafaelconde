@@ -5152,6 +5152,8 @@ html, body {
   background: none; }
 
 .touch .first-block {
+  overflow-x: hidden;
+  overflow-y: hidden;
   background: url("../images/header-photo@2x.jpg");
   background-size: 100%;
   background-position: center center;
@@ -5178,6 +5180,9 @@ html, body {
     min-width: 1080px;
     height: auto;
     text-align: center; }
+    @media (min-width: 1500px) {
+      .first-block #background-video {
+        top: -150px; } }
 
 .touch .nav h1 {
   color: #fafafa; }
@@ -5292,7 +5297,7 @@ html, body {
       padding: 0; }
   .third-block .rods_cones {
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     width: 100%;
     max-width: 575px; }
     @media (max-width: 480px) {
@@ -5317,6 +5322,33 @@ html, body {
       width: 340px;
       margin-top: 35px;
       margin-bottom: 10px; }
+  .third-block .what-more {
+    max-width: 575px;
+    margin: auto;
+    margin-top: 100px; }
+    @media (max-width: 480px) {
+      .third-block .what-more {
+        margin-top: 30px; } }
+    .third-block .what-more h1 {
+      padding-top: 75px;
+      font-size: 45px;
+      color: #2f81b7; }
+      @media (max-width: 400px) {
+        .third-block .what-more h1 {
+          font-size: 34px; } }
+    .third-block .what-more h3 {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #3f3f3f; }
+      @media (max-width: 480px) {
+        .third-block .what-more h3 {
+          padding-left: 5%;
+          padding-right: 5%; } }
+    .third-block .what-more .separator {
+      margin: auto;
+      width: 80%;
+      max-width: 100px;
+      border-bottom: 1px solid #ddd; }
 
 .footer {
   background: #2f81b7;
