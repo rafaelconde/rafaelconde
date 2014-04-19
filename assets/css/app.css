@@ -5137,6 +5137,12 @@ a {
     color: #ed8b3d;
     text-decoration: underline; }
 
+h1, h2, .trio {
+  font-family: "futura-pt"; }
+
+h3, p {
+  font-family: "adelle"; }
+
 body {
   background-color: white; }
 
