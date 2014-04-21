@@ -5250,6 +5250,10 @@ html, body {
     .design .design-work .stupid-bug {
       margin-left: -72px;
       margin-right: 72px; }
+      @media (max-width: 800px) {
+        .design .design-work .stupid-bug {
+          margin-left: -190px;
+          margin-right: 190px; } }
       @media (max-width: 550px) {
         .design .design-work .stupid-bug {
           margin-left: 0;
@@ -5312,6 +5316,10 @@ html, body {
     .code .code-work .stupid-bug {
       margin-left: -250px;
       margin-right: 250px; }
+      @media (max-width: 800px) {
+        .code .code-work .stupid-bug {
+          margin-left: -190px;
+          margin-right: 190px; } }
       @media (max-width: 550px) {
         .code .code-work .stupid-bug {
           margin: 0; } }
@@ -5339,6 +5347,9 @@ html, body {
   @media (max-width: 550px) {
     .music .img-container {
       margin: auto; } }
+  @media (max-width: 800px) {
+    .music .img-container img {
+      margin-top: 75px; } }
   .music .img-container img {
     border-radius: 5px; }
   .music .img-container img {
@@ -5358,6 +5369,9 @@ html, body {
     @media (max-width: 550px) {
       .dream .medium-7 {
         margin: auto; } }
+    @media (max-width: 800px) {
+      .dream .medium-7 {
+        margin: auto; } }
   .dream .img-container {
     width: 200px;
     height: 200px;
@@ -5366,9 +5380,28 @@ html, body {
       .dream .img-container {
         margin-left: 32px; } }
 
+.about-the-product {
+  background: url("../images/lifestyle-browse.jpg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  @media (max-width: 1000px) {
+    .about-the-product {
+      background-size: 200%; } }
+  @media (max-width: 500px) {
+    .about-the-product {
+      background-size: 550%; } }
+  .about-the-product h2, .about-the-product p {
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5); }
+
 .content {
   text-align: center;
-  margin-bottom: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background: #fff;
   padding: 120px;
   padding-top: 50px; }
@@ -5412,7 +5445,7 @@ html, body {
     margin-top: 50px; }
 
 .footer {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
   padding: 20px;
   background: #84bd00;
