@@ -5140,8 +5140,11 @@ a {
 h1, h2, .trio {
   font-family: "futura-pt"; }
 
-h3, p {
-  font-family: "adelle"; }
+h3, p, .body-font {
+  font-family: "garamond-premier-pro"; }
+
+.small-caps {
+  font-variant: small-caps; }
 
 body {
   background-color: white; }
@@ -5205,7 +5208,7 @@ html, body {
     margin: -10px;
     font-weight: 400;
     font-size: 55px;
-    color: #3f3f3f; }
+    color: #3f3f3f3; }
   .nav h2 {
     font-size: 22px;
     color: #777; }
@@ -5245,38 +5248,33 @@ html, body {
       margin-bottom: 30px; } }
   .third-block .sketchcasts {
     margin: auto;
-    margin-top: 50px;
-    width: 90%;
-    max-width: 355px; }
-    .third-block .sketchcasts svg {
-      width: 365px;
-      height: 360px; }
-      @media (max-width: 350px) {
-        .third-block .sketchcasts svg {
-          width: 300px;
-          height: 300px; } }
-    .third-block .sketchcasts h1 {
-      padding-top: 80px;
-      font-size: 45px;
-      color: #2f81b7; }
-      @media (max-width: 320px) {
-        .third-block .sketchcasts h1 {
-          padding-top: 65px; } }
-    .third-block .sketchcasts a .sketch {
-      font-weight: 200;
-      letter-spacing: 4px; }
-    .third-block .sketchcasts a .casts {
-      font-weight: 400; }
-    .third-block .sketchcasts h3 {
-      font-size: 18px;
-      color: #3f3f3f; }
-    .third-block .sketchcasts svg {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: -999; }
+    margin-top: 100px;
+    width: 90%; }
+  .third-block .row {
+    margin-top: 150px; }
+    @media (max-width: 320px) {
+      .third-block .row {
+        margin-top: 100px; }
+        .third-block .row .ios8-kit {
+          margin-top: 100px; } }
+  .third-block h1 {
+    padding-top: 10px;
+    font-size: 45px;
+    color: #2f81b7; }
+  .third-block a .thin {
+    font-weight: 200; }
+  .third-block a .normal {
+    font-weight: 400; }
+  .third-block h3 {
+    font-size: 21px;
+    color: #555555; }
+  .third-block .the-artboard h3 {
+    padding-left: 55px;
+    padding-right: 55px; }
+    @media (max-width: 480px) {
+      .third-block .the-artboard h3 {
+        padding-left: 10px;
+        padding-right: 10px; } }
   .third-block .album-covers {
     margin: auto;
     margin-top: 150px;
@@ -5284,41 +5282,40 @@ html, body {
     max-width: 575px; }
     @media (max-width: 480px) {
       .third-block .album-covers {
-        margin-top: 30px; } }
+        margin-top: 100px; } }
     .third-block .album-covers h1 {
-      padding-top: 75px;
       font-size: 45px;
       font-weight: 400;
       color: #2f81b7; }
     .third-block .album-covers h3 {
-      font-size: 18px;
-      color: #3f3f3f; }
+      font-size: 21px;
+      color: #555555; }
   .third-block .album-covers-container {
     max-width: none;
     margin: 0;
     margin-top: 30px;
-    border-top: 1px solid #2f81b7;
-    border-bottom: 1px solid #2f81b7; }
+    border-top: 2px solid #2f81b7;
+    border-bottom: 2px solid #2f81b7; }
     .third-block .album-covers-container div {
       padding: 0; }
   .third-block .rods_cones {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
     max-width: 575px; }
     @media (max-width: 480px) {
       .third-block .rods_cones {
-        margin-top: 30px; } }
+        margin-top: 100px; } }
     .third-block .rods_cones h1 {
-      padding-top: 75px;
+      padding-top: 50px;
       font-size: 45px;
       color: #2f81b7; }
       @media (max-width: 400px) {
         .third-block .rods_cones h1 {
           font-size: 34px; } }
     .third-block .rods_cones h3 {
-      font-size: 18px;
-      color: #3f3f3f; }
+      font-size: 21px;
+      color: #555555; }
       @media (max-width: 480px) {
         .third-block .rods_cones h3 {
           padding-left: 5%;
@@ -5334,18 +5331,18 @@ html, body {
     margin-top: 100px; }
     @media (max-width: 480px) {
       .third-block .what-more {
-        margin-top: 30px; } }
+        margin-top: 100px; } }
     .third-block .what-more h1 {
-      padding-top: 75px;
+      padding-top: 50px;
       font-size: 45px;
       color: #2f81b7; }
       @media (max-width: 400px) {
         .third-block .what-more h1 {
-          font-size: 34px; } }
+          font-size: 40px; } }
     .third-block .what-more h3 {
       margin-top: 30px;
-      font-size: 18px;
-      color: #3f3f3f; }
+      font-size: 21px;
+      color: #555555; }
       @media (max-width: 480px) {
         .third-block .what-more h3 {
           padding-left: 5%;
@@ -5375,13 +5372,15 @@ html, body {
     text-decoration: underline; }
   .footer .dream {
     margin-top: 20px; }
+    .footer .dream p {
+      font-size: 21px; }
     .footer .dream .line-break {
       display: none; }
     @media (max-width: 480px) {
       .footer .dream {
         margin-top: 20px; }
         .footer .dream p {
-          font-size: 16px; }
+          font-size: 22px; }
         .footer .dream .line-break {
           display: inline; } }
   .footer .polite {
