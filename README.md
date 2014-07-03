@@ -1,5 +1,5 @@
-# Redesign
+# rafaelconde.net
 
-The most advanced responsive front-end framework in the world.
+My personal website.
 
 Auto commited via [Mixture](http://mixture.io)
