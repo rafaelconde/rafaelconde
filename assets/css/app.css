@@ -5132,9 +5132,9 @@ a {
   font-weight: 400; }
 
 .orange {
-  color: #ed8b3d; }
+  color: #fff; }
   .orange:hover {
-    color: #ed8b3d;
+    color: #fff;
     text-decoration: underline; }
 
 h1, h2, .trio {
