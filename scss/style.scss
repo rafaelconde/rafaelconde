@@ -11,7 +11,8 @@ $black: #1F1F20;
 h1,
 h2,
 h3 { font-family: 'futura-pt'; }
-p { font-family: 'ff-tisa-web-pro';}
+p,
+li { font-family: 'ff-tisa-web-pro';}
 
 h1 {
   font-size: 50px;
@@ -20,11 +21,39 @@ h1 {
 
 p { font-weight: 400;}
 
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  li {margin-bottom: 5px;}
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:focus { text-decoration: underline; }
+}
+
 #title {
   font-size: 68px;
   text-transform: uppercase;
   margin-top: -15px;
   margin-bottom: -15px;
+}
+
+.publication {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.lowercase { text-transform:lowercase; }
+.smallcaps {
+  text-transform: small-caps;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.8;
+  padding-left: 5px;
 }
 
 ////////////////////////////////////
@@ -54,7 +83,7 @@ p { font-weight: 400;}
   padding-left: 0 !important;
   padding-right: 0 !important;
 
-  background: red;
+  background: $black;
 }
 
 video#background-video {
@@ -73,20 +102,77 @@ video#background-video {
   position: relative;
   height: 100vh;
   width: 100%;
-  max-height: 625px;
+  max-height: 480px;
   max-width: 100%;
   margin: 0;
   padding: 0;
 
   background: $black;
   color: #fff;
-  .description { height: 100%; }
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+
+  .description,
+  .icon { height: 100%; }
   .description .wrapper {
     @include vertical-align;
     max-width: 500px;
     width: 90%;
     margin: auto;
+    padding-left: 20px;
+    h1 { text-transform: uppercase; }
     h1,
-    p {margin: 0;}
+    p { margin: 0; }
+  }
+}
+
+.icon .wrapper {
+  @include vertical-align;
+  max-width: 180px;
+  width: 90%;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.artboard .icon .wrapper { max-width: 130px; }
+
+.other-thangs { margin-top: 100px; }
+
+.other-thangs .row {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+
+  .wrapper {
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    padding-left: 20px;
+    h1,
+    p { margin: 0; }
+  }
+}
+
+.footer-ish {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .row {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    padding-left: 20px;
+    text-align: center;
   }
 }
