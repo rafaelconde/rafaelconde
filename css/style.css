@@ -1,0 +1,59 @@
+h1,
+h2,
+h3 {
+  font-family: 'futura-pt'; }
+
+p {
+  font-family: 'ff-tisa-web-pro'; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 700; }
+
+p {
+  font-weight: 400; }
+
+#title {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-top: -15px;
+  margin-bottom: -15px; }
+
+.header.row {
+  height: 100vh;
+  width: 100%;
+  max-height: 625px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.my-name-is-earl {
+  height: 100%;
+  padding: 20px;
+  background: #1F1F20;
+  text-align: center;
+  color: #fff; }
+  .my-name-is-earl p {
+    margin: 0; }
+  .my-name-is-earl .wrapper {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.video-wrapper {
+  background: red;
+  height: 100%;
+  max-width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+
+video#background-video {
+  width: 150%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
