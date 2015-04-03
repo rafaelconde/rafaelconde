@@ -22,7 +22,10 @@ ul {
   padding-left: 0;
   margin: 0; }
   ul li {
-    margin-bottom: 5px; }
+    margin-bottom: 8px; }
+    @media (max-width: 1025px) {
+      ul li {
+        margin-bottom: 25px; } }
 
 a {
   text-decoration: none;
@@ -38,6 +41,11 @@ a {
   @media (max-width: 550px) {
     #title {
       font-size: 45px; } }
+  @media (max-width: 346px) {
+    #title {
+      font-size: 10vw;
+      margin-top: 0px;
+      margin-bottom: 0px; } }
 
 .publication {
   font-size: 16px;
@@ -55,6 +63,10 @@ a {
 
 @media (max-width: 1025px) {
   .hide-on-mobile {
+    display: none; } }
+
+@media (min-width: 1025px) {
+  .hide-on-desktop {
     display: none; } }
 
 .header.row {

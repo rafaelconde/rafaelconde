@@ -28,7 +28,12 @@ ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  li {margin-bottom: 5px;}
+  li {
+    margin-bottom: 8px;
+    @media (max-width: 1025px){
+      margin-bottom: 25px;
+    }
+  }
 }
 
 a {
@@ -45,6 +50,11 @@ a {
   margin-bottom: -10px;
   @media (max-width: 550px){
     font-size: 45px;
+  }
+  @media (max-width: 346px){
+    font-size: 10vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -64,6 +74,12 @@ a {
 
 .hide-on-mobile {
   @media (max-width: 1025px){
+    display: none;
+  }
+}
+
+.hide-on-desktop {
+  @media (min-width: 1025px){
     display: none;
   }
 }
