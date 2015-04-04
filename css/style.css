@@ -97,6 +97,7 @@ a {
   height: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  z-index: -1;
   background: #1F1F20; }
 
 video#background-video {
