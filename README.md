@@ -1,5 +1,3 @@
 # rafaelconde.net
 
-My personal website.
-
-Auto commited via [Mixture](http://mixture.io)
+Here's the repo for my personal website, hosted right here on Github.
