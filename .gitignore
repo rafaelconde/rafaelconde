@@ -10,6 +10,8 @@ config.codekit
 # Icon must end with two \r
 Icon
 
+.sass-cache
+.codekit
 
 # Thumbnails
 ._*
