@@ -96,7 +96,7 @@ a {
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .large-7 {width: 61.8% !important;} // Golden Ratio
-.large-5 {width: 38.2% !important;} // Golden Ration
+.large-5 {width: 38.2% !important;} // Golden Ratio
 
 .my-name-is-earl {
   height: 100%;
@@ -189,6 +189,13 @@ video#background-video {
     h1,
     p { margin: 0; }
   }
+}
+
+.meet {
+  h1 {font-size: 48px;}
+  h2 {font-size: 20px; margin-top: 0; margin-bottom: 30px;}
+  ul {columns: 2;}
+  .strike {text-decoration: line-through;}
 }
 
 .footer-ish {

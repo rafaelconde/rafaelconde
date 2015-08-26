@@ -185,6 +185,19 @@ video#background-video {
     .other-thangs .row .wrapper p {
       margin: 0; }
 
+.meet h1 {
+  font-size: 48px; }
+.meet h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 30px; }
+.meet ul {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2; }
+.meet .strike {
+  text-decoration: line-through; }
+
 .footer-ish {
   position: relative;
   width: 100%;
