@@ -80,9 +80,16 @@ a {
 
 .large-7 {
   width: 61.8% !important; }
+  @media (max-width: 1024px) {
+    .large-7 {
+      width: 100% !important; } }
 
 .large-5 {
   width: 38.2% !important; }
+  @media (max-width: 1024px) {
+    .large-5 {
+      width: 0% !important;
+      display: none; } }
 
 .my-name-is-earl {
   height: 100%;

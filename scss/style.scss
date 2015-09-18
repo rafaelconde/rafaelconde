@@ -95,8 +95,19 @@ a {
   padding: 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.large-7 {width: 61.8% !important;} // Golden Ratio
-.large-5 {width: 38.2% !important;} // Golden Ratio
+.large-7 {
+  width: 61.8% !important; // Golden Ratio
+  @media (max-width: 1024px) {
+    width: 100% !important;
+  }
+}
+.large-5 {
+  width: 38.2% !important; // Golden Ratio
+  @media (max-width: 1024px) {
+    width: 0% !important;
+    display: none;
+  }
+}
 
 .my-name-is-earl {
   height: 100%;
