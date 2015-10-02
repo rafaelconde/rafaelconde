@@ -1,0 +1,1 @@
+define(["Modernizr","addTest"],function(s,e){s.addAsyncTest(function(){var s=new Image;s.onerror=function(){e("webplossless",!1,{aliases:["webp-lossless"]})},s.onload=function(){e("webplossless",1==s.width,{aliases:["webp-lossless"]})},s.src="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA="})});

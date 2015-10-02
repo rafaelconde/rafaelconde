@@ -1,0 +1,1 @@
+define(["Modernizr","createElement"],function(e,n){e.addTest("sandbox","sandbox"in n("iframe"))});

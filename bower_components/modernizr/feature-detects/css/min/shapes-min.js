@@ -1,0 +1,1 @@
+define(["Modernizr","testAllProps"],function(e,s){e.addTest("shapes",s("shapeOutside","content-box",!0))});

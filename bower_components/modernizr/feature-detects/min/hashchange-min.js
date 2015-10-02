@@ -1,0 +1,1 @@
+define(["Modernizr","hasEvent"],function(n,e){n.addTest("hashchange",function(){return e("hashchange",window)===!1?!1:void 0===document.documentMode||document.documentMode>7})});

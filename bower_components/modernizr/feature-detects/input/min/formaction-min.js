@@ -1,0 +1,1 @@
+define(["Modernizr","createElement"],function(n,i){n.addTest("inputformaction",!!("formAction"in i("input")),{aliases:["input-formaction"]})});

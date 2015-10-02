@@ -1,0 +1,1 @@
+define(["addTest","createElement"],function(e,t){e("htmlimports","import"in t("link"))});

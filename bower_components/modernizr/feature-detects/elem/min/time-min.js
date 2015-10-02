@@ -1,0 +1,1 @@
+define(["Modernizr","createElement"],function(e,t){e.addTest("time","valueAsDate"in t("time"))});

@@ -1,0 +1,1 @@
+define(["Modernizr"],function(n){var i="CSS"in window&&"supports"in window.CSS,o="supportsCSS"in window;n.addTest("supports",i||o)});

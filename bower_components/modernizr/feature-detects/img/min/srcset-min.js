@@ -1,0 +1,1 @@
+define(["Modernizr","createElement"],function(e,n){e.addTest("srcset","srcset"in n("img"))});

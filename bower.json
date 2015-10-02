@@ -4,6 +4,6 @@
     "foundation": "zurb/bower-foundation"
   },
   "resolutions": {
-    "jquery-placeholder": "~2.1.1"
+    "jquery-placeholder": "~2.1.3"
   }
 }

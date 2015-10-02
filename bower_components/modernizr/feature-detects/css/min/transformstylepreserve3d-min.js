@@ -1,0 +1,1 @@
+define(["Modernizr","testAllProps"],function(e,r){e.addTest("preserve3d",r("transformStyle","preserve-3d"))});

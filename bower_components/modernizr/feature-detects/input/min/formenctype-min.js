@@ -1,0 +1,1 @@
+define(["Modernizr","createElement"],function(e,n){e.addTest("inputformenctype",!!("formEnctype"in n("input")),{aliases:["input-formenctype"]})});

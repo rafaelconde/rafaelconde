@@ -1,7 +1,6 @@
 {
   "name": "jquery-placeholder",
   "description": "A jQuery plugin that enables HTML5 placeholder behavior for browsers that aren’t trying hard enough yet",
-  "version": "2.1.1",
   "license": "MIT",
   "main": [
     "jquery.placeholder.js"
@@ -23,14 +22,15 @@
     "!/jquery.placeholder.min.js.map"
   ],
   "homepage": "https://github.com/mathiasbynens/jquery-placeholder",
-  "_release": "2.1.1",
+  "version": "2.1.3",
+  "_release": "2.1.3",
   "_resolution": {
     "type": "version",
-    "tag": "v2.1.1",
-    "commit": "bc98c214d6dbdf14f97d20e71b8269751c79b34b"
+    "tag": "v2.1.3",
+    "commit": "3442273d05f463a2f9177c2f49a67331df4c6807"
   },
   "_source": "git://github.com/mathiasbynens/jquery-placeholder.git",
-  "_target": "~2.1.1",
+  "_target": "~2.1.3",
   "_originalSource": "jquery-placeholder",
   "_direct": true
 }
