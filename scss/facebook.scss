@@ -1,0 +1,182 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+$black: #1F1F20;
+
+#facebook-portfolio {
+  background: $black;
+
+  .button {
+    display: block;
+    float: left;
+    font-family: 'ff-tisa-web-pro';
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 8px 20px 10px 20px;
+    margin: 20px 20px 0 0 ;
+    width: 45%;
+    text-align: center;
+    background-color: $black;
+    color: #fff;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: #fff;
+      color: $black;
+    }
+  }
+
+  .header-index {
+    margin: auto;
+    color: #fff;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    .wrapper {
+      @include vertical-align;
+    }
+  }
+  .header {
+    position: relative;
+    height: 100vh;
+    top: 0;
+    background: $black;
+    .scroll-indicator {
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+      margin: auto;
+      text-align: center;
+      h4 {margin-bottom: 18px;}
+    }
+    .arrow {
+      position: relative;
+      top: 0px;
+      width: 33px;
+      -webkit-animation: arrows 2.8s infinite;
+      -webkit-animation-delay: 3s;
+    }
+  }
+  .stars-back, .stars-front {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: 100% 100%;
+  }
+  .stars-back {
+    z-index: 1;
+    background: url("../assets/stars-back.svg") transparent no-repeat;
+    -webkit-animation: stars-moving 320s linear;
+  }
+  .stars-front {
+    z-index: 2;
+    background: url("../assets/stars-front.svg") transparent no-repeat;
+    -webkit-animation: stars-moving 160s linear;
+  }
+  // Stars Moving animation
+  @-webkit-keyframes stars-moving {
+      0%   { background-position: 100% 100%; }
+      100% { background-position:   0%   0%; }
+  }
+  // Bouncing animation
+  @-webkit-keyframes arrows {
+    0%  { top:00px; }
+    10% { top:05px; }
+    20% { top:00px; }
+    30% { top:00px; }
+    40% { top:-5px; }
+    50% { top:05px; }
+    60% { top:00px; }
+    70% { top:05px; }
+    80% { top:-5px; }
+    90% { top:05px; }
+    100%{ top:00px; }
+  }
+
+  .left-column {
+    margin: auto;
+    @include vertical-align;
+    position: relative;
+    width: 295px;
+    height: 602px;
+    background: url("/assets/iphone-background.png");
+    background-size: 100% 100%;
+
+    @media (max-width: 905px){
+      display: none;
+    }
+
+    .video-container {
+      position: absolute;
+      width: 256px;
+      height: 455px;
+      top: 73px;
+      left: 20px;
+      background: black;
+      video {width: 100%; height: 100%;}
+    }
+  }
+
+  .portfolio {
+    height: 100vh;
+    max-height: 600px;
+  }
+  .portfolio {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .large-5 {text-align: center;}
+
+  .portfolio.frames {
+    max-height: 802px;
+  }
+  .portfolio.game {
+    margin-top: 700px;
+    img {
+      @include vertical-align;
+      max-width: 200px;
+    }
+  }
+  .portfolio.broadwand {
+    .imgs-wrappers {
+      width: auto;
+      margin: auto;
+      text-align: center;
+      img {
+        width: 22%;
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+    }
+    .large-12 {
+      background: $black;
+      width: 100%;
+      height: 600px;
+    }
+  }
+  iframe {
+    @include vertical-align;
+    position:relative;
+    width: 100%;
+  }
+  .other-stuff {
+    color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 300px;
+    img {
+      width: 200px;
+    }
+    .button {float: none; margin: auto;}
+  }
+}

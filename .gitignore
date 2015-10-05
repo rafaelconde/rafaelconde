@@ -11,7 +11,7 @@ config.codekit
 Icon
 
 .sass-cache
-.codekit
+.codekit*
 
 # Thumbnails
 ._*
