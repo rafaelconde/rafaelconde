@@ -118,10 +118,12 @@
         height: 100%; }
   #facebook-portfolio .portfolio {
     height: 100vh;
-    max-height: 600px; }
-  #facebook-portfolio .portfolio {
+    max-height: 600px;
     max-width: 1400px;
     margin: auto; }
+  #facebook-portfolio .portfolio.imaginary img {
+    max-width: 180px;
+    width: 100%; }
   #facebook-portfolio .large-5 {
     text-align: center; }
   #facebook-portfolio .portfolio.frames {

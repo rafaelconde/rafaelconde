@@ -128,11 +128,17 @@ $black: #1F1F20;
   .portfolio {
     height: 100vh;
     max-height: 600px;
-  }
-  .portfolio {
     max-width: 1400px;
     margin: auto;
   }
+
+  .portfolio.imaginary {
+    img {
+      max-width: 180px;
+      width: 100%;
+    }
+  }
+
   .large-5 {text-align: center;}
 
   .portfolio.frames {
