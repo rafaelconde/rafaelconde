@@ -1,0 +1,39 @@
+{
+    "name": "components/modernizr",
+    "description": "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.",
+    "keywords": [
+        "html5",
+        "css3",
+        "browser",
+        "feature detection"
+    ],
+    "type": "component",
+    "homepage": "http://modernizr.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Modernizr",
+            "homepage": "http://modernizr.com"
+        },
+        { "name": "Faruk Ates" },
+        { "name": "Paul Irish" },
+        { "name": "Alex Sexton" },
+        { "name": "Ryan Seddon" },
+        { "name": "Alexander Farkas" },
+        { "name": "Ben Alman" },
+        { "name": "Stu Cox" }
+    ],
+    "require": {
+        "robloach/component-installer": "*"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "modernizr.js"
+            ],
+            "shim": {
+                "exports": "window.Modernizr"
+            }
+        }
+    }
+}
