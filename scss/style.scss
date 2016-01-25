@@ -152,10 +152,12 @@ body { background: $black !important; }
 }
 
 .video-wrapper {
-  height: 120%;
+  height: 725px;
+  @media (max-height: 700px) { height: 120%; }
   padding-left: 0 !important;
   padding-right: 0 !important;
-  top: -20%;
+  top: -100px;
+  @media (max-height: 700px) { top: -20%; }
   z-index: -1;
   background: $black;
 
@@ -173,7 +175,8 @@ video#background-video {
   width: 100%;
   max-height: 480px;
   max-width: 100%;
-  top: -10%;
+  top: -100px;
+  @media (max-width: 1024px) { top: 0; }
   margin: 0;
   padding: 0;
   background-color: $black;
@@ -234,7 +237,8 @@ video#background-video {
 
 .other-thangs {
   position: relative;
-  top: -10%;
+  top: -100px;
+  @media (max-width: 1024px) { top: 0; }
   background: #fff;
   padding-top: 100px;
   @media (min-width: 840px) {
@@ -272,7 +276,8 @@ video#background-video {
 
 .footer-ish {
   position: relative;
-  top: -10%;
+  top: -100px;
+  @media (max-width: 1024px) { top: 0; }
   width: 100%;
   max-width: 100%;
   margin: 0;
