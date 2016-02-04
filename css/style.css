@@ -88,7 +88,7 @@ strong {
     display: none; } }
 
 body {
-  background: #0a0a0a !important; }
+  background: #0d0d0d !important; }
 
 .row {
   overflow: hidden; }
@@ -118,7 +118,7 @@ body {
 .my-name-is-earl {
   height: 100%;
   padding: 20px;
-  background: #0a0a0a;
+  background: #0d0d0d;
   text-align: center;
   border: 4px solid #000;
   border-top: none;
@@ -138,7 +138,7 @@ body {
   padding-right: 0 !important;
   top: -100px;
   z-index: -1;
-  background: #0a0a0a; }
+  background: #0d0d0d; }
   @media (max-height: 700px) {
     .video-wrapper {
       height: 120%; } }
@@ -149,8 +149,7 @@ body {
 video#background-video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  object-fit: cover; }
 
 .work.row {
   position: relative;
@@ -161,7 +160,7 @@ video#background-video {
   top: -100px;
   margin: 0;
   padding: 0;
-  background-color: #0a0a0a;
+  background-color: #0d0d0d;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
@@ -173,6 +172,8 @@ video#background-video {
   .work.row p a {
     text-decoration: underline;
     -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease; }
     .work.row p a:hover, .work.row p a:focus {
       color: #cccccc; }
@@ -221,6 +222,8 @@ video#background-video {
 .break-this-safe,
 .ios-8-kit {
   -webkit-transition: background-size 10s ease;
+  -moz-transition: background-size 10s ease;
+  -o-transition: background-size 10s ease;
   transition: background-size 10s ease; }
   .sketchcasts:hover,
   .layout:hover,
@@ -229,6 +232,8 @@ video#background-video {
   .ios-8-kit:hover {
     background-size: auto 120%;
     -webkit-transition: background-size 10s ease;
+    -moz-transition: background-size 10s ease;
+    -o-transition: background-size 10s ease;
     transition: background-size 10s ease; }
 
 .other-thangs {
@@ -266,9 +271,7 @@ video#background-video {
   .meet h2 {
     width: 90vw; }
   .meet ul {
-    -webkit-columns: 2;
-       -moz-columns: 2;
-            columns: 2; } }
+    columns: 2; } }
 .meet .strike {
   text-decoration: line-through; }
 
@@ -279,7 +282,8 @@ video#background-video {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  background: #fff; }
+  background: #0d0d0d;
+  color: #fff; }
   @media (max-width: 1024px) {
     .footer-ish {
       top: 0; } }

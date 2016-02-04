@@ -6,8 +6,7 @@
 ////////////////////////////////////////////
 
 // Colors
-$black: #0a0a0a;
-
+$black: #0d0d0d;
 
 // Typography
 h1,
@@ -282,7 +281,8 @@ video#background-video {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: $black;
+  color: #fff;
   .row {
     max-width: 100%;
     margin: 0;
