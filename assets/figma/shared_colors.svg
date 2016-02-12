@@ -1,0 +1,258 @@
+<svg width="31" height="30" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon</title>
+<desc>Created using Figma (9000)</desc>
+<g id="Canvas" transform="translate(-590 -2197)" figma:type="canvas">
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="group">
+<g id="shared_colors" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 1 590 2206.05)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="matrix(0.706137 -0.708075 0.706137 0.708075 609.572 2205.64)" fill="#FCFCFC" style="mix-blend-mode:normal;"/>
+</g>
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(0.706138 -0.708074 0.706138 0.708074 608.945 2205.64)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path3_fill" transform="matrix(-0.706144 0.708069 -0.706135 -0.708078 612.245 2208.22)" fill="#FCFCFC" style="mix-blend-mode:normal;"/>
+</g>
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="matrix(-0.706143 0.70807 -0.706134 -0.708079 612.873 2208.22)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path5_fill" transform="matrix(-0.706132 0.70808 0.706132 0.70808 607.427 2202.96)" fill="#FCFCFC" style="mix-blend-mode:normal;"/>
+</g>
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path6_fill" transform="matrix(-0.706132 0.70808 0.706132 0.70808 607.427 2202.96)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path7_fill" transform="matrix(-0.706129 0.708084 0.706129 0.708084 602.119 2214.35)" fill="#FCFCFC" style="mix-blend-mode:normal;"/>
+</g>
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path8_fill" transform="matrix(-0.706128 0.708084 0.706128 0.708084 602.119 2213.72)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="
+M 0.887611 20.7581
+L 20.4417 20.7581
+L 21.3293 20.7581
+L 21.3293 19.868
+L 21.3293 0.890033
+L 21.3293 0
+L 20.4417 0
+L 0.887611 0
+L 0 0
+L 0 0.890033
+L 0 19.868
+L 0 20.7581
+L 0.887611 20.7581
+Z
+M 0.887611 0.890033
+L 1.77522 0.890033
+L 19.5541 0.890033
+L 20.4417 0.890033
+L 20.4417 1.78007
+L 20.4417 18.978
+L 20.4417 19.868
+L 19.5541 19.868
+L 1.77522 19.868
+L 0.887611 19.868
+L 0.887611 18.978
+L 0.887611 1.78007
+L 0.887611 0.890033
+Z"/>
+<path id="path1_fill" d="
+M 0 0
+L 9.71769 0
+C 10.7498 0 11.5864 0.830079 11.5864 1.85403
+C 11.5864 2.87798 10.7498 3.70807 9.71769 3.70807
+L 0 3.70807
+L 0 0
+Z"/>
+<path id="path2_fill" d="
+M 0.444411 0.444411
+L 0.444411 0
+L 0 0
+L 0 0.444411
+L 0.444411 0.444411
+Z
+M 0.444411 4.15247
+L 0 4.15247
+L 0 4.59688
+L 0.444411 4.59688
+L 0.444411 4.15247
+Z
+M 0.444411 0.888822
+L 10.1621 0.888822
+L 10.1621 0
+L 0.444411 0
+L 0.444411 0.888822
+Z
+M 10.1621 0.888822
+C 10.9521 0.888822 11.5864 1.52324 11.5864 2.29844
+L 12.4752 2.29844
+C 12.4752 1.02573 11.4363 0 10.1621 0
+L 10.1621 0.888822
+Z
+M 11.5864 2.29844
+C 11.5864 3.07363 10.9521 3.70806 10.1621 3.70806
+L 10.1621 4.59688
+C 11.4363 4.59688 12.4752 3.57114 12.4752 2.29844
+L 11.5864 2.29844
+Z
+M 10.1621 3.70806
+L 0.444411 3.70806
+L 0.444411 4.59688
+L 10.1621 4.59688
+L 10.1621 3.70806
+Z
+M 0.888822 4.15247
+L 0.888822 0.444411
+L 0 0.444411
+L 0 4.15247
+L 0.888822 4.15247
+Z"/>
+<path id="path3_fill" d="
+M 0 0
+L 9.71768 0
+C 10.7498 0 11.5864 0.830078 11.5864 1.85403
+C 11.5864 2.87798 10.7498 3.70806 9.71768 3.70806
+L 0 3.70806
+L 0 0
+Z"/>
+<path id="path4_fill" d="
+M 0.444412 0.444412
+L 0.444412 0
+L 0 0
+L 0 0.444412
+L 0.444412 0.444412
+Z
+M 0.444412 4.15248
+L 0 4.15248
+L 0 4.59689
+L 0.444412 4.59689
+L 0.444412 4.15248
+Z
+M 0.444412 0.888823
+L 10.1621 0.888823
+L 10.1621 0
+L 0.444412 0
+L 0.444412 0.888823
+Z
+M 10.1621 0.888823
+C 10.9521 0.888823 11.5864 1.52325 11.5864 2.29844
+L 12.4753 2.29844
+C 12.4753 1.02573 11.4363 0 10.1621 0
+L 10.1621 0.888823
+Z
+M 11.5864 2.29844
+C 11.5864 3.07364 10.9521 3.70806 10.1621 3.70806
+L 10.1621 4.59689
+C 11.4363 4.59689 12.4753 3.57115 12.4753 2.29844
+L 11.5864 2.29844
+Z
+M 10.1621 3.70806
+L 0.444412 3.70806
+L 0.444412 4.59689
+L 10.1621 4.59689
+L 10.1621 3.70806
+Z
+M 0.888823 4.15248
+L 0.888823 0.444412
+L 0 0.444412
+L 0 4.15248
+L 0.888823 4.15248
+Z"/>
+<path id="path5_fill" d="
+M 0 0
+L 0.824017 0
+L 0.824017 9.88816
+L 0 9.88816
+L 0 0
+Z"/>
+<path id="path6_fill" d="
+M 0 0.888824
+L 0 8.99934
+L 0 9.88816
+L 0.824017 9.88816
+L 0.824017 8.99934
+L 0.824017 0.888824
+L 0.824017 0
+L 0 0
+L 0 0.888824
+Z"/>
+<path id="path7_fill" d="
+M 0 1.03002
+C 0 0.461156 0.461156 0 1.03002 0
+C 1.59888 0 2.06004 0.461156 2.06004 1.03002
+C 2.06004 1.59888 1.59888 2.06004 1.03002 2.06004
+C 0.461156 2.06004 0 1.59888 0 1.03002
+Z"/>
+<path id="path8_fill" d="
+M 1.47443 0.888822
+L 1.47443 0
+L 1.47443 0.888822
+Z
+M 2.06004 1.47443
+L 2.94886 1.47443
+L 2.06004 1.47443
+Z
+M 1.47443 2.06004
+L 1.47443 2.94886
+L 1.47443 2.06004
+Z
+M 0.888822 1.47443
+L 0 1.47443
+L 0.888822 1.47443
+Z
+M 1.47443 0
+C 0.660126 0 0 0.660126 0 1.47443
+L 0.888822 1.47443
+C 0.888822 1.15101 1.15101 0.888822 1.47443 0.888822
+L 1.47443 0
+Z
+M 1.47443 0.888822
+C 1.79786 0.888822 2.06004 1.15101 2.06004 1.47443
+L 2.94886 1.47443
+C 2.94886 0.660126 2.28874 0 1.47443 0
+L 1.47443 0.888822
+Z
+M 2.06004 1.47443
+C 2.06004 1.79786 1.79786 2.06004 1.47443 2.06004
+L 1.47443 2.94886
+C 2.28874 2.94886 2.94886 2.28874 2.94886 1.47443
+L 2.06004 1.47443
+Z
+M 1.47443 2.06004
+C 1.15101 2.06004 0.888822 1.79786 0.888822 1.47443
+L 0 1.47443
+C 0 2.28874 0.660126 2.94886 1.47443 2.94886
+L 1.47443 2.06004
+Z"/>
+</defs>
+</svg>

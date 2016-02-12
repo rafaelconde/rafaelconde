@@ -1,0 +1,92 @@
+<svg width="29" height="22" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon</title>
+<desc>Created using Figma (9000)</desc>
+<g id="Canvas" transform="translate(-311 -1402)" figma:type="canvas">
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="group">
+<g id="simultaneous_editing" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(311.2 1402.61)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(311.2 1416.61)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(325.239 1402.61)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path3_fill" transform="translate(325.239 1416.61)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="
+M 7.0195 13.9998
+C 10.8962 13.9998 14.039 10.8658 14.039 6.99986
+C 14.039 3.13395 10.8962 0 7.0195 0
+C 3.14274 0 0 3.13395 0 6.99986
+C 0 10.8658 3.14274 13.9998 7.0195 13.9998
+Z
+M 7.0195 13.1598
+C 3.60443 13.1598 0.839988 10.3997 0.839988 6.99986
+C 0.839988 3.60007 3.60443 0.839984 7.0195 0.839984
+C 10.4346 0.839984 13.199 3.60007 13.199 6.99986
+C 13.199 10.3997 10.4346 13.1598 7.0195 13.1598
+Z"/>
+<path id="path1_fill" d="
+M 0.896981 6.16
+C 1.30788 3.15692 3.89061 0.84 7.0195 0.84
+C 10.1484 0.84 12.7311 3.15692 13.142 6.16
+L 0.896981 6.16
+Z
+M 0 7
+L 0.839988 7
+L 13.199 7
+L 14.039 7
+C 14.039 6.71572 14.022 6.4354 13.989 6.16
+C 13.5729 2.69005 10.6112 0 7.0195 0
+C 3.42781 0 0.466156 2.69005 0.050021 6.16
+C 0.0169929 6.4354 0 6.71572 0 7
+Z"/>
+<path id="path2_fill" d="
+M 7.01949 13.9998
+C 10.8962 13.9998 14.0389 10.8658 14.0389 6.99986
+C 14.0389 3.13395 10.8962 0 7.01949 0
+C 3.14273 0 0 3.13395 0 6.99986
+C 0 10.8658 3.14273 13.9998 7.01949 13.9998
+Z
+M 7.01949 13.1598
+C 3.60442 13.1598 0.839986 10.3997 0.839986 6.99986
+C 0.839986 3.60007 3.60442 0.839984 7.01949 0.839984
+C 10.4346 0.839984 13.199 3.60007 13.199 6.99986
+C 13.199 10.3997 10.4346 13.1598 7.01949 13.1598
+Z"/>
+<path id="path3_fill" d="
+M 0.896979 6.16
+C 1.30788 3.15692 3.89061 0.84 7.01949 0.84
+C 10.1484 0.84 12.7311 3.15692 13.142 6.16
+L 0.896979 6.16
+Z
+M 0 7
+L 0.839986 7
+L 13.199 7
+L 14.0389 7
+C 14.0389 6.71572 14.022 6.4354 13.989 6.16
+C 13.5728 2.69005 10.6112 0 7.01949 0
+C 3.4278 0 0.466155 2.69005 0.0500209 6.16
+C 0.0169928 6.4354 0 6.71572 0 7
+Z"/>
+</defs>
+</svg>

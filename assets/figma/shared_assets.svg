@@ -1,0 +1,52 @@
+<svg width="25" height="30" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon</title>
+<desc>Created using Figma (9000)</desc>
+<g id="Canvas" transform="translate(-313 -2198)" figma:type="canvas">
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="group">
+<g id="shared_assets" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(313 2198)" fill="#050505" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="
+M 0.87535 8.53863
+L 12.0623 15.2509
+L 12.0623 28.7105
+L 0.87535 21.9984
+L 0.87535 8.53863
+Z
+M 24.1246 8.53863
+L 24.1246 21.9984
+L 12.9377 28.7105
+L 12.9377 15.2509
+L 24.1246 8.53863
+Z
+M 23.7165 7.75671
+L 12.5 14.4866
+L 1.28354 7.75671
+L 12.5 1.02684
+L 23.7165 7.75671
+Z
+M 12.5 0
+L 0.427848 7.24329
+L 0 7.5
+L 3.34618e-16 8.01341
+L 9.61485e-15 22.5
+L 12.0623 29.7374
+L 12.5 30
+L 12.9377 29.7374
+L 25 22.5
+L 25 8.01341
+L 25 7.5
+L 24.5721 7.24329
+L 12.5 0
+Z"/>
+</defs>
+</svg>

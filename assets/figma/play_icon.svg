@@ -1,0 +1,43 @@
+<svg width="50" height="50" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>play_icon</title>
+<desc>Created using Figma (9000)</desc>
+<g id="Canvas" transform="translate(-660 -431)" figma:type="canvas">
+<g id="play_icon" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(681.375 448.812)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="g" style="mix-blend-mode:normal;isolation:isolate;" figma:type="group">
+<g id="use" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(660 431)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="
+M 0 0
+L 0 16.25
+L 12.1875 7.58331
+L 0 0
+Z"/>
+<path id="path1_fill" d="
+M 25 50
+C 38.8071 50 50 38.8071 50 25
+C 50 11.1929 38.8071 0 25 0
+C 11.1929 0 0 11.1929 0 25
+C 0 38.8071 11.1929 50 25 50
+Z
+M 25 46.875
+C 12.9188 46.875 3.125 37.0812 3.125 25
+C 3.125 12.9188 12.9188 3.125 25 3.125
+C 37.0812 3.125 46.875 12.9188 46.875 25
+C 46.875 37.0812 37.0812 46.875 25 46.875
+Z"/>
+</defs>
+</svg>
