@@ -271,7 +271,9 @@ video#background-video {
   .meet h2 {
     width: 90vw; }
   .meet ul {
-    columns: 2; } }
+    columns: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2; } }
 .meet .strike {
   text-decoration: line-through; }
 

@@ -268,7 +268,11 @@ video#background-video {
   @media (min-width: 840px){
     h1,
     h2 { width: 90vw;}
-    ul { columns: 2; }
+    ul {
+      columns: 2;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+    }
   }
   .strike { text-decoration: line-through; }
 }
