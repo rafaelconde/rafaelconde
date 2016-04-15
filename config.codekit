@@ -24,6 +24,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/ios8-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14588,
+		"inputAbbreviatedPath": "\/assets\/ios8-icon.png",
+		"outputAbbreviatedPath": "\/assets\/ios8-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/layout-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -31,6 +42,17 @@
 		"initialSize": 17629,
 		"inputAbbreviatedPath": "\/assets\/layout-icon.png",
 		"outputAbbreviatedPath": "\/assets\/layout-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/offscreen-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65864,
+		"inputAbbreviatedPath": "\/assets\/offscreen-icon.png",
+		"outputAbbreviatedPath": "\/assets\/offscreen-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -53,6 +75,17 @@
 		"initialSize": 20982,
 		"inputAbbreviatedPath": "\/assets\/sketchcasts-icon.png",
 		"outputAbbreviatedPath": "\/assets\/sketchcasts-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/sublime-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39858,
+		"inputAbbreviatedPath": "\/assets\/sublime-icon.png",
+		"outputAbbreviatedPath": "\/assets\/sublime-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5312,6 +5345,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/work.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/work.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
