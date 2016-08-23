@@ -207,9 +207,9 @@ video#background-video {
     position: absolute;
     z-index: 10;
     bottom: 55px;
-    right: 1px;
+    right: 0px;
     overflow: hidden;
-    width: 100px;
+    width: 150px;
     height: 300px;
     padding: 0;
     display: block;
@@ -223,15 +223,15 @@ video#background-video {
   }
 }
 
-.to-scroll { @media (max-width: 1100px) { overflow-x: scroll; } }
+.to-scroll { @media (max-width: 1400px) { overflow-x: scroll; } }
 
 .gangsta-wrapper {
   position: relative;
   padding: 0;
   width: 95%;
   overflow-x: hidden;
-  @media (max-width: 1100px) {
-    width: 1100px;
+  @media (max-width: 1400px) {
+    width: 1400px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -247,7 +247,7 @@ video#background-video {
 }
 
 .column {
-  width: 25%;
+  width: 20%;
   float: left;
   text-align: center;
   p {
@@ -272,6 +272,12 @@ video#background-video {
   }
 }
 .sketchcasts img { border-radius: 100px; }
+.youtube img {
+  position: relative;
+  border-radius: 25px;
+  margin-bottom: 45px;
+  top: 22px;
+}
 .frames img,
 .break-this-safe img { border-radius: 35px; }
 
