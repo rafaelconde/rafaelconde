@@ -1,3 +1,3 @@
 # rafaelconde.net
 
-Here's the repo for my personal website, hosted right here on Github.
+Here's the repo for my personal website, hosted on Netlify 🤠
