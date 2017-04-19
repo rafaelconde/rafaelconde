@@ -6,21 +6,18 @@
 ////////////////////////////////////////////
 
 // Colors
-$black: #0A0A0A;
+$black: #252525;
 $light: lighten( $black, 50% );
 $lighter: lighten( $black, 80% );
 
 // Typography
-h1,
-h2 { font-family: 'Avenir Next W01', -apple-system, Roboto, sans-serif; }
-p,
-h3,
-li { font-family: 'Adelle W02', -apple-system, Roboto, 'Times New Roman', serif;}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 800;
-  line-height: 68px;
   @media (max-width: 550px) { font-size: 40px; }
 }
 
@@ -54,15 +51,6 @@ a {
 p { line-height: 28px; }
 
 #title {
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  @media (max-width: 550px) { font-size: 40px; }
-  @media (max-width: 346px) {
-    font-size: 10vw;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
 }
 
 // Custom classes and utilities
@@ -89,110 +77,7 @@ body {
 }
 
 .header {
-  position: relative;
-  height: 70vh;
-  @media (max-width: 400px) { height: 90vh; }
-  max-height: 1000px;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  p {
-    opacity: 0.8;
-    font-size: 22px;
-  }
-  .element-1 {
-    -webkit-animation: fadeInBottom 1s cubic-bezier(0.3, 0, 0.3, 1) 3s both;
-    animation: fadeInBottom 0.8s cubic-bezier(0.3, 0, 0.3, 1) 3s both;
-    @media (max-width: 414px) {
-      -webkit-animation: fadeInBottom 1s cubic-bezier(0.3, 0, 0.3, 1) 1s both;
-      animation: fadeInBottom 0.8s cubic-bezier(0.3, 0, 0.3, 1) 1s both;
-    }
-  }
-  .element-2 {
-    -webkit-animation: fadeInBottom 1s cubic-bezier(0.3, 0, 0.3, 1) 3.5s both;
-    animation: fadeInBottom 0.8s cubic-bezier(0.3, 0, 0.3, 1) 3.5s both;
-    @media (max-width: 414px) {
-      -webkit-animation: fadeInBottom 1s cubic-bezier(0.3, 0, 0.3, 1) 1.5s both;
-      animation: fadeInBottom 0.8s cubic-bezier(0.3, 0, 0.3, 1) 1.5s both;
-    }
-  }
-  .element-3 {
-    -webkit-animation: fadeInBottom 1s cubic-bezier(0.3, 0, 0.3, 1) 3.8s both;
-    animation: fadeInBottom 0.8s cubic-bezier(0.3, 0, 0.3, 1) 3.8s both;
-    @media (max-width: 414px) {
-      -webkit-animation: fadeInBottom 1s cubic-bezier(0.3, 0, 0.3, 1) 1.8s both;
-      animation: fadeInBottom 0.8s cubic-bezier(0.3, 0, 0.3, 1) 1.8s both;
-    }
-  }
-}
 
-@-webkit-keyframes fadeInBottom {
-  0% {
-    -webkit-transform: translate3d(0, 80px, 0);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.my-name-is-earl {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  p {margin: 0;}
-  .wrapper { @include vertical-align; }
-  z-index: 1;
-}
-
-.bluring-layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  background: rgba(13,13,13,0.85);
-  opacity: 1;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  -webkit-animation: fadeIn 1s cubic-bezier(0.3, 0, 0.3, 1) 3s both;
-  animation: fadeIn 0.8s cubic-bezier(0.3, 0, 0.3, 1) 3s both;
-  @media (max-width: 414px) {
-    -webkit-animation: fadeIn 1s cubic-bezier(0.3, 0, 0.3, 1) 1s both;
-    animation: fadeIn 0.8s cubic-bezier(0.3, 0, 0.3, 1) 1s both;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.video-wrapper {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 120%;
-  top: -20%;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  @media (max-width: 414px) {
-    background-image: url("../assets/photo-big.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-video#background-video {
-  @media (max-width: 414px) { display: none; }
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  @include vertical-align;
-  z-index: -1;
 }
 
 .currently, .tidbits {
