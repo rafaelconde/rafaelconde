@@ -1,1 +1,0 @@
-define(["Modernizr"],function(o){o.addTest("geolocation","geolocation"in navigator)});

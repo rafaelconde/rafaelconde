@@ -1,1 +1,0 @@
-define(["Modernizr","testStyles"],function(t,e){e("#modernizr { width: 50vw; }",function(e){var n=parseInt(window.innerWidth/2,10),d=parseInt((window.getComputedStyle?getComputedStyle(e,null):e.currentStyle).width,10);t.addTest("cssvwunit",d==n)})});

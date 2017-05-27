@@ -1,1 +1,0 @@
-define(["Modernizr","createElement"],function(r,e){r.addTest("rgba",function(){var r=e("a").style;return r.cssText="background-color:rgba(150,255,150,.5)",(""+r.backgroundColor).indexOf("rgba")>-1})});

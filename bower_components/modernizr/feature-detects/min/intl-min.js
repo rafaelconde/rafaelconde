@@ -1,1 +1,0 @@
-define(["Modernizr","prefixed"],function(n,d){n.addTest("intl",!!d("Intl",window))});

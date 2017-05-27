@@ -1,1 +1,0 @@
-define(["Modernizr","testAllProps"],function(e,n){e.addTest("userselect",n("userSelect","none",!0))});

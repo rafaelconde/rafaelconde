@@ -1,1 +1,0 @@
-define(["Modernizr","testStyles"],function(t,i){i("#modernizr div {width:1px} #modernizr div:nth-child(2n) {width:2px;}",function(i){t.addTest("nthchild",function(){for(var t=i.getElementsByTagName("div"),n=!0,d=0;5>d;d++)n=n&&t[d].offsetWidth===d%2+1;return n})},5)});

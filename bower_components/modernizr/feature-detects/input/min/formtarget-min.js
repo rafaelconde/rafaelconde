@@ -1,1 +1,0 @@
-define(["Modernizr","createElement"],function(t,e){t.addTest("inputformtarget",!!("formtarget"in e("input")),{aliases:["input-formtarget"]})});

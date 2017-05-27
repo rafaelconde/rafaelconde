@@ -1,1 +1,0 @@
-define(["Modernizr"],function(n){n.addTest("customevent","CustomEvent"in window&&"function"==typeof window.CustomEvent)});

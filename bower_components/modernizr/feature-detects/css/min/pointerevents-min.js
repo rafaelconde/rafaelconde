@@ -1,1 +1,0 @@
-define(["Modernizr","createElement"],function(e,t){e.addTest("csspointerevents",function(){var e=t("a").style;return e.cssText="pointer-events:auto","auto"===e.pointerEvents})});

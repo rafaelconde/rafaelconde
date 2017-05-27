@@ -1,1 +1,0 @@
-define(["Modernizr","addTest"],function(A,a){A.addAsyncTest(function(){var A=new Image;A.onerror=function(){a("webpalpha",!1,{aliases:["webp-alpha"]})},A.onload=function(){a("webpalpha",1==A.width,{aliases:["webp-alpha"]})},A.src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA=="})});

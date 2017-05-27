@@ -1,1 +1,0 @@
-define(["Modernizr","testAllProps"],function(o,l){o.addTest("overflowscrolling",l("overflowScrolling","touch",!0))});

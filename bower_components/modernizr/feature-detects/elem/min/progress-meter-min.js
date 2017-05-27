@@ -1,1 +1,0 @@
-define(["Modernizr","createElement"],function(e,r){e.addTest("progressbar",void 0!==r("progress").max),e.addTest("meter",void 0!==r("meter").max)});

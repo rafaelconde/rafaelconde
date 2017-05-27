@@ -1,1 +1,0 @@
-define(["Modernizr","test/input"],function(t){t.addTest("datalistelem",t.input.list)});

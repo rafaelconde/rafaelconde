@@ -1,1 +1,0 @@
-define(["Modernizr","createElement"],function(e,t){e.addTest("createelementattrs",function(){try{return"test"==t('<input name="test" />').getAttribute("name")}catch(e){return!1}},{aliases:["createelement-attrs"]})});
