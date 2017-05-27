@@ -6,15 +6,24 @@ body {
 h1 {
   font-weight: 800;
   font-size: 60px;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 4px;
+  transition: all 0.3s ease-in-out; }
+  @media (max-width: 580px) {
+    h1 {
+      font-size: 40px; } }
 
 h2 {
   font-weight: 800;
   font-size: 22px;
   margin-top: 16px;
   padding-bottom: 8px;
-  border-bottom: 2px solid #f1f1f1;
-  width: 100%; }
+  border-bottom: 2px solid #e9e9e9;
+  width: 100%;
+  transition: font-size 0.3s ease-in-out; }
+  @media (max-width: 580px) {
+    h2 {
+      font-size: 18px; } }
 
 h3 {
   font-weight: 400;
@@ -23,6 +32,7 @@ h3 {
   margin: 0; }
 
 a {
+  line-height: auto;
   text-decoration: none;
   color: inherit;
   padding-bottom: 4px;
@@ -40,9 +50,6 @@ ul {
 li {
   margin-bottom: 16px; }
 
-#title {
-  margin-bottom: 4px; }
-
 .ninja {
   text-decoration: none; }
   .ninja:hover, .ninja:focus, .ninja:active {
@@ -56,18 +63,32 @@ li {
   max-width: 1024px;
   padding: 0 40px;
   margin: auto; }
+  @media (max-width: 580px) {
+    .gangsta-wrapper {
+      padding: 0 16px; } }
 
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 200px; }
+  padding-bottom: 104px; }
 
 .header {
   margin-top: 164px;
   width: 100%;
-  max-width: 620px; }
+  max-width: 620px;
+  transition: all 0.3s cubic-bezier(0, 0.93, 0.76, 1.03); }
+  @media (max-width: 750px) {
+    .header {
+      max-width: 100%; } }
+  @media (max-width: 580px) {
+    .header {
+      margin-top: 70vh; } }
   .header h2 {
-    color: #f1f1f1; }
+    color: #e9e9e9; }
+  .header h1:hover {
+    color: #e9e9e9; }
+    .header h1:hover #for-friends-name {
+      color: #252525; }
 
 .my-name-is-earl {
   margin-bottom: 64px; }
@@ -96,20 +117,33 @@ body {
   .styled-work-label a {
     z-index: 1;
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: calc(100% + 32px);
     cursor: pointer;
     padding-bottom: 0;
     border-bottom: none; }
+    @media (max-width: 580px) {
+      .styled-work-label a {
+        flex-direction: column;
+        align-items: normal; }
+        .styled-work-label a h3:last-child {
+          margin-top: 4px;
+          padding-left: 8px;
+          font-size: 16px; } }
     .styled-work-label a h3:first-child {
       font-weight: 500;
       padding: 4px 8px;
       margin-right: 8px;
       border-radius: 4px; }
-  .styled-work-label:hover a, .styled-work-label:focus a, .styled-work-label:active a {
-    text-decoration: none; }
-  .styled-work-label:hover .hover-effect, .styled-work-label:focus .hover-effect, .styled-work-label:active .hover-effect {
-    width: 100%; }
+  @media (min-width: 580px) {
+    .styled-work-label:hover a, .styled-work-label:focus a, .styled-work-label:active a {
+      text-decoration: none; }
+    .styled-work-label:hover .hover-effect, .styled-work-label:focus .hover-effect, .styled-work-label:active .hover-effect {
+      width: 100%; } }
+  @media (max-width: 580px) {
+    .styled-work-label {
+      left: 0; } }
 
 #netlify-label,
 .hover-effect.netlify {
@@ -137,7 +171,15 @@ body {
   grid-gap: 40px;
   grid-auto-rows: max-content;
   grid-template-columns: .33fr;
-  grid-template-areas: "read read follow" "listen listen more" "meet meet meet"; }
+  grid-template-areas: "read read follow" "listen listen more" "meet meet meet";
+  transition: all 0.3s cubic-bezier(0, 0.93, 0.76, 1.03); }
+  @media (max-width: 750px) {
+    .other-thangs {
+      grid-template-areas: "read read read" "listen listen listen" "follow follow follow" "more more more" "meet meet meet"; } }
+  @media (max-width: 580px) {
+    .other-thangs {
+      margin-top: 104px;
+      grid-auto-rows: auto; } }
 
 .read {
   grid-area: read; }

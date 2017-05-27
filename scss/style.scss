@@ -8,7 +8,7 @@
 // Colors
 $black: #252525;
 $light: lighten( $black, 30% );
-$lighter: lighten( $black, 80% );
+$lighter: lighten( $black, 77% );
 
 // Typography
 body {
@@ -21,6 +21,12 @@ h1 {
   font-weight: 800;
   font-size: 60px;
   margin: 0;
+  margin-bottom: 4px;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 580px) {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -30,6 +36,12 @@ h2 {
   padding-bottom: 8px;
   border-bottom: 2px solid $lighter;
   width: 100%;
+
+  transition: font-size 0.3s ease-in-out;
+
+  @media (max-width: 580px) {
+    font-size: 18px;
+  }
 }
 
 h3 {
@@ -40,6 +52,7 @@ h3 {
 }
 
 a {
+  line-height: auto;
   text-decoration: none;
   color: inherit;
   padding-bottom: 4px;
@@ -63,10 +76,6 @@ li {
   margin-bottom: 16px;
 }
 
-#title {
-  margin-bottom: 4px;
-}
-
 .ninja {
   text-decoration: none;
   &:hover,
@@ -88,6 +97,10 @@ li {
   max-width: 1024px;
   padding: 0 40px;
   margin: auto;
+
+  @media (max-width: 580px) {
+    padding: 0 16px;
+  }
 }
 
 //////////////////////////////////////
@@ -95,16 +108,23 @@ li {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 200px;
+  padding-bottom: 104px;
 }
 
 .header {
   margin-top: 164px;
   width: 100%;
   max-width: 620px;
+  transition: all 0.3s cubic-bezier(0, 0.93, 0.76, 1.03);
 
-  h2 {
+  @media (max-width: 750px) { max-width: 100%; }
+  @media (max-width: 580px) { margin-top: 70vh; }
+
+  h2 { color: $lighter; }
+
+  h1:hover {
     color: $lighter;
+    #for-friends-name { color: $black; }
   }
 }
 
@@ -142,11 +162,23 @@ body {
   a {
     z-index: 1;
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: calc(100% + 32px);
     cursor: pointer;
     padding-bottom: 0;
     border-bottom: none;
+
+    @media (max-width: 580px) {
+      flex-direction: column;
+      align-items: normal;
+
+      h3:last-child {
+        margin-top: 4px;
+        padding-left: 8px;
+        font-size: 16px;
+      }
+    }
 
     h3:first-child {
       font-weight: 500;
@@ -159,8 +191,14 @@ body {
   &:hover,
   &:focus,
   &:active {
-    a { text-decoration: none; }
-    .hover-effect { width: 100%; }
+    @media (min-width: 580px) {
+      a { text-decoration: none; }
+      .hover-effect { width: 100%; }
+    }
+  }
+
+  @media (max-width: 580px) {
+    left: 0;
   }
 }
 
@@ -198,6 +236,22 @@ body {
     "read read follow"
     "listen listen more"
     "meet meet meet";
+
+  @media (max-width: 750px) {
+    grid-template-areas:
+      "read read read"
+      "listen listen listen"
+      "follow follow follow"
+      "more more more"
+      "meet meet meet";
+  }
+
+  transition: all 0.3s cubic-bezier(0, 0.93, 0.76, 1.03);
+
+  @media (max-width: 580px) {
+    margin-top: 104px;
+    grid-auto-rows: auto;
+  }
 }
 
 .read { grid-area: read; }
