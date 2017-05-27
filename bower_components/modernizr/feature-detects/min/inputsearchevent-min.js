@@ -1,1 +1,0 @@
-define(["Modernizr","hasEvent"],function(e,n){e.addTest("inputsearchevent",n("search"))});

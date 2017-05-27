@@ -1,1 +1,0 @@
-define(["Modernizr","prefixed"],function(e,i){e.addTest("objectfit",!!i("objectFit"),{aliases:["object-fit"]})});

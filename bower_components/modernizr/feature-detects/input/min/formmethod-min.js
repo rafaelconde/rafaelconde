@@ -1,1 +1,0 @@
-define(["Modernizr","createElement"],function(e,n){e.addTest("inputformmethod",!!("formMethod"in n("input")))});

@@ -1,1 +1,0 @@
-define(["Modernizr"],function(e){e.addTest("target",function(){var e=window.document;if(!("querySelectorAll"in e))return!1;try{return e.querySelectorAll(":target"),!0}catch(r){return!1}})});

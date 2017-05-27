@@ -1,1 +1,0 @@
-define(["Modernizr","createElement"],function(e,t){e.addTest("template","content"in t("template"))});
