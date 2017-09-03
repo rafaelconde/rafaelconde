@@ -118,7 +118,8 @@ body {
   transition: all 0.3s cubic-bezier(0, 0.93, 0.76, 1.03);
 
   @media (max-width: 750px) { max-width: 100%; }
-  @media (max-width: 580px) { margin-top: 70vh; }
+  // @media (max-width: 580px) { margin-top: 70vh; } because of stpid mobile safari and bugs :(
+  @media (max-width: 580px) { margin-top: 150%; }
 
   h2 { color: $lighter; }
 
@@ -322,27 +323,6 @@ body {
 }
 
 .to-scroll { @media (max-width: 1400px) { overflow-x: scroll; } }
-
-// .gangsta-wrapper {
-//   position: relative;
-//   padding: 0;
-//   width: 95%;
-//   overflow-x: hidden;
-//   @media (max-width: 1400px) {
-//     width: 1400px;
-//     padding-left: 30px;
-//     padding-right: 30px;
-//   }
-//   max-width: 1400px;
-//   margin: auto;
-//   margin-top: 100px;
-//   margin-bottom: 100px;
-//   &::after {
-//     content: "";
-//     display: block;
-//     clear: both;
-//   }
-// }
 
 .column {
   width: 20%;
