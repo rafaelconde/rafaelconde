@@ -36,11 +36,11 @@ a {
   text-decoration: none;
   color: inherit;
   padding-bottom: 4px;
-  border-bottom: 2px solid #499EBE;
+  border-bottom: 2px solid #499ebe;
   border-color: #fff;
   transition: border-color 0.1s ease-in-out; }
   a:hover, a:focus {
-    border-color: #499EBE; }
+    border-color: #499ebe; }
 
 ul {
   list-style: none;
@@ -51,13 +51,15 @@ li {
   margin-bottom: 16px; }
 
 .ninja {
-  text-decoration: none; }
+  text-decoration: none;
+  border: none; }
   .ninja:hover, .ninja:focus, .ninja:active {
     text-decoration: none;
     cursor: default; }
 
 .strike {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+  opacity: 0.5; }
 
 .gangsta-wrapper {
   max-width: 1024px;
@@ -147,22 +149,22 @@ body {
 
 #netlify-label,
 .hover-effect.netlify {
-  color: #499EBE;
+  color: #499ebe;
   background: #f1f8fa; }
 
 #layout-label,
 .hover-effect.layout {
-  color: #4FC44A;
+  color: #4fc44a;
   background: #f1fbf1; }
 
 #bts-label,
 .hover-effect.bts {
-  color: #519D9E;
+  color: #519d9e;
   background: #f1f8f8; }
 
 #youtube-label,
 .hover-effect.youtube {
-  color: #B31217;
+  color: #b31217;
   background: #fbeeee; }
 
 .other-thangs {
@@ -170,7 +172,7 @@ body {
   margin-top: 164px;
   grid-gap: 40px;
   grid-auto-rows: max-content;
-  grid-template-columns: .33fr;
+  grid-template-columns: 0.33fr;
   grid-template-areas: "read read follow" "listen listen more" "meet meet meet";
   transition: all 0.3s cubic-bezier(0, 0.93, 0.76, 1.03); }
   @media (max-width: 750px) {
@@ -333,13 +335,13 @@ body {
       color: #252525;
       margin-bottom: 10px; }
     #work .showroom .label {
-      font-family: 'Avenir Next W01', -apple-system, Roboto, sans-serif;
+      font-family: "Avenir Next W01", -apple-system, Roboto, sans-serif;
       font-weight: 600; }
     #work .showroom .break-this-safe img,
     #work .showroom .frames img {
       border-radius: 22px; }
     #work .showroom .break-this-safe a {
-      color: #519D9E; }
+      color: #519d9e; }
     @media (min-width: 880px) {
       #work .showroom .break-this-safe .description {
         top: 30%;
@@ -347,7 +349,7 @@ body {
         -ms-transform: translateY(30%);
         transform: translateY(30%); } }
     #work .showroom .frames a {
-      color: #33B0F7; }
+      color: #33b0f7; }
     @media (min-width: 880px) {
       #work .showroom .frames .description {
         top: 30%;
@@ -355,7 +357,7 @@ body {
         -ms-transform: translateY(30%);
         transform: translateY(30%); } }
     #work .showroom .sketchcasts a {
-      color: #1375B8; }
+      color: #1375b8; }
   #work .video-column {
     position: relative;
     text-align: right !important;
@@ -419,13 +421,13 @@ body {
 
 #work .gangsta-wrapper .sublime img {
   box-shadow: none;
-  -webkit-filter: drop-shadow(0px 4px 10px #C2C2C2);
+  -webkit-filter: drop-shadow(0px 4px 10px #c2c2c2);
   -webkit-transition: -webkit-filter 0.3s ease;
   -moz-transition: -webkit-filter 0.3s ease;
   -o-transition: -webkit-filter 0.3s ease;
   transition: -webkit-filter 0.3s ease; }
   #work .gangsta-wrapper .sublime img:hover, #work .gangsta-wrapper .sublime img:active {
-    -webkit-filter: drop-shadow(0px 0px 0px #C2C2C2); }
+    -webkit-filter: drop-shadow(0px 0px 0px #c2c2c2); }
 
 #work .other-thangs .more-work {
   width: 70%; }
