@@ -1,0 +1,166 @@
+.big-hero-six {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 800px; /* +200px for the overflow on the top rubber band */
+  overflow-y: hidden;
+  top: -200px;
+}
+
+  .big-hero-six p {
+    margin: 0;
+    opacity: .70;
+  }
+
+  .big-hero-six p:first-of-type {
+      position: relative;
+      bottom: -10px;
+      left: 3px;
+    }
+
+  .big-hero-six p:last-of-type {
+      position: relative;
+      top: 10px;
+      left: 3px;
+    }
+
+  .big-hero-six .main-content-wrapper {
+    padding-top: 100px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+
+  .big-hero-six .background {
+    background: #fff;
+  }
+
+  .big-hero-six .background img {
+      display: none;
+      position: absolute;
+      height: 100%;
+      right: -40px;
+      }
+
+  .big-hero-six video {
+    position: relative;
+    height: 110%;
+    right: -40px;
+  }
+
+.memoji {
+  display: none;
+  height: 60px;
+  margin-right: 10px;
+}
+
+#unecessary-part-of-name {
+  -webkit-animation: 10s ease-in-out 3s fade-away;
+          animation: 10s ease-in-out 3s fade-away;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade-away {
+  from { opacity: 1; }
+  to { opacity: 0.1; }
+}
+
+@keyframes fade-away {
+  from { opacity: 1; }
+  to { opacity: 0.1; }
+}
+
+/* Some switcharoos on what to show on the hero, depending on the size */
+
+@media (max-width: 1112px) {
+  video {
+    display: none;
+  }
+  .background img {
+    display: block;
+  }
+}
+
+@media (max-width: 780px) {
+  .background img {
+    display: none;
+  }
+
+  .memoji {
+      display: block;
+  }
+}
+
+@media (max-width: 624px) {
+  h1 {
+    font-size: 11vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .big-hero-six .main-content-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+
+  .memoji {
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 14vw;
+  }
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #0e1e25;
+  font-size: 18px;
+  margin: 0;
+  background: #f7fafb;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.ninja-links {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ninja-links:hover {
+  cursor: text;
+}
+
+.wave {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 223px;
+}
+
+.main-content-wrapper {
+  position: relative;
+  width: 95%;
+  max-width: 1024px;
+  margin: auto;
+  z-index: 2;
+}
+
+.background {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  height: 700px;
+  width: 100vw;
+}

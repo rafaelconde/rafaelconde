@@ -22,11 +22,7 @@
     "browser-sync": "^2.24.4"
   },
   "dependencies": {
-    "postcss": "^6.0.22",
-    "postcss-loader": "^2.1.5",
-    "postcss-nested": "^3.0.0",
-    "postcss-preset-env": "^5.1.0",
-    "postcss-simple-vars-async": "^1.2.1",
-    "webpack": "^4.11.0"
+    "autoprefixer": "^8.6.0",
+    "postcss-nested": "^3.0.0"
   }
 }

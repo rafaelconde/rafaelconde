@@ -1,0 +1,50 @@
+@import './hero.css';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #0e1e25;
+  font-size: 18px;
+  margin: 0;
+  background: #f7fafb;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.ninja-links {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ninja-links:hover {
+  cursor: text;
+}
+
+.wave {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 223px;
+}
+
+.main-content-wrapper {
+  position: relative;
+  width: 95%;
+  max-width: 1024px;
+  margin: auto;
+  z-index: 2;
+}
+
+.background {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  height: 700px;
+  width: 100vw;
+}
