@@ -5,7 +5,8 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server '.' --files '.' --reload-debounce 500"
+    "start": "browser-sync start --server '.' --files '.' --reload-debounce 500",
+    "postcss": "postcss --config postcss.json"
   },
   "repository": {
     "type": "git",
