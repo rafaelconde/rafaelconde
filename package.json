@@ -4,7 +4,8 @@
   "description": "Personal website of Rafael Conde",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server '.' --files '.' --reload-debounce 500"
   },
   "repository": {
     "type": "git",
