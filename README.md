@@ -1,3 +1,3 @@
-# rafaelconde.net
+# Rafa's site
 
-Here's the repo for my personal website, hosted on Netlify 🤠
+This is the repo for my personal website 👋
