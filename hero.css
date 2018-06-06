@@ -4,10 +4,11 @@
   height: 800px; /* +200px for the overflow on the top rubber band */
   overflow-y: hidden;
   top: -200px;
+  margin-bottom: -200px;
+  z-index: 1;
 
   p {
     margin: 0;
-    opacity: .70;
 
     &:first-of-type {
       position: relative;
@@ -22,9 +23,14 @@
     }
   }
 
+  .background {
+    height: 700px;
+    width: 100vw;
+    text-align: center;
+  }
+
   .main-content-wrapper {
     padding-top: 100px;
-    display: flex;
     align-items: center;
   }
 

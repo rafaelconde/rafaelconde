@@ -1,0 +1,64 @@
+.netlify {
+  position: relative;
+  z-index: 2;
+  margin-top: -329px;
+
+  .tint-color {
+    color: #00ad9f;
+  }
+
+  .main-content-wrapper {
+    align-items: center;
+    height: 780px;
+  }
+
+  .showcase {
+    position: relative;
+    top: -70px;
+  }
+
+  .card {
+    position: absolute;
+    background-size: cover;
+
+    &:first-of-type {
+      position: relative;
+    }
+
+    &:nth-child(1) {
+      top: -200px;
+      left: -110px;
+      background-image: url(assets/dribbble-1.png);
+    }
+
+    &:nth-child(2) {
+      top: -150px;
+      left: 200px;
+      background-image: url(assets/dribbble-splittest.gif);
+    }
+
+    &:nth-child(3) {
+      top: 70px;
+      left: 70px;
+      background-image: url(assets/dribbble-netlify-app.png);
+    }
+
+    &:nth-child(4) {
+      top: 160px;
+      left: 290px;
+      background-image: url(assets/dribbble-netlify-logo.png);
+    }
+
+    &:nth-child(5) {
+      top: 330px;
+      left: 50px;
+      background-image: url(assets/dribbble-icons.gif);
+    }
+  }
+
+  .wave {
+    z-index: 1;
+  }
+
+
+}

@@ -5,11 +5,12 @@
   height: 800px; /* +200px for the overflow on the top rubber band */
   overflow-y: hidden;
   top: -200px;
+  margin-bottom: -200px;
+  z-index: 1;
 }
 
   .big-hero-six p {
     margin: 0;
-    opacity: .70;
   }
 
   .big-hero-six p:first-of-type {
@@ -24,10 +25,14 @@
       left: 3px;
     }
 
+  .big-hero-six .background {
+    height: 700px;
+    width: 100vw;
+    text-align: center;
+  }
+
   .big-hero-six .main-content-wrapper {
     padding-top: 100px;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-align: center;
         align-items: center;
   }
@@ -116,6 +121,74 @@
     font-size: 14vw;
   }
 }
+.netlify {
+  position: relative;
+  z-index: 2;
+  margin-top: -329px;
+
+
+}
+
+  .netlify .tint-color {
+    color: #00ad9f;
+  }
+
+  .netlify .main-content-wrapper {
+    -ms-flex-align: center;
+        align-items: center;
+    height: 780px;
+  }
+
+  .netlify .showcase {
+    position: relative;
+    top: -70px;
+  }
+
+  .netlify .card {
+    position: absolute;
+    background-size: cover;
+  }
+
+  .netlify .card:first-of-type {
+      position: relative;
+    }
+
+  .netlify .card:nth-child(1) {
+      top: -200px;
+      left: -110px;
+      background-image: url(dribbble-1.431b052d.png);
+    }
+
+  .netlify .card:nth-child(2) {
+      top: -150px;
+      left: 200px;
+      background-image: url(dribbble-splittest.69d54e10.gif);
+    }
+
+  .netlify .card:nth-child(3) {
+      top: 70px;
+      left: 70px;
+      background-image: url(dribbble-netlify-app.754ad8d4.png);
+    }
+
+  .netlify .card:nth-child(4) {
+      top: 160px;
+      left: 290px;
+      background-image: url(dribbble-netlify-logo.cda539d9.png);
+    }
+
+  .netlify .card:nth-child(5) {
+      top: 330px;
+      left: 50px;
+      background-image: url(dribbble-icons.38f41996.gif);
+    }
+
+  .netlify .wave {
+    z-index: 1;
+  }
+.break-this-safe {
+  background: #000;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #0e1e25;
@@ -129,6 +202,30 @@ h1 {
   font-weight: 800;
   margin: 0;
 }
+
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  margin-top: 16px;
+  opacity: .7;
+  line-height: 1.4em;
+}
+
+a.external-link {
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 24px;
+}
+
+a.external-link::after {
+    content: "→";
+    position: absolute;
+    margin-left: 4px;
+  }
 
 .ninja-links {
   color: inherit;
@@ -148,7 +245,46 @@ h1 {
   height: 223px;
 }
 
+.card {
+  display: block;
+  position: relative;
+  width: 480px;
+  height: 360px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.depth-level-1 {
+  -webkit-box-shadow: 0px 4px 34px rgba(14, 30, 37, 0.16);
+          box-shadow: 0px 4px 34px rgba(14, 30, 37, 0.16);
+  z-index: 3;
+}
+
+.depth-level-2 {
+  -webkit-transform: scale(.8, .8);
+      -ms-transform: scale(.8, .8);
+          transform: scale(.8, .8);
+  -webkit-box-shadow: 0px 4px 24px rgba(14, 30, 37, 0.16);
+          box-shadow: 0px 4px 24px rgba(14, 30, 37, 0.16);
+  z-index: 2;
+}
+
+.depth-level-3 {
+  -webkit-transform: scale(.7, .7);
+      -ms-transform: scale(.7, .7);
+          transform: scale(.7, .7);
+  -webkit-box-shadow: 0px 4px 14px rgba(14, 30, 37, 0.16);
+          box-shadow: 0px 4px 14px rgba(14, 30, 37, 0.16);
+  z-index: 1;
+}
+
 .main-content-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   position: relative;
   width: 95%;
   max-width: 1024px;
@@ -161,6 +297,4 @@ h1 {
   position: absolute;
   bottom: 0;
   z-index: 1;
-  height: 700px;
-  width: 100vw;
 }
