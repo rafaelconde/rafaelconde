@@ -17,9 +17,13 @@
 
     @media (max-width: 975px) {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       min-height: 900px;
       padding-bottom: 150px;
+    }
+
+    @media (max-width: 780px) {
+      align-items: flex-start;
     }
 
     @media (max-width: 469px) {
@@ -31,6 +35,7 @@
   .showcase {
     position: relative;
     margin-top: 40px;
+    left: -20px;
     transform: scale(.6, .6);
     transform-origin: top left;
 
@@ -77,9 +82,5 @@
       left: 50px;
       background-image: url(assets/dribbble-icons.gif);
     }
-  }
-
-  .wave {
-    z-index: 1;
   }
 }

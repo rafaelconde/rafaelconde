@@ -177,13 +177,19 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":11}],2:[function(require,module,exports) {
+},{"_css_loader":11}],101:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./hero.css":9,"./section-netlify.css":17,"./section-breakthissafe.css":45,"_css_loader":11}],73:[function(require,module,exports) {
+},{"./assets/layout-1.jpg":102,"./assets/layout-2.jpg":103,"./assets/layout-cover.png":104,"./assets/layout-3.jpg":105,"./assets/layout-4.jpg":106,"./assets/layout-5.jpg":107,"./assets/layout-6.jpg":108,"_css_loader":11}],2:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"./hero.css":9,"./section-netlify.css":17,"./section-breakthissafe.css":45,"./section-layout.css":101,"_css_loader":11}],111:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -353,7 +359,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],74:[function(require,module,exports) {
+},{}],112:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -435,5 +441,5 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":13}],0:[function(require,module,exports) {
-var b=require(74);b.load([["dribbble-1.431b052d.png",35],["dribbble-splittest.69d54e10.gif",38],["dribbble-netlify-app.754ad8d4.png",39],["dribbble-netlify-logo.cda539d9.png",40],["dribbble-icons.38f41996.gif",41]]);
-},{}]},{},[73,0], null)
+var b=require(112);b.load([["dribbble-1.431b052d.png",35],["dribbble-splittest.69d54e10.gif",38],["dribbble-netlify-app.754ad8d4.png",39],["dribbble-netlify-logo.cda539d9.png",40],["dribbble-icons.38f41996.gif",41],["layout-1.31139b52.jpg",102],["layout-2.e2d16782.jpg",103],["layout-cover.f4d74db9.png",104],["layout-3.6c33b494.jpg",105],["layout-4.ee0829fa.jpg",106],["layout-5.e784cb79.jpg",107],["layout-6.3a896eac.jpg",108]]);
+},{}]},{},[111,0], null)

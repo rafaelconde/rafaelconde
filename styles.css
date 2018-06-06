@@ -1,6 +1,7 @@
 @import './hero.css';
 @import './section-netlify.css';
 @import './section-breakthissafe.css';
+@import './section-layout.css';
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -30,22 +31,13 @@ p {
   line-height: 1.4em;
 }
 
-a {
+p a {
   display: inline-block;
   color: inherit;
   text-decoration: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-
-  &:hover,
-  &:focus {
-    background: #fff;
-    color: #000;
-    border-radius: 2px;
-    padding: 2px;
-
-    /* TODO */
-  }
 }
+
 a.external-link {
   font-weight: 500;
   text-decoration: none;
@@ -57,6 +49,13 @@ a.external-link {
     position: absolute;
     margin-left: 4px;
   }
+}
+
+.whole-thang-is-a-target {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 }
 
 .ninja-links {
@@ -91,23 +90,37 @@ a.external-link {
   height: 360px;
   background: #fff;
   border-radius: 16px;
+
+  transition: transform .1s ease-in-out;
 }
 
 .depth-level-1 {
   box-shadow: 0px 4px 34px 2px rgba(14, 30, 37, 0.16);
   z-index: 3;
+
+  &:hover {
+    transform: translateY(-16px);
+  }
 }
 
 .depth-level-2 {
   transform: scale(.8, .8);
   box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
   z-index: 2;
+
+  &:hover {
+    transform: scale(.8, .8) translateY(-16px);
+  }
 }
 
 .depth-level-3 {
   transform: scale(.7, .7);
   box-shadow: 0px 4px 14px 2px rgba(14, 30, 37, 0.16);
   z-index: 1;
+
+  &:hover {
+    transform: scale(.7, .7) translateY(-16px);
+  }
 }
 
 .main-content-wrapper {

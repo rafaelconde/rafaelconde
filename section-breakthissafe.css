@@ -4,7 +4,7 @@
   z-index: 1;
 
   .tint-color {
-    color: #639b9d;
+    color: #519D9E;
   }
 
   .wave {
@@ -20,9 +20,13 @@
 
     @media (max-width: 975px) {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       padding-top: 110px;
       margin-bottom: -110px;
+    }
+
+    @media (max-width: 780px) {
+      align-items: flex-start;
     }
 
     @media (max-width: 469px) {
@@ -53,7 +57,7 @@
 
     video {
       position: absolute;
-      top: 702px;
+      top: 403px;
       left: 38px;
       width: 179px;
     }
