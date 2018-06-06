@@ -18,8 +18,11 @@
 
     &:last-of-type {
       position: relative;
-      top: 10px;
       left: 3px;
+
+      @media (minx-width: 520px) {
+        top: 8px;
+      }
     }
   }
 
@@ -32,6 +35,7 @@
   .main-content-wrapper {
     padding-top: 100px;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .background {
@@ -71,16 +75,16 @@
 /* Some switcharoos on what to show on the hero, depending on the size */
 
 @media (max-width: 1112px) {
-  video {
+  .big-hero-six video {
     display: none;
   }
-  .background img {
+  .big-hero-six .background img {
     display: block;
   }
 }
 
 @media (max-width: 780px) {
-  .background img {
+  .big-hero-six .background img {
     display: none;
   }
 
@@ -90,23 +94,25 @@
 }
 
 @media (max-width: 624px) {
-  h1 {
+  .big-hero-six h1 {
     font-size: 11vw;
   }
 }
 
 @media (max-width: 520px) {
   .big-hero-six .main-content-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
   }
 
   .memoji {
-    height: 80px;
+    height: 44px;
     margin-right: 10px;
   }
 
-  h1 {
-    font-size: 14vw;
+  .big-hero-six h1 {
+    font-size: 42px;
+    margin:4px 0 4px 0;
   }
 }

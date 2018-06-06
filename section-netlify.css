@@ -1,7 +1,10 @@
 .netlify {
   position: relative;
   z-index: 2;
-  margin-top: -329px;
+
+  @media (min-width: 975px) {
+    margin-top: -329px;
+  }
 
   .tint-color {
     color: #00ad9f;
@@ -9,12 +12,32 @@
 
   .main-content-wrapper {
     align-items: center;
-    height: 780px;
+    padding-bottom: 30px;
+    min-height: 730px;
+
+    @media (max-width: 975px) {
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 900px;
+      padding-bottom: 150px;
+    }
+
+    @media (max-width: 469px) {
+      min-height: 790px;
+      padding-bottom: 10px;
+    }
   }
 
   .showcase {
     position: relative;
-    top: -70px;
+    margin-top: 40px;
+    transform: scale(.6, .6);
+    transform-origin: top left;
+
+    @media (min-width: 469px) {
+      transform: scale(1, 1);
+      top: -70px;
+    }
   }
 
   .card {
@@ -59,6 +82,4 @@
   .wave {
     z-index: 1;
   }
-
-
 }

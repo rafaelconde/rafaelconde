@@ -20,6 +20,8 @@ h2 {
   font-size: 52px;
   font-weight: bold;
   margin: 0;
+
+  @media (max-width: 520px) { font-size: 42px; }
 }
 
 p {
@@ -28,10 +30,27 @@ p {
   line-height: 1.4em;
 }
 
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+  &:hover,
+  &:focus {
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+    padding: 2px;
+
+    /* TODO */
+  }
+}
 a.external-link {
   font-weight: 500;
   text-decoration: none;
   margin-top: 24px;
+  border-bottom: none;
 
   &::after {
     content: "→";
@@ -52,10 +71,17 @@ a.external-link {
 .wave {
   display: block;
   position: absolute;
-  bottom: 0;
   z-index: 9;
   width: 100vw;
-  height: 223px;
+  min-width: 1400px;
+}
+
+.wave-bottom {
+  bottom: 0;
+}
+
+.wave-top {
+  top: -75px;
 }
 
 .card {
@@ -68,19 +94,19 @@ a.external-link {
 }
 
 .depth-level-1 {
-  box-shadow: 0px 4px 34px rgba(14, 30, 37, 0.16);
+  box-shadow: 0px 4px 34px 2px rgba(14, 30, 37, 0.16);
   z-index: 3;
 }
 
 .depth-level-2 {
   transform: scale(.8, .8);
-  box-shadow: 0px 4px 24px rgba(14, 30, 37, 0.16);
+  box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
   z-index: 2;
 }
 
 .depth-level-3 {
   transform: scale(.7, .7);
-  box-shadow: 0px 4px 14px rgba(14, 30, 37, 0.16);
+  box-shadow: 0px 4px 14px 2px rgba(14, 30, 37, 0.16);
   z-index: 1;
 }
 
@@ -89,10 +115,14 @@ a.external-link {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  width: 95%;
+  width: 90%;
   max-width: 1024px;
   margin: auto;
   z-index: 2;
+}
+
+.content {
+  max-width: 600px;
 }
 
 .background {
@@ -100,4 +130,10 @@ a.external-link {
   position: absolute;
   bottom: 0;
   z-index: 1;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
