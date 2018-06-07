@@ -11,8 +11,22 @@
     z-index: 1;
   }
 
+  .wave-top {
+    top: -100px;
+  }
+
   .wave-bottom {
-    bottom: -76px;
+    bottom: -100px;
+  }
+
+  @media (max-width: 1800px) {
+    .wave-top {
+      top: -75px;
+    }
+
+    .wave-bottom {
+      bottom: -76px;
+    }
   }
 
   .main-content-wrapper {

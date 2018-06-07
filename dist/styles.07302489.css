@@ -254,8 +254,22 @@
     z-index: 1;
   }
 
+  .break-this-safe .wave-top {
+    top: -100px;
+  }
+
   .break-this-safe .wave-bottom {
-    bottom: -76px;
+    bottom: -100px;
+  }
+
+  @media (max-width: 1800px) {
+    .break-this-safe .wave-top {
+      top: -75px;
+    }
+
+    .break-this-safe .wave-bottom {
+      bottom: -76px;
+    }
   }
 
   .break-this-safe .main-content-wrapper {
