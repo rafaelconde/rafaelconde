@@ -427,7 +427,7 @@
       -webkit-transform: scale(1, 1);
           -ms-transform: scale(1, 1);
               transform: scale(1, 1);
-      top: -20px;
+      top: -50px;
       left: -40px
   }
     }
@@ -501,6 +501,11 @@
   z-index: 1;
 }
 
+  @media (max-width: 975px) {.miscelanious-is-a-funny-word {
+    top: 180px
+}
+  }
+
   .miscelanious-is-a-funny-word p {
     margin-top: 8px;
   }
@@ -508,6 +513,13 @@
   .miscelanious-is-a-funny-word .wave-top{
     top: -222px;
   }
+
+  @media (max-width: 1400px) {
+
+  .miscelanious-is-a-funny-word .wave-top{
+      top: -180px
+  }
+    }
 
   .miscelanious-is-a-funny-word .main-content-wrapper {
     -ms-flex-align: center;
@@ -539,6 +551,7 @@
     width: 40px;
     height: 40px;
     margin-right: 16px;
+    padding-top: 4px;
   }
 
   .miscelanious-is-a-funny-word .detail img {
@@ -552,8 +565,8 @@
 .people-id-like-to-meet ul {
     -webkit-column-count: 5;
             column-count: 5;
-    -webkit-column-width: 190px;
-            column-width: 190px;
+    -webkit-column-width: 192px;
+            column-width: 192px;
   }
 
 .people-id-like-to-meet .tick {
@@ -584,7 +597,8 @@
     text-decoration: none;
   }
 
-.social {
+.miscelanious-is-a-funny-word .main-content-wrapper.social {
+  margin-top: 64px;
 }
 
 .miscelanious-is-a-funny-word .main-content-wrapper.footer {
@@ -597,6 +611,24 @@
 .miscelanious-is-a-funny-word .main-content-wrapper.footer p {
     font-size: 14px;
     margin-bottom: 4px;
+  }
+
+.in-the-year-2000 li,
+.social li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.in-the-year-2000 li .detail, .social li .detail {
+    -ms-flex-preferred-size: 40px;
+        flex-basis: 40px;
+  }
+
+.in-the-year-2000 li .wrapper, .social li .wrapper {
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
   }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -628,6 +660,11 @@ h3 {
   margin: 0;
 }
 
+@media (max-width: 520px) {
+
+h3 { font-size: 28px
+} }
+
 h4 {
   font-weight: 600;
   margin: 0 0 4px 0;
@@ -643,8 +680,12 @@ p a {
   display: inline-block;
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(0, 179, 229, 0.3);
 }
+
+p a:hover {
+    border-color: rgba(0, 179, 229, 1);
+  }
 
 a.external-link {
   display: inline-block;
