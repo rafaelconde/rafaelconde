@@ -1,0 +1,90 @@
+.netlify {
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: 975px) {
+    margin-top: -329px;
+  }
+
+  .tint-color {
+    color: #00ad9f;
+  }
+
+  .external-link:hover {
+    border-color: #00ad9f;
+  }
+
+  .main-content-wrapper {
+    align-items: center;
+    padding-bottom: 30px;
+    min-height: 730px;
+
+    @media (max-width: 975px) {
+      flex-direction: column;
+      align-items: center;
+      min-height: 900px;
+      padding-bottom: 150px;
+    }
+
+    @media (max-width: 780px) {
+      align-items: flex-start;
+    }
+
+    @media (max-width: 469px) {
+      min-height: 790px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .showcase {
+    position: relative;
+    margin-top: 40px;
+    left: -20px;
+    transform: scale(.6, .6);
+    transform-origin: top left;
+
+    @media (min-width: 469px) {
+      transform: scale(1, 1);
+      top: -70px;
+    }
+  }
+
+  .card {
+    position: absolute;
+    background-size: cover;
+
+    &:first-of-type {
+      position: relative;
+    }
+
+    &:nth-child(1) {
+      top: -200px;
+      left: -110px;
+      background-image: url(assets/dribbble-1.png);
+    }
+
+    &:nth-child(2) {
+      top: -150px;
+      left: 200px;
+      background-image: url(assets/dribbble-splittest.gif);
+    }
+
+    &:nth-child(3) {
+      top: 70px;
+      left: 70px;
+      background-image: url(assets/dribbble-netlify-app.png);
+    }
+
+    &:nth-child(4) {
+      top: 160px;
+      left: 290px;
+      background-image: url(assets/dribbble-netlify-logo.png);
+    }
+
+    &:nth-child(5) {
+      top: 330px;
+      left: 50px;
+      background-image: url(assets/dribbble-icons.gif);
+    }
+  }
+}

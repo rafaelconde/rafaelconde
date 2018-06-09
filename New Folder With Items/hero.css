@@ -1,0 +1,118 @@
+.big-hero-six {
+  display: flex;
+  position: relative;
+  height: 800px; /* +200px for the overflow on the top rubber band */
+  overflow-y: hidden;
+  top: -200px;
+  margin-bottom: -200px;
+  z-index: 1;
+
+  p {
+    margin: 0;
+
+    &:first-of-type {
+      position: relative;
+      bottom: -10px;
+      left: 3px;
+    }
+
+    &:last-of-type {
+      position: relative;
+      left: 3px;
+
+      @media (minx-width: 520px) {
+        top: 8px;
+      }
+    }
+  }
+
+  .background {
+    height: 700px;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .main-content-wrapper {
+    padding-top: 100px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .background {
+    background: #fff;
+
+    img {
+      display: none;
+      position: absolute;
+      height: 100%;
+      right: -40px;
+      }
+  }
+
+  video {
+    position: relative;
+    height: 110%;
+    right: -40px;
+  }
+}
+
+.memoji {
+  display: none;
+  height: 60px;
+  margin-right: 10px;
+}
+
+#unecessary-part-of-name {
+  animation: 10s ease-in-out 3s fade-away;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-away {
+  from { opacity: 1; }
+  to { opacity: 0.1; }
+}
+
+/* Some switcharoos on what to show on the hero, depending on the size */
+
+@media (max-width: 1112px) {
+  .big-hero-six video {
+    display: none;
+  }
+  .big-hero-six .background img {
+    display: block;
+  }
+}
+
+@media (max-width: 780px) {
+  .big-hero-six .background img {
+    display: none;
+  }
+
+  .memoji {
+      display: block;
+  }
+}
+
+@media (max-width: 624px) {
+  .big-hero-six h1 {
+    font-size: 11vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .big-hero-six .main-content-wrapper {
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+  }
+
+  .memoji {
+    height: 44px;
+    margin-right: 10px;
+  }
+
+  .big-hero-six h1 {
+    font-size: 42px;
+    margin:4px 0 4px 0;
+  }
+}

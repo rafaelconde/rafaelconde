@@ -98,27 +98,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({3:[function(require,module,exports) {
-function meetingSomeone() {
+})({155:[function(require,module,exports) {
 
-  var ticks = document.querySelectorAll(".tick");
-  var rafa = document.getElementById('easterNope');
-
-  for (var i = 0; i < ticks.length; ++i) {
-    var tick = ticks[i];
-    popout = function popout() {
-      rafa.className = 'popout';
-    };
-    tick.onclick = function () {
-      rafa.className = 'popin';
-      console.log('If you can make this happen though, or if you are this person, lets TALK ON TWITTER;');
-      setTimeout(popout, 3000);
-    };
-  }
-}
-
-meetingSomeone();
-},{}],43:[function(require,module,exports) {
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{}],153:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -147,7 +133,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61270' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52904' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -288,5 +274,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[43,3], null)
-//# sourceMappingURL=/scripts.a7567afe.map
+},{}]},{},[153], null)
