@@ -493,6 +493,96 @@
       left: -120px;
       background-image: url(layout-6.3a896eac.jpg);
     }
+.miscelanious-is-a-funny-word {
+  background: #fff;
+  position: relative;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  z-index: 1;
+}
+
+  .miscelanious-is-a-funny-word p {
+    margin-top: 8px;
+  }
+
+  .miscelanious-is-a-funny-word .wave-top{
+    top: -222px;
+  }
+
+  .miscelanious-is-a-funny-word .main-content-wrapper {
+    -ms-flex-align: center;
+        align-items: center;
+    padding-bottom: 30px;
+    min-height: 730px;
+    margin-top: -40px;
+  }
+
+  .miscelanious-is-a-funny-word .content {
+    max-width: 100%;
+  }
+
+  .miscelanious-is-a-funny-word ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0 0 0;
+  }
+
+  .miscelanious-is-a-funny-word li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .miscelanious-is-a-funny-word .detail {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
+  .miscelanious-is-a-funny-word .detail img {
+      width: 100%;
+    }
+
+  .miscelanious-is-a-funny-word .wrapper p {
+    margin: 0;
+  }
+
+.people-id-like-to-meet ul {
+    -webkit-column-count: 5;
+            column-count: 5;
+    -webkit-column-width: 190px;
+            column-width: 190px;
+  }
+
+.people-id-like-to-meet .tick {
+    display: block;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #0E1E25;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+
+.people-id-like-to-meet .checked .tick {
+    border: 2px solid #219653;
+    background: rgba(33, 150, 83, 0.17);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDExIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQuMTMzMDUgNC43ODUxNUwyLjQ4MDYgMy4xMzI3QzEuOTEzMTMgMi41NjUyMiAwLjk5MzA3NiAyLjU2NTIyIDAuNDI1NjA0IDMuMTMyN0MtMC4xNDE4NjggMy43MDAxNyAtMC4xNDE4NjggNC42MjAyMiAwLjQyNTYwNCA1LjE4NzY5TDMuMDc5NzQgNy44NDE4MkMzLjQ2MjQ2IDguMjI0NTUgNC4wMDU1NiA4LjM0OTE1IDQuNDkyNzEgOC4yMTU2M0M0Ljc1MzE2IDguMTU3NzEgNS4wMDA3NiA4LjAyNzQzIDUuMjAzNDEgNy44MjQ3OUwxMC41NDc2IDIuNDgwNkMxMS4xMTUxIDEuOTEzMTMgMTEuMTE1MSAwLjk5MzA3NiAxMC41NDc2IDAuNDI1NjA0QzkuOTgwMTIgLTAuMTQxODY4IDkuMDYwMDcgLTAuMTQxODY4IDguNDkyNiAwLjQyNTYwNEw0LjEzMzA1IDQuNzg1MTVaIiBmaWxsPSIjMjE5NjUzIi8+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+  }
+
+.people-id-like-to-meet .checked a {
+    color: #219653;
+  }
+
+.people-id-like-to-meet li a {
+    font-size: 18px;
+    color: #0E1E25;
+    font-weight: 500;
+    text-decoration: none;
+  }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #0e1e25;
@@ -518,6 +608,16 @@ h2 {
 h2 { font-size: 42px
 } }
 
+h3 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
 p {
   margin-top: 16px;
   opacity: .7;
@@ -532,9 +632,10 @@ p a {
 }
 
 a.external-link {
+  display: inline-block;
   font-weight: 500;
   text-decoration: none;
-  margin-top: 24px;
+  margin-top: 8px;
   border-bottom: none;
 }
 

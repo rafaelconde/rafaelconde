@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({30:[function(require,module,exports) {
+})({32:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +128,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],17:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,37 +159,43 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":30}],13:[function(require,module,exports) {
+},{"./bundle-url":32}],14:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":17}],14:[function(require,module,exports) {
+},{"_css_loader":19}],15:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./assets/dribbble-1.png":25,"./assets/dribbble-splittest.gif":26,"./assets/dribbble-netlify-app.png":27,"./assets/dribbble-netlify-logo.png":28,"./assets/dribbble-icons.gif":29,"_css_loader":17}],15:[function(require,module,exports) {
+},{"./assets/dribbble-1.png":20,"./assets/dribbble-splittest.gif":22,"./assets/dribbble-netlify-app.png":21,"./assets/dribbble-netlify-logo.png":23,"./assets/dribbble-icons.gif":24,"_css_loader":19}],16:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":17}],16:[function(require,module,exports) {
+},{"_css_loader":19}],17:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./assets/layout-1.jpg":18,"./assets/layout-2.jpg":19,"./assets/layout-cover.png":20,"./assets/layout-3.jpg":21,"./assets/layout-4.jpg":22,"./assets/layout-5.jpg":23,"./assets/layout-6.jpg":24,"_css_loader":17}],2:[function(require,module,exports) {
+},{"./assets/layout-1.jpg":25,"./assets/layout-2.jpg":26,"./assets/layout-cover.png":28,"./assets/layout-3.jpg":27,"./assets/layout-4.jpg":29,"./assets/layout-5.jpg":31,"./assets/layout-6.jpg":30,"_css_loader":19}],18:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./hero.css":13,"./section-netlify.css":14,"./section-breakthissafe.css":15,"./section-layout.css":16,"_css_loader":17}],31:[function(require,module,exports) {
+},{"_css_loader":19}],2:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"./hero.css":14,"./section-netlify.css":15,"./section-breakthissafe.css":16,"./section-layout.css":17,"./section-other.css":18,"_css_loader":19}],99:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -218,7 +224,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53233' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52904' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -359,7 +365,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],33:[function(require,module,exports) {
+},{}],100:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -440,6 +446,6 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":30}],0:[function(require,module,exports) {
-var b=require(33);b.load([["dribbble-1.431b052d.png",25],["dribbble-splittest.69d54e10.gif",26],["dribbble-netlify-app.754ad8d4.png",27],["dribbble-netlify-logo.cda539d9.png",28],["dribbble-icons.38f41996.gif",29],["layout-1.31139b52.jpg",18],["layout-2.e2d16782.jpg",19],["layout-cover.f4d74db9.png",20],["layout-3.6c33b494.jpg",21],["layout-4.ee0829fa.jpg",22],["layout-5.e784cb79.jpg",23],["layout-6.3a896eac.jpg",24]]);
-},{}]},{},[31,0], null)
+},{"./bundle-url":32}],0:[function(require,module,exports) {
+var b=require(100);b.load([["dribbble-1.431b052d.png",20],["dribbble-splittest.69d54e10.gif",22],["dribbble-netlify-app.754ad8d4.png",21],["dribbble-netlify-logo.cda539d9.png",23],["dribbble-icons.38f41996.gif",24],["layout-1.31139b52.jpg",25],["layout-2.e2d16782.jpg",26],["layout-cover.f4d74db9.png",28],["layout-3.6c33b494.jpg",27],["layout-4.ee0829fa.jpg",29],["layout-5.e784cb79.jpg",31],["layout-6.3a896eac.jpg",30]]);
+},{}]},{},[99,0], null)
