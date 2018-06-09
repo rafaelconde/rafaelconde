@@ -84,3 +84,18 @@
     text-decoration: none;
   }
 }
+
+.social {
+}
+
+.miscelanious-is-a-funny-word .main-content-wrapper.footer {
+  display: block;
+  padding-bottom: 30px;
+  min-height: 0px;
+  margin-top: 40px;
+
+  p {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+}
