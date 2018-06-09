@@ -15,12 +15,10 @@
   .wave-top{
     top: -272px;
 
-    @media (max-width: 1400px) {
-      top: -180px;
-    }
-
     @media (max-width: 2000px) {
       top: -222px;
+    } @media (max-width: 1450px) {
+      top: -180px;
     }
   }
 

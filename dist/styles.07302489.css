@@ -526,17 +526,17 @@
     top: -272px;
   }
 
-  @media (max-width: 1400px) {
-
-  .miscelanious-is-a-funny-word .wave-top{
-      top: -180px
-  }
-    }
-
   @media (max-width: 2000px) {
 
   .miscelanious-is-a-funny-word .wave-top{
       top: -222px
+  }
+    }
+
+  @media (max-width: 1450px) {
+
+  .miscelanious-is-a-funny-word .wave-top{
+      top: -180px
   }
     }
 
