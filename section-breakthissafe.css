@@ -7,6 +7,10 @@
     color: #519D9E;
   }
 
+  .external-link:hover {
+    border-color: #519D9E;
+  }
+
   .wave {
     z-index: 1;
   }

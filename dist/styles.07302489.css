@@ -145,6 +145,10 @@
     color: #00ad9f;
   }
 
+  .netlify .external-link:hover {
+    border-color: #00ad9f;
+  }
+
   .netlify .main-content-wrapper {
     -ms-flex-align: center;
         align-items: center;
@@ -248,6 +252,10 @@
 
   .break-this-safe .tint-color {
     color: #519D9E;
+  }
+
+  .break-this-safe .external-link:hover {
+    border-color: #519D9E;
   }
 
   .break-this-safe .wave {
@@ -371,6 +379,10 @@
 
   .layout .tint-color {
     color: #50C54C;
+  }
+
+  .layout .external-link:hover {
+    border-color: #50C54C;
   }
 
   .layout .main-content-wrapper {
@@ -511,13 +523,20 @@
   }
 
   .miscelanious-is-a-funny-word .wave-top{
-    top: -222px;
+    top: -272px;
   }
 
   @media (max-width: 1400px) {
 
   .miscelanious-is-a-funny-word .wave-top{
       top: -180px
+  }
+    }
+
+  @media (max-width: 2000px) {
+
+  .miscelanious-is-a-funny-word .wave-top{
+      top: -222px
   }
     }
 
@@ -539,12 +558,11 @@
     margin: 40px 0 0 0;
   }
 
-  .miscelanious-is-a-funny-word li {
+  .miscelanious-is-a-funny-word .flexing-like-a-douche {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    margin-bottom: 24px;
   }
 
   .miscelanious-is-a-funny-word .detail {
@@ -565,8 +583,8 @@
 .people-id-like-to-meet ul {
     -webkit-column-count: 5;
             column-count: 5;
-    -webkit-column-width: 192px;
-            column-width: 192px;
+    -webkit-column-width: 190px;
+            column-width: 190px;
   }
 
 .people-id-like-to-meet .tick {
@@ -590,12 +608,27 @@
     color: #219653;
   }
 
+.people-id-like-to-meet li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-bottom: 18px;
+    margin-right: -8px;
+  }
+
 .people-id-like-to-meet li a {
     font-size: 18px;
     color: #0E1E25;
     font-weight: 500;
     text-decoration: none;
+    border-bottom: 2px solid #fff;
+    padding-top: 2px;
   }
+
+.people-id-like-to-meet li a:hover {
+      border-bottom: 2px solid #219653;
+    }
 
 .miscelanious-is-a-funny-word .main-content-wrapper.social {
   margin-top: 64px;
@@ -613,22 +646,57 @@
     margin-bottom: 4px;
   }
 
-.in-the-year-2000 li,
-.social li {
+.in-the-year-2000 .flexing-like-a-douche,
+.social .flexing-like-a-douche {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
       align-items: flex-start;
 }
 
-.in-the-year-2000 li .detail, .social li .detail {
+.in-the-year-2000 .flexing-like-a-douche .detail, .social .flexing-like-a-douche .detail {
     -ms-flex-preferred-size: 40px;
         flex-basis: 40px;
   }
 
-.in-the-year-2000 li .wrapper, .social li .wrapper {
+.in-the-year-2000 .flexing-like-a-douche .wrapper, .social .flexing-like-a-douche .wrapper {
     -ms-flex-preferred-size: 95%;
         flex-basis: 95%;
+  }
+
+.in-the-year-2000 li,
+.social li {
+  display: block;
+  position: relative;
+  padding: 8px;
+  margin-top: -8px;
+  margin-left: -8px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.in-the-year-2000 li:hover, .social li:hover {
+    background: rgba(0, 179, 229, .1);
+    cursor: pointer;
+  }
+
+.in-the-year-2000 li .whole-thang-is-a-target, .social li .whole-thang-is-a-target {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+.in-the-year-2000 .frames:hover {      background: rgba(059, 191, 248, .1); }
+.in-the-year-2000 .sketchcasts:hover { background: rgba(069, 116, 174, .1); }
+.social .twitter:hover {               background: rgba(097, 159, 230, .1); }
+.social .dribbble:hover {              background: rgba(176, 092, 131, .1); }
+.social .github:hover {                background: rgba(023, 021, 022, .1); }
+.social .apple-music:hover {           background: rgba(213, 110, 125, .1); }
+.social .strava:hover {                background: rgba(219, 098, 058, .1); }
+
+.dribbble img {
+    border-radius: 999px;
   }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -687,18 +755,22 @@ p a:hover {
     border-color: rgba(0, 179, 229, 1);
   }
 
-a.external-link {
+  a.external-link {
   display: inline-block;
   font-weight: 500;
   text-decoration: none;
   margin-top: 8px;
-  border-bottom: none;
+  border-bottom: 2px solid rgba(0, 179, 229, 0);
 }
 
-a.external-link::after {
+  a.external-link::after {
     content: "→";
     position: absolute;
     margin-left: 4px;
+  }
+
+  a.external-link:hover {
+    border-color: rgba(0, 179, 229, 1);
   }
 
 .whole-thang-is-a-target {
@@ -825,4 +897,48 @@ a.external-link::after {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+#easterNope {
+  z-index: 999;
+  position: fixed;
+  left: -280px;
+  top: 50%;
+  height: 200px;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.popin {
+  -webkit-animation: 1s popin ease-in-out;
+          animation: 1s popin ease-in-out;
+}
+
+.popout {
+  -webkit-animation: 1s popout ease-in-out;
+          animation: 1s popout ease-in-out;
+}
+
+@-webkit-keyframes popin {
+  from { left: -280px; }
+  to {left: 0;}
+}
+
+@keyframes popin {
+  from { left: -280px; }
+  to {left: 0;}
+}
+
+@-webkit-keyframes popout {
+  from { left: 0px; }
+  to {left: -280px;}
+}
+
+@keyframes popout {
+  from { left: 0px; }
+  to {left: -280px;}
+}
+
+.hide {
+  display: none;
 }

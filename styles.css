@@ -55,17 +55,21 @@ p a {
   }
 }
 
-a.external-link {
+  a.external-link {
   display: inline-block;
   font-weight: 500;
   text-decoration: none;
   margin-top: 8px;
-  border-bottom: none;
+  border-bottom: 2px solid rgba(0, 179, 229, 0);
 
   &::after {
     content: "→";
     position: absolute;
     margin-left: 4px;
+  }
+
+  &:hover {
+    border-color: rgba(0, 179, 229, 1);
   }
 }
 
@@ -167,4 +171,35 @@ a.external-link {
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+#easterNope {
+  z-index: 999;
+  position: fixed;
+  left: -280px;
+  top: 50%;
+  height: 200px;
+  animation-fill-mode: forwards;
+}
+
+.popin {
+  animation: 1s popin ease-in-out;
+}
+
+.popout {
+  animation: 1s popout ease-in-out;
+}
+
+@keyframes popin {
+  from { left: -280px; }
+  to {left: 0;}
+}
+
+@keyframes popout {
+  from { left: 0px; }
+  to {left: -280px;}
+}
+
+.hide {
+  display: none;
 }

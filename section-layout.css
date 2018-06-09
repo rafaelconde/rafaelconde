@@ -10,6 +10,10 @@
     color: #50C54C;
   }
 
+  .external-link:hover {
+    border-color: #50C54C;
+  }
+
   .main-content-wrapper {
     align-items: center;
     padding-bottom: 30px;

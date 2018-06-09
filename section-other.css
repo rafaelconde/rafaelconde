@@ -13,10 +13,14 @@
   }
 
   .wave-top{
-    top: -222px;
+    top: -272px;
 
     @media (max-width: 1400px) {
       top: -180px;
+    }
+
+    @media (max-width: 2000px) {
+      top: -222px;
     }
   }
 
@@ -37,10 +41,9 @@
     margin: 40px 0 0 0;
   }
 
-  li {
+  .flexing-like-a-douche {
     display: flex;
     align-items: center;
-    margin-bottom: 24px;
   }
 
   .detail {
@@ -62,7 +65,7 @@
 .people-id-like-to-meet {
   ul {
     column-count: 5;
-    column-width: 192px;
+    column-width: 190px;
   }
 
   .tick {
@@ -86,11 +89,24 @@
     color: #219653;
   }
 
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-right: -8px;
+  }
+
   li a {
     font-size: 18px;
     color: #0E1E25;
     font-weight: 500;
     text-decoration: none;
+    border-bottom: 2px solid #fff;
+    padding-top: 2px;
+
+    &:hover {
+      border-bottom: 2px solid #219653;
+    }
   }
 }
 
@@ -110,8 +126,8 @@
   }
 }
 
-.in-the-year-2000 li,
-.social li {
+.in-the-year-2000 .flexing-like-a-douche,
+.social .flexing-like-a-douche {
   display: flex;
   align-items: flex-start;
 
@@ -120,5 +136,42 @@
   }
   .wrapper {
     flex-basis: 95%;
+  }
+}
+
+.in-the-year-2000 li,
+.social li {
+  display: block;
+  position: relative;
+  padding: 8px;
+  margin-top: -8px;
+  margin-left: -8px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+
+  &:hover {
+    background: rgba(0, 179, 229, .1);
+    cursor: pointer;
+  }
+
+  .whole-thang-is-a-target {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+.in-the-year-2000 .frames:hover {      background: rgba(059, 191, 248, .1); }
+.in-the-year-2000 .sketchcasts:hover { background: rgba(069, 116, 174, .1); }
+.social .twitter:hover {               background: rgba(097, 159, 230, .1); }
+.social .dribbble:hover {              background: rgba(176, 092, 131, .1); }
+.social .github:hover {                background: rgba(023, 021, 022, .1); }
+.social .apple-music:hover {           background: rgba(213, 110, 125, .1); }
+.social .strava:hover {                background: rgba(219, 098, 058, .1); }
+
+.dribbble {
+  img {
+    border-radius: 999px;
   }
 }
