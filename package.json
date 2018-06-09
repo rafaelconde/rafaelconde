@@ -1,0 +1,28 @@
+{
+  "name": "rafaelconde",
+  "version": "1.0.0",
+  "description": "Personal website of Rafael Conde",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server '.' --files '.' --reload-debounce 500",
+    "postcss": "postcss --config postcss.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelconde/rafaelconde.git"
+  },
+  "author": "Rafael Conde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelconde/rafaelconde/issues"
+  },
+  "homepage": "https://github.com/rafaelconde/rafaelconde#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^8.6.0",
+    "postcss-nested": "^3.0.0"
+  }
+}
