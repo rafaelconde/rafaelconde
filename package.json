@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server '.' --files '.' --reload-debounce 500",
-    "postcss": "postcss --config postcss.json"
+    "postcss": "postcss --config postcss.json",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "autoprefixer": "^8.6.0",
+    "parcel": "^1.8.1",
     "postcss-nested": "^3.0.0"
   }
 }
