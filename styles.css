@@ -90,6 +90,11 @@ a.external-link {
   cursor: text;
 }
 
+.papa-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .wave {
   display: block;
   position: absolute;

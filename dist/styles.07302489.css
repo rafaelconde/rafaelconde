@@ -6,6 +6,7 @@
   overflow-y: hidden;
   top: -200px;
   margin-bottom: -200px;
+  overflow-x: hidden;
   z-index: 1;
 }
 
@@ -788,6 +789,11 @@ a.external-link:hover {
 
 .ninja-links:hover {
   cursor: text;
+}
+
+.papa-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .wave {
