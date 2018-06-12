@@ -60,7 +60,7 @@
     &:nth-child(1) {
       top: -200px;
       left: -110px;
-      background-image: url(assets/dribbble-1.png);
+      background-image: url(assets/dribbble-1.jpg);
     }
 
     &:nth-child(2) {
@@ -78,7 +78,7 @@
     &:nth-child(4) {
       top: 160px;
       left: 290px;
-      background-image: url(assets/dribbble-netlify-logo.png);
+      background-image: url(assets/dribbble-netlify-logo.jpg);
     }
 
     &:nth-child(5) {
