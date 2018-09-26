@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: white;
+  background: #202124;
+  font-size: 17px;
+}
+
+.article p {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin: 0 auto 40px auto;
+}
+
+span.date {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .5;
+}
+
+em.aside {
+  opacity: .5;
+  transition: opacity 1s 0.2s;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+p {
+  margin: 0 auto 28px auto;
+  line-height: 28px;
+}
+
+.article,
+.header {
+  max-width: 600px;
+  margin: auto;
+}
+
+.header a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.header svg {
+  margin-right: 4px;
+}
+
+.header {
+  margin: 40px auto 64px auto;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #8f9091;
+}
+
+.header a {
+  opacity: .5;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
