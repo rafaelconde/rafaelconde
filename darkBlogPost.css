@@ -33,7 +33,17 @@ em.aside {
 
 p {
   margin: 0 auto 28px auto;
-  line-height: 28px;
+  line-height: 29px;
+}
+
+.article a {
+  color: inherit;
+  border-bottom: 2px solid #7cace4;
+  text-decoration: none;
+}
+
+a.ninja {
+  border-bottom: none;
 }
 
 hr {
@@ -48,20 +58,30 @@ hr {
   margin: auto;
 }
 
-.header a,
-.footer a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-  width: 100%;
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  opacity: 0.5;
-  transition: opacity 0.2s;
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
 
-  &:hover {
-    opacity: 1;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .pull-right {
+    text-align: right;
   }
 }
 
@@ -80,4 +100,10 @@ hr {
   margin: 104px auto 40px auto;
   padding-top: 16px;
   border-top: 1px solid #8f9091;
+}
+
+.article img {
+  width: 100%;
+  margin: 24px auto 40px;
+  border-radius: 4px;
 }
