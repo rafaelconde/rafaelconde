@@ -690,6 +690,7 @@
 
 .in-the-year-2000 .frames:hover {      background: rgba(059, 191, 248, .1); }
 .in-the-year-2000 .sketchcasts:hover { background: rgba(069, 116, 174, .1); }
+.in-the-year-2000 .talks:hover {       background: rgba(010, 158, 251, .1); }
 .social .twitter:hover {               background: rgba(097, 159, 230, .1); }
 .social .mastodon:hover {              background: rgba(040, 044, 055, .1); }
 .social .dribbble:hover {              background: rgba(176, 092, 131, .1); }

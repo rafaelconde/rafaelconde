@@ -70,6 +70,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   newRequire.modules = modules;
   newRequire.cache = cache;
   newRequire.parent = previousRequire;
+  newRequire.register = function (id, exports) {
+    modules[id] = [function (require, module) {
+      module.exports = exports;
+    }, {}];
+  };
 
   for (var i = 0; i < entry.length; i++) {
     newRequire(entry[i]);
@@ -98,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({51:[function(require,module,exports) {
+})({"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +133,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],38:[function(require,module,exports) {
+},{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,43 +164,37 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":51}],30:[function(require,module,exports) {
+},{"./bundle-url":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"hero.css":[function(require,module,exports) {
 
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":38}],31:[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"section-netlify.css":[function(require,module,exports) {
 
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"./assets/dribbble-1.jpg":47,"./assets/dribbble-splittest.gif":46,"./assets/dribbble-netlify-app.png":48,"./assets/dribbble-netlify-logo.jpg":49,"./assets/dribbble-icons.gif":50,"_css_loader":38}],32:[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./assets/dribbble-1.jpg":[["dribbble-1.adc960ab.jpg","assets/dribbble-1.jpg"],"assets/dribbble-1.jpg"],"./assets/dribbble-splittest.gif":[["dribbble-splittest.69d54e10.gif","assets/dribbble-splittest.gif"],"assets/dribbble-splittest.gif"],"./assets/dribbble-netlify-app.png":[["dribbble-netlify-app.754ad8d4.png","assets/dribbble-netlify-app.png"],"assets/dribbble-netlify-app.png"],"./assets/dribbble-netlify-logo.jpg":[["dribbble-netlify-logo.187f8d74.jpg","assets/dribbble-netlify-logo.jpg"],"assets/dribbble-netlify-logo.jpg"],"./assets/dribbble-icons.gif":[["dribbble-icons.38f41996.gif","assets/dribbble-icons.gif"],"assets/dribbble-icons.gif"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"section-breakthissafe.css":[function(require,module,exports) {
 
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":38}],33:[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"section-layout.css":[function(require,module,exports) {
 
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"./assets/layout-1.jpg":40,"./assets/layout-2.jpg":41,"./assets/layout-cover.png":39,"./assets/layout-3.jpg":44,"./assets/layout-4.jpg":42,"./assets/layout-5.jpg":43,"./assets/layout-6.jpg":45,"_css_loader":38}],34:[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./assets/layout-1.jpg":[["layout-1.31139b52.jpg","assets/layout-1.jpg"],"assets/layout-1.jpg"],"./assets/layout-2.jpg":[["layout-2.e2d16782.jpg","assets/layout-2.jpg"],"assets/layout-2.jpg"],"./assets/layout-cover.png":[["layout-cover.f4d74db9.png","assets/layout-cover.png"],"assets/layout-cover.png"],"./assets/layout-3.jpg":[["layout-3.6c33b494.jpg","assets/layout-3.jpg"],"assets/layout-3.jpg"],"./assets/layout-4.jpg":[["layout-4.ee0829fa.jpg","assets/layout-4.jpg"],"assets/layout-4.jpg"],"./assets/layout-5.jpg":[["layout-5.e784cb79.jpg","assets/layout-5.jpg"],"assets/layout-5.jpg"],"./assets/layout-6.jpg":[["layout-6.3a896eac.jpg","assets/layout-6.jpg"],"assets/layout-6.jpg"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"section-other.css":[function(require,module,exports) {
 
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":38}],3:[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles.css":[function(require,module,exports) {
 
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"./hero.css":30,"./section-netlify.css":31,"./section-breakthissafe.css":32,"./section-layout.css":33,"./section-other.css":34,"_css_loader":38}],52:[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./hero.css":"hero.css","./section-netlify.css":"section-netlify.css","./section-breakthissafe.css":"section-breakthissafe.css","./section-layout.css":"section-layout.css","./section-other.css":"section-other.css","_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -224,11 +223,13 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61869' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55501' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
     if (data.type === 'update') {
+      console.clear();
+
       data.assets.forEach(function (asset) {
         hmrApply(global.parcelRequire, asset);
       });
@@ -238,8 +239,6 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
           hmrAccept(global.parcelRequire, asset.id);
         }
       });
-      // Clear the console after HMR
-      console.clear();
     }
 
     if (data.type === 'reload') {
@@ -301,7 +300,7 @@ function getParents(bundle, id) {
     for (d in modules[k][1]) {
       dep = modules[k][1][d];
       if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(+k);
+        parents.push(k);
       }
     }
   }
@@ -365,87 +364,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],54:[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  var id = bundles[bundles.length - 1];
-
-  return Promise.all(bundles.slice(0, -1).map(loadBundle)).then(function () {
-    return require(id);
-  });
-}
-
-var bundleLoaders = {};
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-
-var bundles = {};
-function loadBundle(bundle) {
-  var id;
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.modules[id] = [function (require, module) {
-          module.exports = resolved;
-        }, {}];
-      }
-
-      return resolved;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":51}],0:[function(require,module,exports) {
-var b=require(54);b.load([["dribbble-1.adc960ab.jpg",47],["dribbble-splittest.69d54e10.gif",46],["dribbble-netlify-app.754ad8d4.png",48],["dribbble-netlify-logo.187f8d74.jpg",49],["dribbble-icons.38f41996.gif",50],["layout-1.31139b52.jpg",40],["layout-2.e2d16782.jpg",41],["layout-cover.f4d74db9.png",39],["layout-3.6c33b494.jpg",44],["layout-4.ee0829fa.jpg",42],["layout-5.e784cb79.jpg",43],["layout-6.3a896eac.jpg",45]]);
-},{}]},{},[52,0], null)
+},{}]},{},["../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
