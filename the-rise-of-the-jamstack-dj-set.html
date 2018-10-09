@@ -37,54 +37,56 @@
 
       <p><em class="aside">This is a transcript of a talk originally presented at Algolia Search Party Meetup in Paris, 2017.</em></p>
 
-      <p>The name of this talk is &quot;The Rise of the JAMstack (DJ set)&quot;, and the reason as to why this is the DJ set, is because the original &quot;Rise of the JAMstack&quot; talk is by Mathias Billmman (my boss, CEO of Netlify), he gave this talk last year at Smashing Conference in San Francisco, and I'm offering a different take of the talk, I'm presenting the Designer's Journey — same topic, but from a different point of view.</p>
+      <p>The name of this talk is &#8220;The Rise of the JAMstack (DJ set)&#8221;, and why is it a DJ set, is because the original &#8220;Rise of the JAMstack&#8221; talk is by Mathias Biilmann, he gave <a href="https://vimeo.com/163522126">this talk <em>last year</em> at Smashing Conference in San Francisco</a>, and I&#8217;m offering a different take of the talk, I&#8217;m presenting the Designer&#8217;s Journey — same topic, but from a different point of view.</p>
 
-      <p>My name is Rafael Conde, but people call me Rafa, you can call me Rafa too — I'm a designer at Netlify, and Netlify for those who don't know, is a platform to build and host your websites (I'll give you a demo later).</p>
+      <p>My name is Rafael Conde, but people call me Rafa, you can call me Rafa too — I&#8217;m a designer at <a href="https://www.netlify.com">Netlify</a>, and Netlify for those who don&#8217;t know, is a platform to build and host your websites (I&#8217;ll give you a demo later).</p>
 
       <hr />
 
       <p>The web is changing.
-      It always is, it changes very fast — what I learned about web development back in college looks very different nowadays, and there are three big trends going on nowadays:</p>
+      It always is, it changes very fast — what I learned about web development back in college looks very different nowadays, and there are three big trends going on today:</p>
 
-      <ul>
-      <li>Git all the things;</li>
-      <li>Modern JavaScript (ES6);</li>
-      <li>API economy;</li>
-      </ul>
+      <h3>Git all the things</h3>
 
-      <p>First, git is an essential component of almost everyone's workflow (no one even taught me git back in college), I wonder how many of you reading this still manually transfers your files via FTP to a remote server, as the primary way of updating your websites? For most web developers now, most of it is all automated with git playing a crucial role there.</p>
+      <p>First, Git is an essential component of almost everyone&#8217;s workflow (no one even taught me Git back in college), I wonder how many of you reading this still manually transfers your files via FTP to a remote server, as the primary way of updating your websites? For most web developers now, most of it is all automated, with Git playing a crucial role.</p>
+
+      <h3>Modern JavaScript (ES6)</h3>
 
       <p>With ES6, JavaScript has come a long way, and we are now building complex modern applications on the web.</p>
 
-      <p>Lastly, there is now a very rich API economy available to all of us, you don't have to spend a lot of time and effort building the smaller building blocks of your website and/or web apps since there are now so many good and mature APIs that you can pull from and add to your sites — APIs like Algolia if you want search on your site, if you're looking to add payments, there's Stripe and PayPal. Do you need comments on your blog? You can add Disquss. You get the point.</p>
+      <h3>API economy</h3>
+
+      <p>Lastly, there is now a very rich API economy available to all of us, you don&#8217;t have to spend a lot of time and effort building the smaller building blocks of your website and/or web apps since there are now so many good and mature APIs that you can pull from and add to your sites — APIs like <a href="https://www.algolia.com">Algolia</a> if you want search on your site, if you&#8217;re looking to add payments, there&#8217;s <a href="https://stripe.com/pt">Stripe</a>. Do you need comments on your blog? You can add <a href="https://disqus.com">Disqus</a>. You get the point.</p>
 
       <h2>The old stack</h2>
 
-      <p>The web started as a way of sharing scientific articles, between nerds at CERN — that's what it was built for, that was its purpose — a way to view documents.</p>
+      <p>The web started as a way of sharing scientific articles, between some nerds at CERN — that&#8217;s what it was built for, that was its purpose — a way to view documents.</p>
 
-      <p>CSS and JavaScript wasn't a thing.</p>
+      <p>CSS and JavaScript wasn&#8217;t a thing.</p>
 
-      <p>Earlier this year, I met ___ one of the fathers of CSS, and he was commenting on the fact that this language was written as a way to style a document, and now we are using it to build complex user interfaces for web applications. It's a miracle that it still holds up honestly.</p>
+      <img src="assets/first-website.png" alt="Screengrab of the first website ever, still live." />
 
-      <p>Actually, it's a miracle that the web actually works nowadays, since its applications are so far ahead of what it was originally intended for.</p>
+      <p>Earlier this year, I met <a href="https://en.wikipedia.org/wiki/Bert_Bos">Bert Bos</a>, one of the fathers of CSS, and he was commenting on the fact that this language was written as a way to style a document, and now we are using it to build complex user interfaces for web applications. It&#8217;s a miracle that it still holds up honestly.</p>
 
-      <p>So, back in the day the web as very simple: you had a browser, that pinged a server, that delivered a document for you.</p>
+      <p>Actually, it&#8217;s a miracle that the web actually works nowadays, since its applications are so far ahead of what it was originally intended for.</p>
 
-      <p>IMAGE</p>
+      <p>So, back in the day the web as very simple: you had a browser, that pinged a server, that delivered a document to you.</p>
 
-      <p>But of course that wasn't enough, so eventually we decided to add a program, that the server would ping, it would run and build your website, send it back to the server, which would send it back to the browser.</p>
+      <img src="assets/step1.png" alt="Simply a browser talking to a server" />
 
-      <p>IMAGE</p>
+      <p>But of course that wasn&#8217;t enough, so eventually we decided to add a program, that the server would ping, it would run and build your website, send it back to the server, which would send it back to the browser.</p>
+
+      <img src="assets/step2.png" alt="Simply a browser talking to a server… and that server talking to a program" />
 
       <p>And then we needed more, so we added databases, which became an essential part of how websites ran.</p>
 
-      <p>IMAGE</p>
+      <img src="assets/step3.png" alt="Add a database to that" />
 
       <p>Of course, all of this started to get real slow, so we just added caches everywhere.</p>
 
-      <p>IMAGE</p>
+      <img src="assets/step4.png" alt="Add cache to all steps" />
 
-      <p>And this, this is the current state of how most of the web works, and there's at least three major problems with this approach:</p>
+      <p>And this, this is the current state of how most of the web works, and there&#8217;s at least three major problems with this approach:</p>
 
       <h3>1. Security</h3>
 
@@ -92,30 +94,89 @@
 
       <h3>2. Performance</h3>
 
-      <p>Like I said before, this current approach is kinda slow, there are a lot of moving parts, and just like security, it's a pretty hard thing to manage and keep under control — here's a couple of other funny stats: 78% of people who use the web felt <em>frustration</em> because some websites were slow. Speaking of random data points, here's another: 4% of people who use the web literally threw their phones at some point because a website was slow.</p>
+      <p>Like I said before, this current approach is kinda slow, there are a lot of moving parts, and just like security, it&#8217;s a pretty hard thing to manage and keep under control — here&#8217;s a couple of other funny stats: 78% of people who use the web felt <em>frustration</em> because websites were slow. Speaking of random data points, here&#8217;s another: 4% of people who use the web literally threw their phones at some point because a website was slow.</p>
 
       <h3>3. Reliability</h3>
 
-      <p>Like I said, and you can see the theme here: there's a lot of moving parts, a lot of stuff happening. Something being reliable is very valuable and important to people, at some point WordPress.com was offering for $75 000 to build a scalable model.</p>
+      <p>Like I said, and you can see the theme here: there&#8217;s a lot of moving parts, a lot of stuff happening. Something being reliable is very valuable and important to people, at some point WordPress.com was offering for $75 000 to build a scalable model.</p>
 
-      <p>You don't want to build your website, get linked on HackerNews and your website go down — that's the worst possible moment for your website to go down, but a pretty common one.</p>
+      <p>You don&#8217;t want to build your website, get linked on HackerNews and your website go down — that&#8217;s the worst possible moment for your website to go down, but a pretty common one.</p>
 
-      <p>It's also very expensive to build a fast and reliable website using this old stack, and, on a personal note, I can't do this. As a designer and frontend developer, I don't know how to setup a server, write my own backend code, build a scalable and secure stack, manage a database — I have just no clue.</p>
+      <p>It&#8217;s also very expensive to build a fast and reliable website using this old stack, and, on a personal note, <strong>I can&#8217;t do it</strong>. As a designer and frontend developer, I don&#8217;t know how to setup a server, write my own backend code, build a scalable and secure stack, manage a database — I have just no clue.</p>
 
       <h2>The new stack</h2>
 
       <p>We at Netlify started looking at a different way of doing this, of building websites, and by how popular static site generators are getting, it seems that a lot of web developers around the world are too.</p>
 
-      <p>IMAGE</p>
+      <img src="assets/step5.png" alt="Simply a browser talking to a global CDN" />
 
       <p>Ideally, we would have our website, built as a static version, on a global CDN, and just like in the old days, the browser would ask for a site, and the server would deliver it.</p>
 
       <p>And if you need a bit more functionality, you would just plug in a bunch of those APIs we just talked about.</p>
 
-      <p>IMAGE</p>
+      <img src="assets/step6.png" alt="Add external APIs if needed" />
 
-      <p>An important part of this, and what makes this stack possible, is that we are decoupling the building and the hosting, decoupling frontend and the backend — which means that we wouldn't have to build a whole new website someone pings the server, the website is built, it's there, it's static.</p>
+      <p>An important part of this, and what makes this stack possible, is that we are decoupling the building and the hosting, decoupling frontend and the backend — which means that we wouldn&#8217;t have to build a whole new website someone pings the server, the website is built, it&#8217;s there, it&#8217;s static.</p>
 
+      <h3>Developer workflow</h3>
+
+      <p>If something is a pain in the ass to work with, even if it&#8217;s the most performant or secure, a lot of developers will stay away from it if they can. Luckily, with this JAMstack approach the developer workflow is a joy to use, and makes building these websites actually exciting and fun (fun is subjective here, I personally have a lot of fun).</p>
+
+      <p>We call this workflow, a Git-centric workflow.</p>
+
+      <p>Your code lives in a git repository, gets built by an external provider, and it&#8217;s distributed to a global CDN ready to be delivered to the client.</p>
+
+      <hr />
+
+      <p>And these are the basic principals behind the JAMstack, which by the way, stands for JavaScript, APIs, and Markup.</p>
+
+      <h2>&#8220;Static sounds fun, but I can&#8217;t do that&#8221;</h2>
+
+      <p>One of the most common things I hear from people regarding the JAMstack is something along the lines of &#8220;Static sites sound fun and all, but I can&#8217;t do that for my site, I need a server&#8221;.
+      Now, I&#8217;m not saying that they are wrong, I just challenge them to ask themselves, &#8220;but can&#8217;t I? Do I really need a server?&#8221;.</p>
+
+      <p>A good example of this is Smashing Magazine.</p>
+
+      <p>Smashing Magazine is one the most popular websites for front end web developers, and their website was built like this:</p>
+
+      <ul>
+        <li>They have a magazine, built on WordPress.</li>
+        <li>An online store, built on Shopify.</li>
+        <li>They had their own Job Board site, which was a Rails app.</li>
+        <li>And their conference site, built as a Kirby app.</li>
+      </ul>
+
+      <p>And on top of this, they were planning to add memberships to all of these.</p>
+
+      <p>In 2016, <a href="https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/">Mathias Biilmann decided to go on a little experiment</a>, and scrapped the existing Smashing Magazine&#8217;s WordPress site, push it to Netlify and deliver it as a static version. Turns out, <a href="https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/">it was up to 10 times faster</a>.</p>
+
+      <p>So <a href="https://www.smashingmagazine.com/author/vitaly-friedman/">Vitaly</a> from Smashing asked if this was something they could do — and Matt said sure!</p>
+
+      <p>We actually couldn&#8217;t at the time, with what we had — so we built several open source APIs to make all of this possible:</p>
+
+      <ul>
+        <li><a href="https://github.com/netlify/netlify-cms">Netlify CMS</a></li>
+        <li><a href="https://github.com/netlify/gotrue">GoTrue</a></li>
+        <li><a href="https://github.com/netlify/gocommerce">GoCommerce</a></li>
+        <li><a href="https://github.com/netlify/gotiator">GoTiator</a></li>
+        <li><a href="https://github.com/netlify/gotell">GoTell</a></li>
+        <li><a href="https://github.com/netlify/gojoin">GoJoin</a></li>
+      </ul>
+
+      <p>You can check all of them out <a href="https://www.netlify.com/open-source/">netlify.com/open-source</a>.</p>
+
+      <p>And turns out we made it possible, right now, <a href="https://www.smashingmagazine.com">smashingmagazine.com</a> is served as a static website.</p>
+
+      <h3>The problem is the word &#8220;static&#8221;</h3>
+
+      <p>I have a feeling that the problem is the actual word, static.
+      Static sounds boring, doesn&#8217;t sound capable nor powerful — it doesn&#8217;t sound secure and fast at all.</p>
+
+      <h2>How about that sweet workflow you mentioned?</h2>
+
+      <p>This is the most fun part of this all, and here&#8217;s a demo of how fun and powerful it can be to work as a modern web developer:</p>
+
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/irq7Lzz8ptI?rel=0&amp;showinfo=0&amp;start=795" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
       <p><a href="http://mic-drop.netlify.com/?drop" class="ninja" target="_blank">👋🎤</a></p>
     </div>

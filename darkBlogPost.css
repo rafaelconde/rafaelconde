@@ -16,6 +16,14 @@ h1 {
   margin: 0 auto 40px auto;
 }
 
+h2 {
+  margin: 104px auto 16px auto;
+}
+
+h3 {
+  margin: 64px auto 16px auto;
+}
+
 span.date {
   font-size: 14px;
   font-weight: 500;
