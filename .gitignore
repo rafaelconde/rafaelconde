@@ -12,6 +12,7 @@ Icon
 
 .sass-cache
 .codekit*
+.cache
 
 # Thumbnails
 ._*
