@@ -1,0 +1,26 @@
+{
+  "name": "rafaelconde",
+  "version": "1.0.0",
+  "description": "Personal website of Rafael Conde",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelconde/rafaelconde.git"
+  },
+  "author": "Rafael Conde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelconde/rafaelconde/issues"
+  },
+  "homepage": "https://github.com/rafaelconde/rafaelconde#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.8.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "clean-css": "^4.2.1",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.6.0"
+  }
+}
