@@ -29,6 +29,7 @@ module.exports = function(eleventyConfig) {
 
   // static passthroughs
   eleventyConfig.addPassthroughCopy("src/site/assets");
+  eleventyConfig.addPassthroughCopy("src/site/css");
   eleventyConfig.addPassthroughCopy("src/site/favicon.ico");
 
   // compress and combine js files
