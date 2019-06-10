@@ -4,7 +4,7 @@
 [build.environment]
   NODE_VERSION = "10.15.3"
 
- [[redirects]]
+[[redirects]]
   from = "/talk1"
   to = "/blog/how-being-a-developer-makes-me-a-better-designer"
   status = 301

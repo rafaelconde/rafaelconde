@@ -18,7 +18,6 @@
   "homepage": "https://github.com/rafaelconde/rafaelconde#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "html-minifier": "^4.0.0",
     "postcss": "^7.0.17",
     "postcss-import": "^12.0.1",
