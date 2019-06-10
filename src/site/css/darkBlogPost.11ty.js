@@ -2,11 +2,14 @@ const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');
 
+const fileName = "darkBlogPost.css";
+
+
 module.exports = class {
   async data () {
-    const rawFilepath = path.join(__dirname, '../_includes/postcss/darkBlogPost.css');
+    const rawFilepath = path.join(__dirname, `../_includes/postcss/${fileName}`);
     return {
-      permalink: 'css/darkBlogPost.css',
+      permalink: `css/${fileName}`,
       rawFilepath,
       rawCss: await fs.readFileSync(rawFilepath)
     };

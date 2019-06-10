@@ -2,11 +2,14 @@ const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');
 
+const fileName = "styles.css";
+
+
 module.exports = class {
   async data () {
-    const rawFilepath = path.join(__dirname, '../_includes/postcss/styles.css');
+    const rawFilepath = path.join(__dirname, `../_includes/postcss/${fileName}`);
     return {
-      permalink: 'css/styles.css',
+      permalink: `css/${fileName}`,
       rawFilepath,
       rawCss: await fs.readFileSync(rawFilepath)
     };
@@ -22,3 +25,4 @@ module.exports = class {
     .then(result => result.css);
   };
 }
+
