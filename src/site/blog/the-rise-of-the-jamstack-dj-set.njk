@@ -1,15 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Rafa: The Rise of the JAMstack (DJ set)</title>
-    <meta name="description" content="Transcript of Rafa's talk, originally presented at Algolia Search Party in Paris, titled 'The Rise of the JAMstack (DJ set)'">
-    <meta name="author" content="Rafael Conde">
-    <meta name="viewport" content="initial-scale=1.0" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="darkBlogPost.css"/>
-  </head>
-  <body>
+---
+layout: layouts/blog.njk
+title: "Rafa: The Rise of the JAMstack (DJ set)"
+description: "Transcript of Rafa's talk, originally presented at Algolia Search Party in Paris, titled 'The Rise of the JAMstack (DJ set)'"
+---
+
     <div class="header">
       <a href="index.html">
         <svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -64,7 +58,7 @@
 
       <p>CSS and JavaScript wasn&#8217;t a thing.</p>
 
-      <img src="assets/first-website.png" alt="Screengrab of the first website ever, still live." />
+      <img src="/assets/first-website.png" alt="Screengrab of the first website ever, still live." />
 
       <p>Earlier this year, I met <a href="https://en.wikipedia.org/wiki/Bert_Bos">Bert Bos</a>, one of the fathers of CSS, and he was commenting on the fact that this language was written as a way to style a document, and now we are using it to build complex user interfaces for web applications. It&#8217;s a miracle that it still holds up honestly.</p>
 
@@ -72,19 +66,19 @@
 
       <p>So, back in the day the web as very simple: you had a browser, that pinged a server, that delivered a document to you.</p>
 
-      <img src="assets/step1.png" alt="Simply a browser talking to a server" />
+      <img src="/assets/step1.png" alt="Simply a browser talking to a server" />
 
       <p>But of course that wasn&#8217;t enough, so eventually we decided to add a program, that the server would ping, it would run and build your website, send it back to the server, which would send it back to the browser.</p>
 
-      <img src="assets/step2.png" alt="Simply a browser talking to a server… and that server talking to a program" />
+      <img src="/assets/step2.png" alt="Simply a browser talking to a server… and that server talking to a program" />
 
       <p>And then we needed more, so we added databases, which became an essential part of how websites ran.</p>
 
-      <img src="assets/step3.png" alt="Add a database to that" />
+      <img src="/assets/step3.png" alt="Add a database to that" />
 
       <p>Of course, all of this started to get real slow, so we just added caches everywhere.</p>
 
-      <img src="assets/step4.png" alt="Add cache to all steps" />
+      <img src="/assets/step4.png" alt="Add cache to all steps" />
 
       <p>And this, this is the current state of how most of the web works, and there&#8217;s at least three major problems with this approach:</p>
 
@@ -108,13 +102,13 @@
 
       <p>We at Netlify started looking at a different way of doing this, of building websites, and by how popular static site generators are getting, it seems that a lot of web developers around the world are too.</p>
 
-      <img src="assets/step5.png" alt="Simply a browser talking to a global CDN" />
+      <img src="/assets/step5.png" alt="Simply a browser talking to a global CDN" />
 
       <p>Ideally, we would have our website, built as a static version, on a global CDN, and just like in the old days, the browser would ask for a site, and the server would deliver it.</p>
 
       <p>And if you need a bit more functionality, you would just plug in a bunch of those APIs we just talked about.</p>
 
-      <img src="assets/step6.png" alt="Add external APIs if needed" />
+      <img src="/assets/step6.png" alt="Add external APIs if needed" />
 
       <p>An important part of this, and what makes this stack possible, is that we are decoupling the building and the hosting, decoupling frontend and the backend — which means that we wouldn&#8217;t have to build a whole new website someone pings the server, the website is built, it&#8217;s there, it&#8217;s static.</p>
 
@@ -180,18 +174,3 @@
 
       <p><a href="http://mic-drop.netlify.com/?drop" class="ninja" target="_blank">👋🎤</a></p>
     </div>
-
-    <div class="footer">
-      <a href="index.html">
-        <svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g fill="#FFFFFF">
-                    <path d="M8.58494617,5.99388911 L0.998890097,5.99388911 C0.44721833,5.99388911 0,5.54667078 0,4.99499901 C0,4.44332725 0.44721833,3.99610892 0.998890097,3.99610892 L8.58651723,3.99610892 L6.7871067,2.19669839 C6.39701586,1.80660755 6.39701586,1.17414532 6.7871067,0.784054471 C7.17719755,0.393963623 7.80965978,0.393963623 8.19975063,0.784054471 L11.659304,4.24360779 C11.8681431,4.42669167 12,4.69544693 12,4.99499901 C12,5.30001297 11.8632909,5.5730968 11.6478039,5.75631922 L8.19975063,9.2043725 C7.80965978,9.59446335 7.17719755,9.59446335 6.7871067,9.2043725 C6.39701586,8.81428165 6.39701586,8.18181943 6.7871067,7.79172858 L8.58494617,5.99388911 Z" id="arrow" transform="translate(6.000000, 4.994213) scale(-1, 1) translate(-6.000000, -4.994213) "></path>
-                </g>
-            </g>
-        </svg>
-        Back to Rafa's website
-      </a>
-    </div>
-  </body>
-</html>

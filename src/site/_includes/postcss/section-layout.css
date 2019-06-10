@@ -70,43 +70,43 @@
     &:nth-child(1) {
       top: -160px;
       left: -60px;
-      background-image: url(assets/layout-1.jpg);
+      background-image: url(/assets/layout-1.jpg);
     }
 
     &:nth-child(2) {
       top: -160px;
       left: 200px;
-      background-image: url(assets/layout-2.jpg);
+      background-image: url(/assets/layout-2.jpg);
     }
 
     &:nth-child(3) {
       top: 70px;
       left: 70px;
-      background-image: url(assets/layout-cover.png);
+      background-image: url(/assets/layout-cover.png);
     }
 
     &:nth-child(4) {
       top: 130px;
       left: 340px;
-      background-image: url(assets/layout-3.jpg);
+      background-image: url(/assets/layout-3.jpg);
     }
 
     &:nth-child(5) {
       top: 300px;
       left: -60px;
-      background-image: url(assets/layout-4.jpg);
+      background-image: url(/assets/layout-4.jpg);
     }
 
     &:nth-child(6) {
       top: 340px;
       left: 170px;
-      background-image: url(assets/layout-5.jpg);
+      background-image: url(/assets/layout-5.jpg);
     }
 
     &:nth-child(7) {
       top: 110px;
       left: -120px;
-      background-image: url(assets/layout-6.jpg);
+      background-image: url(/assets/layout-6.jpg);
     }
   }
 }

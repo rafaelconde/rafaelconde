@@ -60,13 +60,13 @@
     &:nth-child(1) {
       top: -200px;
       left: -110px;
-      background-image: url(assets/dribbble-1.jpg);
+      background-image: url(/assets/dribbble-1.jpg);
     }
 
     &:nth-child(2) {
       top: -150px;
       left: 200px;
-      background-image: url(assets/dribbble-splittest.gif);
+      background-image: url(/assets/dribbble-splittest.gif);
     }
 
     &:nth-child(3) {

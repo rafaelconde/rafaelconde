@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
   // static passthroughs
   eleventyConfig.addPassthroughCopy("src/site/assets");
   eleventyConfig.addPassthroughCopy("src/site/favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/site/favicon.ico");
 
 
   // compress and combine js files
@@ -45,7 +46,7 @@ module.exports = function(eleventyConfig) {
       input: "src/site",
       output: "dist",
     },
-    templateFormats : ["njk", "md", "11ty.js"],
+    templateFormats : ["njk", "md", "11ty.js", "css"],
     htmlTemplateEngine : "njk",
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true

@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>{%- if title -%}{{ title }}{%- else -%}Rafa's website{%- endif -%}</title>
-    <meta name="description" content="Personal website of Rafael Conde">
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Personal website of Rafael Conde{%- endif -%}">
     <meta name="author" content="Rafael Conde">
     <meta name="viewport" content="initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/styles.css"/>
+    {% if stylesheet %}
+    <link rel="stylesheet" href="/css/{{ stylesheet }}"/>
+    {% else %}
+    <link rel="stylesheet" href="/css/styles.css"/>
+    {% endif %}
   </head>
   <body>
     {{ content | safe }}
-
-    <!-- capture the JS content as a Nunjucks variable -->
     {% set js %}{% include "js/scripts.js" %}{% endset %}
-    <!-- feed it through our jsmin filter to minify -->
     <script>{{ js | jsmin | safe }}</script>
   </body>
 </html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{%- if title -%}{{ title }}{%- else -%}Rafa's website{%- endif -%}</title>
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Personal website of Rafael Conde{%- endif -%}">
+    <meta name="author" content="Rafael Conde">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    {% if stylesheet %}
+    <link rel="stylesheet" href="/css/{{ stylesheet }}"/>
+    {% else %}
+    <link rel="stylesheet" href="/css/darkBlogPost.css"/>
+    {% endif %}
+  </head>
+  <body>
+
+    {{ content | safe }}
+
+    <div class="footer">
+      <a href="/">
+        <svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g fill="#FFFFFF">
+                    <path d="M8.58494617,5.99388911 L0.998890097,5.99388911 C0.44721833,5.99388911 0,5.54667078 0,4.99499901 C0,4.44332725 0.44721833,3.99610892 0.998890097,3.99610892 L8.58651723,3.99610892 L6.7871067,2.19669839 C6.39701586,1.80660755 6.39701586,1.17414532 6.7871067,0.784054471 C7.17719755,0.393963623 7.80965978,0.393963623 8.19975063,0.784054471 L11.659304,4.24360779 C11.8681431,4.42669167 12,4.69544693 12,4.99499901 C12,5.30001297 11.8632909,5.5730968 11.6478039,5.75631922 L8.19975063,9.2043725 C7.80965978,9.59446335 7.17719755,9.59446335 6.7871067,9.2043725 C6.39701586,8.81428165 6.39701586,8.18181943 6.7871067,7.79172858 L8.58494617,5.99388911 Z" id="arrow" transform="translate(6.000000, 4.994213) scale(-1, 1) translate(-6.000000, -4.994213) "></path>
+                </g>
+            </g>
+        </svg>
+        Back to Rafa's website
+      </a>
+    </div>
+
+  </body>
+</html>
+
