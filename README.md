@@ -5,9 +5,23 @@ This is the repo for my personal website 👋
 ## Develop locally
 If you wish to run this site locally, clone it, and run:
 
-`npm install`
-`npm start`
+```bash
+# install the dependencies
+yarn
 
-This will create a local server at `http://localhost:3000` with Browsersync and auto-refresh.
+# run the build server with live reload
+yarn start
+```
 
-(playing with Siri shortcuts)
+
+Alternatively, if you also wish to test things like the Netlify redirects which are specified in the netlify.toml file, you can use `netlify dev` to run the build.
+
+```bash
+# install netlify dev as part of the Netlify CLI
+npm install -g netlify-cli
+
+# run the build server with live reload and some Netlify sugar
+netlify dev
+```
+
+
