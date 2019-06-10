@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i");
 
+:root {
+  --background: #202124;
+  --textColor: #fff;
+  --lighterVariant: #8f9091;
+
+  @media (prefers-color-scheme: light) {
+    --background: #fff;
+    --textColor: #202124;
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: white;
-  background: #202124;
+  color: var(--textColor);
+  background: var(--background);
   font-size: 17px;
 }
 
@@ -31,7 +42,7 @@ span.date {
 }
 
 em.aside {
-  opacity: 0.5;
+  opacity: 0.6;
   transition: opacity 1s 0.2s;
 
   &:hover {
@@ -72,9 +83,15 @@ hr {
   align-items: center;
   justify-content: space-between;
 
+  #video-icon,
+  #back-arrow,
+  #footer-back-arrow {
+    fill: var(--textColor);
+  }
+
   a {
     display: block;
-    color: white;
+    color: var(--textColor);
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
@@ -101,13 +118,13 @@ hr {
 .header {
   margin: 40px auto 64px auto;
   padding-bottom: 12px;
-  border-bottom: 1px solid #8f9091;
+  border-bottom: 1px solid var(--lighterVariant);
 }
 
 .footer {
   margin: 104px auto 40px auto;
   padding-top: 16px;
-  border-top: 1px solid #8f9091;
+  border-top: 1px solid var(--lighterVariant);
 }
 
 .article img {
