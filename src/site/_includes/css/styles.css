@@ -1,16 +1,9 @@
 
-// @import 'src/site/_includes/css/hero.css';
-// @import 'src/site/_includes/css/section-netlify.css';
-// @import 'src/site/_includes/css/section-breakthissafe.css';
-// @import 'src/site/_includes/css/section-layout.css';
-// @import 'src/site/_includes/css/section-other.css';
-
-
-@import '/css/hero.css';
-@import '/css/section-netlify.css';
-@import '/css/section-breakthissafe.css';
-@import '/css/section-layout.css';
-@import '/css/section-other.css';
+@import url('hero.css');
+@import url('section-netlify.css');
+@import url('section-breakthissafe.css');
+@import url('section-layout.css');
+@import url('section-other.css');
 
 
 body {

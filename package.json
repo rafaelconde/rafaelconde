@@ -19,8 +19,11 @@
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
-    "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
+    "postcss": "^7.0.17",
+    "postcss-import": "^12.0.1",
+    "autoprefixer": "^9.6.0",
+    "precss": "^4.0.0",
     "uglify-js": "^3.6.0"
   }
 }

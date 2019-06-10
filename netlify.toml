@@ -6,10 +6,10 @@
 
  [[redirects]]
   from = "/talk1"
-  to = "/blog/how-being-a-developer-makes-me-a-better-designer.html"
+  to = "/blog/how-being-a-developer-makes-me-a-better-designer"
   status = 301
 
 [[redirects]]
   from = "/talk2"
-  to = "/blog/the-rise-of-the-jamstack-dj-set.html"
+  to = "/blog/the-rise-of-the-jamstack-dj-set"
   status = 302

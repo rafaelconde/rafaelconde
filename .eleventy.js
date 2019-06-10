@@ -1,8 +1,6 @@
-// const postcss = require("postcss");
-// const autoprefixer = require("autoprefixer");
+const UglifyJS              = require("uglify-js");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
-const CleanCSS = require("clean-css");
-const UglifyJS = require("uglify-js");
+
 
 module.exports = function(eleventyConfig) {
 
@@ -11,26 +9,10 @@ module.exports = function(eleventyConfig) {
     templateFormats: "md"
   });
 
-  // Add date format filter
-  // eleventyConfig.addFilter("dateDisplay", require("./src/site/_filters/dates.js") );
-
-  // add a filter to compile postCSS
-  // eleventyConfig.addFilter("postCSS", function(code) {
-  //   return postcss([autoprefixer]).process(code).css;
-  // });
-  eleventyConfig.addFilter("cssmin", function(code) {
-    const output = new CleanCSS({}).minify(code);
-
-    console.log(output.errors)
-
-    return output.styles;
-  });
-
-
   // static passthroughs
   eleventyConfig.addPassthroughCopy("src/site/assets");
-  eleventyConfig.addPassthroughCopy("src/site/css");
   eleventyConfig.addPassthroughCopy("src/site/favicon.ico");
+
 
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", function(code) {
@@ -41,6 +23,7 @@ module.exports = function(eleventyConfig) {
       }
       return minified.code;
   });
+
 
   // minify the html output for bonus points from the web perf pixies
   const htmlmin = require("html-minifier");
@@ -62,7 +45,7 @@ module.exports = function(eleventyConfig) {
       input: "src/site",
       output: "dist",
     },
-    templateFormats : ["njk", "md"],
+    templateFormats : ["njk", "md", "11ty.js"],
     htmlTemplateEngine : "njk",
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true

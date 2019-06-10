@@ -7,13 +7,7 @@
     <meta name="author" content="Rafael Conde">
     <meta name="viewport" content="initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    {# <link rel="stylesheet" href="styles.css"/> #}
-    <style>
-    {% set css %}
-      {% include "css/styles.css" %}
-    {% endset %}
-    {{ css | cssmin | safe }}
-    </style>
+    <link rel="stylesheet" href="/styles.css"/>
   </head>
   <body>
     {{ content | safe }}
