@@ -1,8 +1,26 @@
+const { DateTime } = require('luxon');
+
+
 module.exports = function(eleventyConfig) {
 
   // static passthroughs
   eleventyConfig.addPassthroughCopy("src/site/assets");
   eleventyConfig.addPassthroughCopy("src/site/favicon.ico");
+
+
+  // Add a friendly date filter to nunjucks.
+  // Defaults to format of LLLL d, y unless an
+  // alternate is passed as a parameter.
+  // {{ date | friendlyDate('OPTIONAL FORMAT STRING') }}
+  // List of supported tokens: https://moment.github.io/luxon/docs/manual/formatting.html#table-of-tokens
+  eleventyConfig.addFilter('friendlyDate', function(dateObj, format) {
+    var formatString = format ? format : 'LLLL d, y';
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat(formatString);
+  });
+
+
 
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", function(code) {

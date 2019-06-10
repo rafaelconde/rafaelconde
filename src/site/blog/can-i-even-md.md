@@ -1,6 +1,7 @@
 ---
 title: trying a markdown template
 tododate: "dates are hard"
+date: 2019-06-10
 ---
 
 # Do I need to add some header details to the template?
