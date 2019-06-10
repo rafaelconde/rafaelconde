@@ -12,4 +12,4 @@
 [[redirects]]
   from = "/talk2"
   to = "/blog/the-rise-of-the-jamstack-dj-set"
-  status = 302
+  status = 301
