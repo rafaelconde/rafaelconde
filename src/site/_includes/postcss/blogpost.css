@@ -19,7 +19,8 @@ body {
   font-size: 17px;
 }
 
-.article p {
+.article p,
+.article li {
   font-family: "Merriweather", serif;
 }
 
@@ -53,6 +54,10 @@ em.aside {
 p {
   margin: 0 auto 28px auto;
   line-height: 29px;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 .article a {
