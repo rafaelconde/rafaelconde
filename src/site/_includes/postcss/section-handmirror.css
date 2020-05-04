@@ -1,18 +1,16 @@
 .handmirror {
   position: relative;
   z-index: 2;
-  background: #fff;
-
-  @media (min-width: 975px) {
-    /* margin-top: -329px; */
-  }
+  background: #0b0b0c;
+  color: #fff;
+  margin-top: 64px;
   
   .wave-bottom {
     z-index: 1;
   }
 
   .tint-color {
-    color: #00ad9f;
+    color: #2dff0f;
   }
 
   .external-link:hover {
@@ -21,7 +19,7 @@
 
   .main-content-wrapper {
     align-items: center;
-    padding: 64px 0 124px 0;
+    padding: 64px 0 186px 0;
 
     @media (max-width: 975px) {
       flex-direction: column;
@@ -35,7 +33,7 @@
     }
 
     @media (max-width: 469px) {
-      min-height: 790px;
+      min-height: 860px;
       padding-bottom: 10px;
     }
   }
@@ -46,6 +44,10 @@
     left: -20px;
     transform: scale(.6, .6);
     transform-origin: top left;
+    
+    @media (max-width: 975px) {
+      top: -64px;
+    }
 
     @media (min-width: 469px) {
       transform: scale(1, 1);

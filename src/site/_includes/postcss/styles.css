@@ -107,7 +107,7 @@ a.external-link {
 }
 
 .wave-bottom {
-  bottom: 0;
+  bottom: -8px;
 }
 
 .wave-top {
