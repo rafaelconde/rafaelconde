@@ -13,6 +13,11 @@
   .external-link:hover {
     border-color: #00ad9f;
   }
+  
+  .wave-bottom {
+    z-index: 1;
+    margin-bottom: -64px;
+  }
 
   .main-content-wrapper {
     align-items: center;
@@ -23,7 +28,8 @@
       flex-direction: column;
       align-items: center;
       min-height: 900px;
-      padding-bottom: 150px;
+      margin-bottom: -40px;
+      padding-bottom: 0px;
     }
 
     @media (max-width: 780px) {
@@ -40,12 +46,17 @@
     position: relative;
     margin-top: 40px;
     left: -20px;
-    transform: scale(.6, .6);
+    top: -70px;
+    transform: scale(1, 1);
     transform-origin: top left;
+    z-index: 2;
+    
+    @media (max-width: 975px) {
+      transform: scale(.6, .6);
+    }
 
-    @media (min-width: 469px) {
-      transform: scale(1, 1);
-      top: -70px;
+    @media (max-width: 469px) {
+      margin-top: 204px;
     }
   }
 

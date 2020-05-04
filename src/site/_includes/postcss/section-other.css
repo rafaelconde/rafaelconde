@@ -4,10 +4,6 @@
   flex-direction: column;
   z-index: 1;
 
-  @media (max-width: 975px) {
-    top: 180px;
-  }
-
   p {
     margin-top: 8px;
   }
