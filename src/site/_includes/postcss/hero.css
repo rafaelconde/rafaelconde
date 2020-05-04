@@ -1,10 +1,10 @@
 .big-hero-six {
   display: flex;
   position: relative;
-  height: 800px; /* +200px for the overflow on the top rubber band */
+  height: 600px; /* +200px for the overflow on the top rubber band */
   overflow-y: hidden;
-  top: -200px;
-  margin-bottom: -200px;
+  top: 0px;
+  margin-bottom: 200px;
   overflow-x: hidden;
   color: #fff;
   z-index: 1;
