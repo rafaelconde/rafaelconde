@@ -6,6 +6,7 @@
   top: -200px;
   margin-bottom: -200px;
   overflow-x: hidden;
+  color: #fff;
   z-index: 1;
 
   p {
@@ -31,6 +32,7 @@
     height: 700px;
     width: 100vw;
     text-align: center;
+    background: #000;
   }
 
   .main-content-wrapper {
@@ -39,21 +41,10 @@
     justify-content: flex-start;
   }
 
-  .background {
-    background: #fff;
-
-    img {
-      display: none;
-      position: absolute;
-      height: 100%;
-      right: -40px;
-      }
-  }
-
   video {
     position: relative;
-    height: 110%;
-    right: -40px;
+    right: -20%;
+    z-index: 1;
   }
 }
 
@@ -75,19 +66,18 @@
 
 /* Some switcharoos on what to show on the hero, depending on the size */
 
-@media (max-width: 1112px) {
-  .big-hero-six video {
-    display: none;
-  }
-  .big-hero-six .background img {
-    display: block;
-  }
-}
-
 @media (max-width: 780px) {
-  .big-hero-six .background img {
-    display: none;
-  }
+  .big-hero-six {
+    color: #0e1e25;
+   
+    .background {
+      background: #fff;
+   }
+ }
+ 
+ .big-hero-six video {
+   display: none;
+   }
 
   .memoji {
       display: block;
@@ -101,6 +91,7 @@
 }
 
 @media (max-width: 520px) {
+  
   .big-hero-six .main-content-wrapper {
     align-items: center;
     justify-content: flex-start;
