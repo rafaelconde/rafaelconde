@@ -44,10 +44,6 @@
     left: -20px;
     transform: scale(.6, .6);
     transform-origin: top left;
-    
-    @media (max-width: 975px) {
-      top: -64px;
-    }
 
     @media (min-width: 469px) {
       transform: scale(1, 1);
