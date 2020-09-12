@@ -1,0 +1,51 @@
+.superlist {
+  position: relative;
+  z-index: 2;
+  background: #0e0e0e;
+  color: #fff;
+  
+  .wave-bottom {
+	z-index: 1;
+  }
+
+  .tint-color {
+	color: #ff5043;
+  }
+
+  .external-link:hover,
+  a:hover {
+	border-color: #ff5043;
+  }
+
+  .main-content-wrapper {
+	align-items: center;
+	padding: 64px 0 186px 0;
+
+	@media (max-width: 975px) {
+	  flex-direction: column;
+	  align-items: center;
+	  padding-bottom: 124px;
+	  
+	  .showcase {
+		  margin-top: 24px;
+	  }
+	}
+
+	@media (max-width: 469px) {
+	  min-height: 860px;
+	  padding-bottom: 10px;
+	}
+  }
+
+  .showcase {
+	position: relative;
+	
+	svg {
+		height: 264px;
+	}
+  }
+  
+  .wave path {
+	  fill: #f7fafb;
+  }
+}

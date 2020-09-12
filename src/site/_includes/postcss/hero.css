@@ -3,9 +3,7 @@
   position: absolute;
   height: 600px;
   top: 0px;
-  margin-bottom: 200px;
   overflow: hidden;
-  color: #fff;
   z-index: 1;
 
   p {
@@ -13,7 +11,6 @@
 
     &:first-of-type {
       position: relative;
-      /* bottom: -10px; */
       left: 3px;
     }
 
@@ -31,7 +28,7 @@
     height: 600px;
     width: 100vw;
     text-align: center;
-    background: #000;
+    background: #fff;
   }
 
   .main-content-wrapper {
@@ -44,6 +41,10 @@
     right: -20%;
     top: -40px;
     z-index: 1;
+  }
+  
+  .wave path {
+    fill: #0e0e0e;
   }
 }
 

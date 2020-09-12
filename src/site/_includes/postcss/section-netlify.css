@@ -3,11 +3,11 @@
   z-index: 2;
 
   @media (min-width: 975px) {
-    margin-top: -329px;
+    margin-top: -104px;
   }
 
   .tint-color {
-    color: #00ad9f;
+    color: #009387;
   }
 
   .external-link:hover {
@@ -16,7 +16,7 @@
   
   .wave-bottom {
     z-index: 1;
-    margin-bottom: -64px;
+    /* margin-bottom: -64px; */
   }
 
   .main-content-wrapper {

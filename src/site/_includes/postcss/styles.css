@@ -1,9 +1,10 @@
 
 @import url('hero.css');
+@import url('section-superlist.css');
 @import url('section-netlify.css');
-@import url('section-handmirror.css');
-@import url('section-breakthissafe.css');
-@import url('section-layout.css');
+/* @import url('section-handmirror.css'); */
+/* @import url('section-breakthissafe.css'); */
+/* @import url('section-layout.css'); */ 
 @import url('section-other.css');
 
 
@@ -104,6 +105,7 @@ a.external-link {
   z-index: 9;
   width: 100vw;
   min-width: 1400px;
+  height: auto;
 }
 
 .wave-bottom {
