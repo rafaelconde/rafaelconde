@@ -1,12 +1,18 @@
-
+@import url('normalize.css');
 @import url('hero.css');
 @import url('section-superlist.css');
 @import url('section-netlify.css');
-/* @import url('section-handmirror.css'); */
-/* @import url('section-breakthissafe.css'); */
-/* @import url('section-layout.css'); */ 
+@import url('section-handmirror.css');
+@import url('section-thwip.css');
+@import url('section-layout.css'); 
+@import url('section-breakthissafe.css');
 @import url('section-other.css');
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

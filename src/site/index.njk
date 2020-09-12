@@ -57,7 +57,9 @@ layout: layouts/base.njk
             <div class="card depth-level-3"><a href="https://dribbble.com/shots/3611833-Split-Testing-Iconography" target="_blank" class="whole-thang-is-a-target"></a></div>
           </div>
         </div>
-        <img class="wave wave-bottom" src="/assets/wave-5.png">
+        <svg class="wave wave-bottom" width="4324" height="202" viewBox="0 0 4324 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.996094 202V80.4186C0.996094 80.4186 202 -52.0911 743 24.5C1284 101.091 1884 24.5 2624 24.5C3364 24.5 4324 101.091 4324 101.091C4324 101.091 4324 202 4324 202H0.996094Z" fill="white"/>
+        </svg>
       </div>
       
       <div class="section handmirror">
@@ -81,7 +83,187 @@ layout: layouts/base.njk
             <div class="card depth-level-2"></div>
           </div>
         </div>
-        <img class="wave wave-bottom" src="/assets/wave-6.png">
+        <svg class="wave wave-bottom" width="4323" height="700" viewBox="0 0 4323 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4323 34.5566C4323 252.392 4225.5 548.808 3509.5 548.808C3135 548.808 3153.5 368.696 2564.5 393C2119.77 411.351 1139.99 506.534 733.498 548.808C327.002 591.082 0 561.739 0 561.739V700H4323C4323 700 4323 -183.279 4323 34.5566Z" fill="white"/>
+        </svg>
+      </div>
+      
+      <div class="section thwip">
+        <div class="main-content-wrapper">
+          <div class="content">
+            <h2>Thwip</h2>
+            <p>Your portable soundboard, right on your Apple Watch, for free!</p>
+            <p>I think sound effects make life 7% funnier, so I've built a soundboard for your Apple Watch with a Spider-Man Web Shooter mode — I have some ideas for the future of this app, so keep your ey… ears open.</p>
+            <a href="https://apps.apple.com/us/app/id1523810458" target="_blank" class="external-link tint-color">Download on the App Store</a>
+            <br />
+            <a href="https://thwip.app" target="_blank" class="external-link tint-color">Landing page</a>
+            
+          </div>
+          <div class="showcase">
+            <img class="annotation" src="/assets/thwip-annotation.png">
+            <div class="apple-watch-my-back">
+              <div class="viewport">
+                <span id="clock"></span>
+                <div class="thwip-screen" id="WKMainView">
+                  <div class="swiper-container" id="WKPaginationView">
+                    <div class="swiper-wrapper">
+                      <div class="page page-1 swiper-slide">
+                        <div class="button-grid">
+                          <div class="button sound-effect" onclick="playSound('audio-airhorn')">
+                            <img src="/assets/icon/airhorn.png" />
+                            <audio id="audio-airhorn" src="/assets/sounds/airhorn.m4a"/></audio>
+                            
+                          </div>
+                          <div class="button sound-effect" onclick="playSound('audio-rimshot')">
+                            <img src="/assets/icon/rimshot.png" />
+                            <audio id="audio-rimshot" src="/assets/sounds/rimshot.m4a"/></audio>
+                          </div>
+                          <div class="button sound-effect" onclick="playSound('audio-inception')">
+                            <img src="/assets/icon/inception.png" />
+                            <audio id="audio-inception" src="/assets/sounds/inception.m4a"/></audio>
+                          </div>
+                          <div class="button sound-effect" onclick="playSound('audio-tada')">
+                            <img src="/assets/icon/tada.png" />
+                            <audio id="audio-tada" src="/assets/sounds/tada.m4a"/></audio>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page page-2 swiper-slide">
+                        <div class="button-grid">
+                          <div class="button sound-effect" onclick="playSound('audio-trombone')">
+                            <img src="/assets/icon/trombone.png" />
+                            <audio id="audio-trombone" src="/assets/sounds/trombone.m4a"/></audio>
+                          </div>
+                          <div class="button sound-effect" onclick="playSound('audio-bell')">
+                            <img src="/assets/icon/bell.png" />
+                            <audio id="audio-bell" src="/assets/sounds/bell.m4a"/></audio>
+                          </div>
+                          <div class="button sound-effect" onclick="playSound('audio-crickets')">
+                            <img src="/assets/icon/crickets.png" />
+                            <audio id="audio-crickets" src="/assets/sounds/crickets.m4a"/></audio>
+                          </div>
+                          <div class="button sound-effect" onclick="playSound('audio-rangers')">
+                            <img src="/assets/icon/rangers.png" />
+                            <audio id="audio-rangers" src="/assets/sounds/rangers.m4a"/></audio>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page page-3 swiper-slide">
+                        <div class="button-grid">
+                          <div class="button sound-effect button-webshooter" onclick="playSound_Webshooter()">
+                            <img src="/assets/icon/webshooter.png" />
+                            <audio class="webshooter" src="/assets/sounds/webshooter1.m4a"/></audio>
+                            <audio class="webshooter" src="/assets/sounds/webshooter2.m4a"/></audio>
+                            <audio class="webshooter" src="/assets/sounds/webshooter3.m4a"/></audio>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page page-4 swiper-slide">
+                        <div class="WKList">
+                          <div class="WKButton">
+                            <img src="/assets/icon/volume.svg" />
+                            <span>Volume</span>
+                          </div>
+                          <div class="WKButton" onclick="presentHelp()">
+                            <img src="/assets/icon/trombone.png" />
+                            <span>Help</span>
+                          </div>
+                          <div class="WKButton" onclick="presentAbout()">
+                            <img src="/assets/icon/tada.png" />
+                            <span>About</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="thwip-screen" id="WKAboutView">
+                  <div class="navigation-bar" onclick="backToMain()">
+                    <img src="/assets/icon/back-arrow.svg" />
+                    <span>About this…</span>
+                  </div>
+                  <div class="ScrollView">
+                    <section>
+                      <img class="app-logo" src="/assets/icon/logo.png" />
+                      <h4>Thwip</h4>
+                    </section>
+                    <section>
+                      <p>Made by</p>
+                      <p>Rafa</p>
+                    </section>
+                    <section>
+                      <p>Special thanks</p>
+                      <p>
+                        Débora Ribeiro<br />
+                        Ryan McLeod<br />
+                        Kevin Clark<br />
+                        Laura Conde<br />
+                      </p>
+                    </section>
+                    <section>
+                      <p>Web sounds by</p>
+                      <p>The Blast</p>
+                    </section>
+                    <section>
+                      <p>Sound effects</p>
+                      <p>All sounds were recorded by Rafa and/or royalty free</p>
+                    </section>
+                    <section>
+                      <p>Made why</p>
+                      <p>Thought it would be fun</p>
+                    </section>
+                    <section>
+                      <p>Yeah but like, why call it 'thwip'?</p>
+                      <p>It's the sound that Spider-People's web-shooters make</p>
+                    </section>
+                    <section>
+                      <p>What? Webshooters?</p>
+                      <p>This app was originally just a one button thing and you would strap your watch to the palm of your hand and make 'Spider-People' noises</p>
+                    </section>
+                    <section>
+                      <p>No further questions</p>
+                      <p>Ok, thanks so much for downloading this app. I have exciting plans for future updates, follow <a href="https://twitter.com/rafahari" target="_blast">@rafahari</a> or <a href="https://twitter.com/thwipapp" target="_blast">@thwipapp</a> on Twitter to be on top of them ✨</p>
+                    </section>
+                  </div>
+                </div>
+                <div class="thwip-screen" id="WKHelpView">
+                  <div class="navigation-bar" onclick="backToMain()">
+                    <img src="/assets/icon/back-arrow.svg" />
+                    <span>Help</span>
+                  </div>
+                  <div class="ScrollView">
+                    <section>
+                      <p>The sound is coming from my headphones.</p>
+                      <p>Swipe from the bottom to bring up Control Center, tap the AirPlay icon and make sure 'Speaker' is selected.</p>
+                    </section>
+                    <section>
+                      <p>Why is the 'spider web' button bigger than the others? Is this a bug?</p>
+                      <p>Hey I see what you did there, but spiders aren't actually bugs. The button is bigger so that it's easier to hit if you're, let's see, using it to pretend you're one of your favorite super-heroes.
+                      </p>
+                      <img src="/assets/webshooter-example.jpg" alt="Picture of an Apple Watch strapped to the palm of your hand, making the webshooting hand pose like Spider-Man, whilst tapping on the button to make it fire up the sound effect — it's fun">
+                    </section>
+                    <section>
+                      <p>Excuse me, I demand to speak with the manager!</p>
+                      <p>Feel free to send me an email at <a href="mailto:rafahari@gmail.com?Subject=Hi%20Rafa!">rafahari@gmail.com</a> or tweet at me <a href="https://twitter.com/thwipapp" target="_blast">@rafahari</a> — be nice.</p>
+                    </section>
+                  </div>
+                </div>
+                <div class="thwip-screen" id="WKRoot">
+                </div>
+              </div>
+            </div>
+            <div class="card depth-level-2 video-card">
+              <a href="https://thwip.app" target="_blank" class="whole-thang-is-a-target">
+              <video preload muted autoplay loop src="/assets/thwip-demo.mp4">
+              </video>
+            </div>
+            <div class="card depth-level-2"><a href="#" target="_blank" class="whole-thang-is-a-target"></a></div>
+          </div>
+        </div>
+        <svg class="wave wave-bottom" width="4323" height="700" viewBox="0 0 4323 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.72978e-08 34.5567C-0.00398254 252.392 251.499 426.462 957.999 515.983C2043 640.319 1870.5 376.296 2459.5 400.6C2904.23 418.951 3183 506.534 3589.5 548.808C3996 591.082 4323 561.739 4323 561.739V700H4.72978e-08C4.72978e-08 700 0.00398264 -183.279 4.72978e-08 34.5567Z" fill="white"/>
+        </svg>
       </div>
       
       <div class="section layout">
@@ -140,7 +322,7 @@ layout: layouts/base.njk
                   </div>
                   <div class="wrapper">
                     <h4>Frames</h4>
-                    <p>an iOS utitlity app to save and mirror your Framer prototypes.</p>
+                    <p>An iOS utitlity app to save and mirror your Framer prototypes.</p>
                   </div>
                 </div>
                 <a href="http://frames.design/" target="_blank" class="whole-thang-is-a-target"></a>
@@ -152,7 +334,7 @@ layout: layouts/base.njk
                   </div>
                   <div class="wrapper">
                     <h4>SketchCasts</h4>
-                    <p>a weekly video tutorial on Sketch.</p>
+                    <p>A weekly video tutorial on Sketch.</p>
                   </div>
                 </div>
                 <a href="https://sketchcasts.net/" target="_blank" class="whole-thang-is-a-target"></a>
@@ -289,18 +471,6 @@ layout: layouts/base.njk
               </div>
               <a href="https://twitter.com/rafahari" target="_blank" class="whole-thang-is-a-target"></a>
             </li>
-            <li class="mastodon">
-              <div class="flexing-like-a-douche">
-                <div class="detail">
-                  <img src="/assets/social-mastodon.png"/>
-                </div>
-                <div class="wrapper">
-                  <h4>Mastodon</h4>
-                  <p>I'm running <a href="https://mastodon.design/" target="_blank">Mastodon.design</a> instance, and it's the promise of 2009 Design Twitter all over again ✨</p>
-                </div>
-              </div>
-              <a href="https://mastodon.design/@rafa" target="_blank" class="whole-thang-is-a-target"></a>
-            </li>
             <li class="dribbble">
               <div class="flexing-like-a-douche">
                 <div class="detail">
@@ -359,27 +529,14 @@ layout: layouts/base.njk
                 </div>
               </div>
             </li>
-            <li class="strava">
-              <div class="flexing-like-a-douche">
-                <div class="detail">
-                  <img src="/assets/social-strava.png"/>
-                </div>
-                <div class="wrapper">
-                  <h4>Strava</h4>
-                  <p>I've been really into running lately, let's kudos each other 🏃</p>
-                </div>
-              </div>
-              <a href="https://www.strava.com/athletes/29959435" target="_blank" class="whole-thang-is-a-target"></a>
-            </li>
           </ul>
         </div>
       </div>
 
       <div class="main-content-wrapper footer">
           <p>Copyleft © [what-year-is-this]</p>
-          <p>This website does not represent the skillzZ of Rafael Conde, this is his personal web standards' rebelion — <a href="https://github.com/rafaelconde/rafaelconde" target="_blank">open sourced</a>.</p>
+          <p>This website definitely does not represent the skillz of Rafael Conde, this is his personal web standards' rebelion — <a href="https://github.com/rafaelconde/rafaelconde" target="_blank">open sourced</a>.</p>
           <p>Not currently looking for a job, but here's <a target="_blank" href="/assets/Résumé.pdf">my résumé</a> if you're into that.</p>
-          <p>I'm also working on a <a target="_blank" class="ninja-links" href="/assets/thwip-demo.mp4">new little thing</a></p>
       </div>
     </div>
     <img src="/assets/not-how-this-works.png" id="easterNope" class="easter not-how-this-works" />

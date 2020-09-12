@@ -7,6 +7,10 @@
   
   .wave-bottom {
     z-index: 1;
+    
+    path {
+      fill: #f0d8fd;
+    }
   }
 
   .tint-color {

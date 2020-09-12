@@ -3,7 +3,7 @@
   z-index: 2;
 
   @media (min-width: 975px) {
-    margin-top: -104px;
+    margin: -104px 0 -40px;
   }
 
   .tint-color {
@@ -16,12 +16,15 @@
   
   .wave-bottom {
     z-index: 1;
-    /* margin-bottom: -64px; */
+    margin-bottom: -64px;
+    
+    path {
+      fill: #0b0b0c;
+    }
   }
 
   .main-content-wrapper {
     align-items: center;
-    padding-bottom: 30px;
     min-height: 730px;
 
     @media (max-width: 975px) {
