@@ -16,17 +16,15 @@
   }
 
   .wave-top {
-    top: -100px;
+    top: -8px;
+    
+    path {
+      fill: #f7fafb;
+    }
   }
 
   .wave-bottom {
     bottom: -8px;
-  }
-
-  @media (max-width: 1800px) {
-    .wave-top {
-      top: -75px;
-    }
   }
 
   .main-content-wrapper {

@@ -64,6 +64,7 @@
 
   .tick {
     display: block;
+    box-sizing: content-box;
     height: 18px;
     width: 18px;
     border: 2px solid #0E1E25;
