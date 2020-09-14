@@ -8,25 +8,6 @@
     margin-top: 8px;
   }
 
-  .wave-top{
-    top: -200px;
-
-     @media (min-width: 1450px) {
-      top: -229px;
-    }
-    @media (min-width: 1850px) {
-      top: -280px;
-    }
-    
-    @media (min-width: 2010px) {
-      top: -325px;
-    }
-    
-    @media (min-width: 2360px) {
-      top: -360px;
-    }
-  }
-
   .main-content-wrapper {
     align-items: center;
     padding-bottom: 30px;
