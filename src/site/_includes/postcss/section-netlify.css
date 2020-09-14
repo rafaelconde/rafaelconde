@@ -1,6 +1,6 @@
 .netlify {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 
   @media (min-width: 975px) {
     margin: -104px 0 -40px;
@@ -55,7 +55,7 @@
     z-index: 2;
     
     @media (max-width: 975px) {
-      transform: scale(.6, .6);
+      transform: scale(.8);
     }
 
     @media (max-width: 469px) {

@@ -3,8 +3,9 @@
   position: absolute;
   height: 600px;
   top: 0px;
-  overflow: hidden;
+  background: white;
   z-index: 1;
+  margin-bottom: 64px;
 
   p {
     margin: 0;
@@ -25,27 +26,48 @@
   }
 
   .background {
-    height: 600px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    text-align: center;
+    max-width: 1440px;
+    margin: auto;
     background: #fff;
+    bottom: -164px;
+    z-index: 2;
+    overflow: hidden;
   }
 
   .main-content-wrapper {
     align-items: center;
     justify-content: flex-start;
+    z-index: 3;
   }
 
   video {
     position: relative;
-    right: -20%;
-    top: -40px;
     z-index: 1;
+    width: 101%;
+    left: 0;
+    right: 0;
   }
   
-  .wave path {
-    fill: #0e0e0e;
-  }
+  .custom-wave {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    /* top: 514px; */
+    top: 445px;
+    width: 100vw;
+    height: 400px;
+    background: #0e0e0e;
+    
+    path,
+    rect {
+      fill: #0e0e0e;
+      }
+    }
 }
 
 .memoji {
@@ -73,14 +95,16 @@
     .background {
       background: #fff;
    }
- }
- 
- .big-hero-six video {
-   display: none;
+   
+   .custom-wave {
+     display: none;
    }
+ }
+}
 
-  .memoji {
-      display: block;
+@media (max-width: 900px) {
+  .big-hero-six .background {
+    bottom: -64px;
   }
 }
 
@@ -98,13 +122,8 @@
     font-size: 16px;
   }
 
-  .memoji {
-    height: 44px;
-    margin-right: 10px;
-  }
-
   .big-hero-six h1 {
     font-size: 42px;
-    margin:4px 0 4px 0;
+    margin: 4px 0 4px 0;
   }
 }

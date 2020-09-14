@@ -30,13 +30,9 @@
 	@media (max-width: 975px) {
 	  flex-direction: column;
 	  align-items: center;
-	  min-height: 900px;
+	  min-height: 0;
 	  margin-top: 64px;
 	  margin-bottom: 104px;
-	}
-
-	@media (max-width: 780px) {
-	  align-items: flex-start;
 	}
 
 	@media (max-width: 469px) {
@@ -47,6 +43,10 @@
 
   .showcase {
 	position: relative;
+	
+	@media (max-width: 975px) {
+		
+	}
 	
 	.video-card {
 		position: absolute;
@@ -70,6 +70,10 @@
 		width: 200px;
 		left: -164px;
 		z-index: 999;
+		
+		@media (max-width: 577px) {
+			left: -64px;	
+		}
 	}
   }
   

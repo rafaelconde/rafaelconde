@@ -19,7 +19,7 @@
 
   .main-content-wrapper {
 	align-items: center;
-	padding: 64px 0 186px 0;
+	padding: 0 0 186px 0;
 
 	@media (max-width: 975px) {
 	  flex-direction: column;
@@ -32,7 +32,7 @@
 	}
 
 	@media (max-width: 469px) {
-	  min-height: 860px;
+	  /* min-height: 860px; */
 	  padding-bottom: 10px;
 	}
   }

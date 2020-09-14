@@ -1,6 +1,6 @@
 .handmirror {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   background: #0b0b0c;
   color: #fff;
   margin-top: 64px;
@@ -48,8 +48,14 @@
     left: -20px;
     transform: scale(.6, .6);
     transform-origin: top left;
+    top: 24px;
+    
+    @media (min-width: 475px) {
+      transform: scale(.8);
+      top: 64px;
+    }
 
-    @media (min-width: 469px) {
+    @media (min-width: 975px) {
       transform: scale(1, 1);
       top: -70px;
     }
