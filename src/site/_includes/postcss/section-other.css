@@ -9,12 +9,21 @@
   }
 
   .wave-top{
-    top: -272px;
+    top: -200px;
 
-    @media (max-width: 2000px) {
-      top: -222px;
-    } @media (max-width: 1450px) {
-      top: -180px;
+     @media (min-width: 1450px) {
+      top: -229px;
+    }
+    @media (min-width: 1850px) {
+      top: -280px;
+    }
+    
+    @media (min-width: 2010px) {
+      top: -325px;
+    }
+    
+    @media (min-width: 2360px) {
+      top: -360px;
     }
   }
 
