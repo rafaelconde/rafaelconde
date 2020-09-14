@@ -49,8 +49,7 @@
     position: relative;
     z-index: 1;
     width: 101%;
-    left: 0;
-    right: 0;
+    flex: none;
   }
   
   .custom-wave {
