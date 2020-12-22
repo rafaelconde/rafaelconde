@@ -1,0 +1,102 @@
+---
+title: "Rafa: How to Feed Your Cat with Siri"
+description: "How-to Guide on how to add the Petkit Pet Feeder to Home, Homebridge, and Siri Shortcuts"
+date: 2020-12-22
+---
+
+
+<h1>How to Feed Your Cat with Siri</h1>
+
+<p>I while ago I tweeted a video of me using Siri to feed my cat</p>
+
+<p>
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Got a new pet feeder and “hacked” it to make it work with Siri/HomeKit. <br><br>The cat was not impressed, but whatever, Siri can feed her now. <a href="https://t.co/e42FA89vVW">pic.twitter.com/e42FA89vVW</a></p>&mdash; Rafa (@rafahari) <a href="https://twitter.com/rafahari/status/1258037604529967104?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+
+<p>Since then several people have asked me how did I make that work, and through the mystical power of procrastination I am now writing a simple how-to guide, 6 months later.</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<p>This is extremely hacky — everytime you log in to the Petkit app in a different device this breaks, but it made for a cool tweet and it&#39;s fun. </p>
+
+<h2 id="what-we-ll-need">What we&#39;ll need</h2>
+
+<p>If you have an Apple Silicon based Mac, then that&#39;s the only device we&#39;ll need, otherwise we need an iOS device to run the Petkit app… oh yeah and we need the Petkit feeder and app. I should&#39;ve start there.</p>
+
+<img src="/assets/petfeeder/mac-gallery.png" alt="Screenshot of a Mac running Charles, Terminal, Paw, Petkit, and Home." />
+
+<img src="/assets/petfeeder/mac-app-store.png" alt="Screenshot of petkit in the Mac App Store on Apple Silicon Macs" />
+
+<p>I&#39;ve only tested this with the <a href="https://petkit.co.uk/product/petkit-element-mini-auto-feeder/">Petkit Element Mini</a>, but I see no reason why it wouldn&#39;t work with the other Petkit devices.</p>
+
+<p>There&#39;s two parts to this:</p>
+
+<ol>
+    <li>Find the right API call by &quot;listening&quot; to our network requests</li>
+    <li>Add a way to make those calls through Siri or the Home app</li>
+</ol>
+
+<h2 id="finding-the-right-api-call">Finding the right API call</h2>
+
+<p>First thing we need to do is find the right API call. We&#39;re going to do this by &quot;listening&quot; to our network requests, trigger a manual feeding with the Petkit app, and finding the right booger.</p>
+
+<p>To listen to the network requests I use an app called Charles, which is available for both <a href="https://www.charlesproxy.com">macOS</a> and <a href="https://apps.apple.com/us/app/charles-proxy/id1134218562">iOS</a>.</p>
+
+<p>Let&#39;s start by opening the Petkit app, make sure you&#39;re logged in and everything is already set up and proceed to the screen that would trigger a new feeding… AND STOP, NO TOUCHING!</p>
+
+<img src="/assets/petfeeder/petkit-app.png" alt="Screenshot of an iPad running the petkit app, in the manual feeding view" />
+
+<p>Let&#39;s now open Charles, make sure the status is set to Active, tap Current Session, and let&#39;s hit the little Clear Session icon in the bottom to make it easier to find the right one.</p>
+
+<p>Alright, we can now go back to Petkit, and trigger a new manual feeding. The amount of food that you selected is going to be the amount used for our &quot;smart feedings&quot;. Did the feeder dispense food? Good. If it didn&#39;t then something&#39;s wrong and I&#39;m not qualified to help you any further, go figure that one out first.</p>
+
+<p>Cool, let&#39;s now go back to Charles, and BOOM, it should have a bunch of new items in that list… it should look something like this:</p>
+
+<img src="/assets/petfeeder/charles-api.png" alt="Screenshot of Charles with the right API call selected" />
+
+<p>Tap the one that says <code>http://api.petkt.com</code> and then look for the first one that says <code>latest/feedermini/save_dailyfeed</code> — that&#39;s the one, that&#39;s our booger! Keep that thing around, we&#39;re gonna need it very soon.</p>
+
+<h2 id="triggering-from-siri-home">Triggering from Siri/Home</h2>
+
+<p>There&#39;s now two ways we can trigger this via Siri: we can either create a Shortcut, or add it as a device to our Home app via <a href="https://homebridge.io">Homebridge</a>.</p>
+
+<h3 id="ios-shortcuts">iOS Shortcuts</h3>
+
+<p>Definitely the easiest way is to create a Shortcut — open the Shortcuts app and hit <code>+</code> to create a new Shortcut.</p>
+
+<ol>
+    <li>Start by adding a &quot;Text&quot; block, and paste the &quot;Response Body&quot; content in there.</li>
+    <img src="/assets/petfeeder/view-body.png" alt="Screenshot of Charles highlighting the body section" />
+    <li>Next add a &quot;URL&quot; block with the right URL content from the API call.</li>
+    <li>And finally, add a &quot;Get contents of URL&quot; block. Hit &quot;Show more&quot; and here you&#39;re going to add all the Request Headers… it&#39;ll take some time, but make sure you get all of these right. For the Request Body section add the Text block we just created.</li>
+    <img src="/assets/petfeeder/shortcut-final-1.png" alt="Screenshots of Shortcuts with the right configurations" />
+    <img src="/assets/petfeeder/shortcut-final-2.png" alt="Screenshots of Shortcuts with the right configurations" />
+</ol>
+
+<p>That&#39;s hit, run the Shortcut and the your feeder should dispense food!</p>
+
+<h3 id="adding-it-as-a-device-in-home-via-homebridge">Adding it as a device in Home, via Homebridge</h3>
+
+<p>If you&#39;re running <a href="https://homebridge.io">Homebridge</a>, we can add the Petkit feeder as a device using the <code>homebridge-http-switch</code> plugin.</p>
+
+<ol>
+    <li>Follow the <a href="https://github.com/Supereg/homebridge-http-switch">instructions to install and setup the plugin</a></li>
+    <li>In your <code>config.json</code> add the appropriate Request Headers</li>
+    <img src="/assets/petfeeder/config-example.png" alt="Screenshot of my config.json file" />
+    <li>Save your changes and run <code>homebridge</code></li>
+    <li>You should now see the new device in your Home app, it&#39;s a simple switch/button</li>
+    <img src="/assets/petfeeder/home-switch.png" alt="Screenshots of the Home app with the new switch" />
+    <li>Optionally, you can create a Scene that just triggers the device for an easier Siri trigger (just call the scene something like &quot;Feed the Cat&quot;).</li>
+    <img src="/assets/petfeeder/home-app.png" alt="Screenshots of the Home app with the scene and device" />
+</ol>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>If something is not working, it&#39;s very likely that you either wrote down the API call incorrectly. I like to use an app like <a href="https://paw.cloud">Paw</a> to assemble and test the API call before, to make sure I got it right. </p>
+
+<hr>
+
+<p>There you go, a convoluted and complicated way of achieving something pretty nerdy that will definitely break in a couple weeks. </p>
+
+
+
