@@ -4,10 +4,12 @@
   --background: #202124;
   --textColor: #fff;
   --lighterVariant: #8f9091;
+  --codeBG: rgba(255,255,255,0.08);
 
   @media (prefers-color-scheme: light) {
     --background: #fff;
     --textColor: #202124;
+    --codeBG: rgba(32,33,36,0.08);
   }
 }
 
@@ -36,6 +38,15 @@ h3 {
   margin: 64px auto 16px auto;
 }
 
+code {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--codeBG);
+  border-radius: 6px;
+}
+
 span.date {
   font-size: 14px;
   font-weight: 500;
@@ -51,7 +62,7 @@ em.aside {
   }
 }
 
-p {
+p, li {
   margin: 0 auto 28px auto;
   line-height: 29px;
 }
