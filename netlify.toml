@@ -18,3 +18,8 @@
   from = "/uber"
   to = "https://preview.pitch.com/app/presentation/link/33adc313-8a30-4d3f-a18a-7d331b5e2615/29abb619-77fe-4d43-a4d5-604ba6aaaa3f"
   status = 301
+  
+[[redirects]]
+  from = "/imac"
+  to = "/hello-iMac-2021-desktop-pictures.zip"
+  status = 301
