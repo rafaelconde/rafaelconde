@@ -23,3 +23,8 @@
   from = "/imac"
   to = "/assets/hello-iMac-2021-desktop-pictures.zip"
   status = 301
+  
+[[redirects]]
+  from = "/monterey"
+  to = "/assets/monterey.zip"
+  status = 301
