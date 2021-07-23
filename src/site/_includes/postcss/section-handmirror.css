@@ -86,7 +86,10 @@
     &:nth-child(3) {
       top: 0px;
       left: 40px;
-      background-image: url(/assets/hand-mirror-dribbble-1.png);
+      background-image: url(/assets/hand-mirror-app-icon.png);
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     &:nth-child(4) {
