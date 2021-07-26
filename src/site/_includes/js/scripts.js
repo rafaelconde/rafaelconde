@@ -91,3 +91,17 @@ function toggleMute(){
     document.getElementById("mute-switch-button").classList.add("mute-switch-on");
   }
 }
+
+// Dynamically change theme-color on scroll
+var theme = document.querySelector('meta[name="theme-color"]');
+var secSuperlist = document.getElementById('superlist');
+
+window.addEventListener('scroll', function() {
+  var coordSuperlist = secSuperlist.getBoundingClientRect();
+  
+  if (coordSuperlist.top < 150 && coordSuperlist.top > -430) {
+    // console.log("Superlist is up");
+    // console.log(coordSuperlist.top);
+    theme.setAttribute("content", "#0e0e0e");
+  }
+});
