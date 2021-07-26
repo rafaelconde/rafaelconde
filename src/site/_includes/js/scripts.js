@@ -93,15 +93,38 @@ function toggleMute(){
 }
 
 // Dynamically change theme-color on scroll
-var theme = document.querySelector('meta[name="theme-color"]');
-var secSuperlist = document.getElementById('superlist');
+// Incredibly janky bad code but I don't have a lot of time to experiment right now 😅
+var theme = document.querySelector('meta[name="theme-color"]'),
+secSuperlist = document.getElementById('superlist'),
+secNetlify = document.getElementById("netlify"),
+secHandMirror = document.getElementById("handmirror"),
+secThwip = document.getElementById("thwip"),
+secLayout = document.getElementById("layout"),
+secBreak = document.getElementById("breakthissafe"),
+secOther = document.getElementById("other-stuff");
 
 window.addEventListener('scroll', function() {
-  var coordSuperlist = secSuperlist.getBoundingClientRect();
+  var coordSuperlist = secSuperlist.getBoundingClientRect(),
+  coordNetlify = secNetlify.getBoundingClientRect(),
+  coordHandMirror = secHandMirror.getBoundingClientRect(),
+  coordThwip = secThwip.getBoundingClientRect(),
+  coordLayout = secLayout.getBoundingClientRect(),
+  coordBreak = secBreak.getBoundingClientRect(),
+  coordOther = secOther.getBoundingClientRect();
   
-  if (coordSuperlist.top < 150 && coordSuperlist.top > -430) {
-    // console.log("Superlist is up");
-    // console.log(coordSuperlist.top);
+  if (coordSuperlist.top < 150 && coordSuperlist.top > 0 - coordSuperlist.height) {
     theme.setAttribute("content", "#0e0e0e");
+  } else if (coordNetlify.top < 0 && coordNetlify.top > -30 - coordNetlify.height) {
+    theme.setAttribute("content", "#fff");
+  } else if (coordHandMirror.top < 200 && coordHandMirror.top > 100 - coordHandMirror.height) {
+    theme.setAttribute("content", "#000");
+  } else if (coordThwip.top < 100 && coordThwip.top > 50 - coordThwip.height) {
+    theme.setAttribute("content", "#f0d8fd");
+  } else if (coordLayout.top < 100 && coordLayout.top > -50 - coordLayout.height) {
+    theme.setAttribute("content", "#00C833");
+  } else if (coordBreak.top < 150 && coordBreak.top > 0 - coordBreak.height) {
+    theme.setAttribute("content", "#000");
+  } else {
+    theme.setAttribute("content", "#fff");
   }
 });
