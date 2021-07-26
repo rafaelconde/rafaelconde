@@ -103,6 +103,51 @@ secLayout = document.getElementById("layout"),
 secBreak = document.getElementById("breakthissafe"),
 secOther = document.getElementById("other-stuff");
 
+var hue = 0;
+var saturation = 0;
+var lightness = 100;
+ 
+function animateColor(h,s,l) {
+  
+  var delay = 10;
+  
+  if (h != hue || s != saturation || l != lightness ) {
+    if (h != hue) {
+      if (h < 180) {
+        hue--;
+      } else {
+        hue++;
+      }
+   
+      if (hue == 361) {
+        hue = 0;
+      }
+  
+    } else if (s != saturation) {
+      saturation++;
+   
+      if (saturation == 101) {
+        saturation = 0;
+      }
+    } else if (l != lightness) {
+      if (l < 50) {
+        lightness--;
+      } else {
+        lightness++;
+      }
+      if (lightness == 101) {
+        lightness = 0;
+      }
+    }
+    
+    setTimeout(function() {
+        theme.setAttribute("content", 'hsl(' + parseInt(hue) + ',' + parseInt(saturation) + '%,' + parseInt(lightness) + '%)');
+        
+        animateColor(h, s, l);
+      }, delay);
+  }
+}
+
 window.addEventListener('scroll', function() {
   var coordSuperlist = secSuperlist.getBoundingClientRect(),
   coordNetlify = secNetlify.getBoundingClientRect(),
@@ -113,18 +158,19 @@ window.addEventListener('scroll', function() {
   coordOther = secOther.getBoundingClientRect();
   
   if (coordSuperlist.top < 150 && coordSuperlist.top > 0 - coordSuperlist.height) {
-    theme.setAttribute("content", "#0e0e0e");
+    animateColor(0, 0, 5);
   } else if (coordNetlify.top < 0 && coordNetlify.top > -30 - coordNetlify.height) {
-    theme.setAttribute("content", "#fff");
+    animateColor(0, 0, 100);
   } else if (coordHandMirror.top < 200 && coordHandMirror.top > 100 - coordHandMirror.height) {
-    theme.setAttribute("content", "#0b0b0c");
+    animateColor(0, 0, 0);
   } else if (coordThwip.top < 100 && coordThwip.top > 50 - coordThwip.height) {
-    theme.setAttribute("content", "#f0d8fd");
+    animateColor(279, 90, 92);
   } else if (coordLayout.top < 100 && coordLayout.top > -50 - coordLayout.height) {
-    theme.setAttribute("content", "#00C833");
+    animateColor(135, 100, 39);
   } else if (coordBreak.top < 150 && coordBreak.top > 0 - coordBreak.height) {
-    theme.setAttribute("content", "#000");
+    animateColor(0, 0, 0);
   } else {
-    theme.setAttribute("content", "#fff");
+    animateColor(0, 0, 100);
   }
 });
+
