@@ -117,7 +117,7 @@ window.addEventListener('scroll', function() {
   } else if (coordNetlify.top < 0 && coordNetlify.top > -30 - coordNetlify.height) {
     theme.setAttribute("content", "#fff");
   } else if (coordHandMirror.top < 200 && coordHandMirror.top > 100 - coordHandMirror.height) {
-    theme.setAttribute("content", "#000");
+    theme.setAttribute("content", "#0b0b0c");
   } else if (coordThwip.top < 100 && coordThwip.top > 50 - coordThwip.height) {
     theme.setAttribute("content", "#f0d8fd");
   } else if (coordLayout.top < 100 && coordLayout.top > -50 - coordLayout.height) {
