@@ -47,8 +47,29 @@ function checkTime(i) {
 startTime()
 
 function playSound(id) {
-	var sound = document.getElementById(id);
+	var sound = document.getElementById(id),
+	toolbarColor = "rgb(184, 1, 1)";
 	sound.play();
+	
+	if (id == "audio-airhorn") {
+		toolbarColor = "rgb(184, 1, 1)"; 
+	} else if (id == "audio-rimshot") {
+		toolbarColor = "rgb(161, 0, 253)"; 
+	} else if (id == "audio-inception") {
+		toolbarColor = "rgb(0, 137, 245)"; 
+	} else if (id == "audio-tada") {
+		toolbarColor = "rgb(167, 252, 3)"; 
+	} else if (id == "audio-trombone") {
+		toolbarColor = "rgb(245, 167, 0)"; 
+	} else if (id == "audio-bell") {
+		toolbarColor = "rgb(245, 114, 0)"; 
+	} else if (id == "audio-crickets") {
+		toolbarColor = "rgb(128, 198, 0)"; 
+	} else if (id == "audio-rangers") {
+		toolbarColor = "rgb(215, 1, 187)"; 
+	}
+	
+	startColorFade(60, 4, toolbarColor, currentThemeColor);
 }
 
 function playSound_Webshooter() {
