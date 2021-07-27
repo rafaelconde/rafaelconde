@@ -1,0 +1,115 @@
+.boobyTrack {
+	font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+	position: relative;
+  z-index: 1;
+  margin-top: -56px;
+  background: #fcfcfc;
+
+  .tint-color {
+	color: #AF3B52;
+  }
+  
+  .wave-bottom {
+	z-index: 1;
+	
+	path {
+		fill: #f0d8fd;
+	}
+  }
+
+  .external-link:hover {
+	border-color: #8700f3;
+  }
+
+  .main-content-wrapper {
+	align-items: center;
+	padding-bottom: 30px;
+	min-height: 730px;
+	margin-top: -40px;
+	z-index: 2;
+
+	@media (max-width: 975px) {
+	  flex-direction: column;
+	  align-items: center;
+	  min-height: 0;
+	  margin-top: 64px;
+	  margin-bottom: 104px;
+	}
+
+	@media (max-width: 469px) {
+	  min-height: 790px;
+	  padding-bottom: 10px;
+	}
+  }
+  
+  .viewport {
+	  background-image: url(/assets/boobyTrack-screenshot.png);
+	  background-size: cover;
+  }
+
+  .showcase {
+	position: relative;
+	
+	@media (max-width: 975px) {
+		
+	}
+	
+	.apple-watch-my-back {
+		position: relative;
+		left: -164px;
+		z-index: 1;
+		transform: scale(.8, .8) rotate(-12deg);
+	}
+	
+	.video-card {
+		position: absolute;
+		width: auto;
+		height: auto;
+		overflow: hidden;
+		top: -64px;
+		right: -124px;
+		z-index: 2;
+		
+		transform: scale(.8, .8) rotate(10deg);
+		box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
+		z-index: 2;
+		
+		&:hover {
+			transform: scale(.8, .8) translateY(-16px) rotate(2deg);
+		} 
+		
+		video {
+			position: relative;
+			padding: 8px 8px 4px 8px;
+			border-radius: 16px;
+			width: 400px;
+		}
+	}
+	
+	.annotation {
+		position: absolute;
+		width: 200px;
+		left: -164px;
+		z-index: 999;
+		
+		@media (max-width: 577px) {
+			left: -64px;	
+		}
+	}
+  }
+  
+  .card {
+	  position: absolute;
+	  background-size: cover;
+	  
+	  &:nth-child(3) {
+		  top: 264px;
+		  left: -140px;
+		  height: 300px;
+		  width: 300px;
+		  border-radius: 50%;
+		  background-image: url(/assets/booby-track-app-icon.png);
+		  background-color: transparent;
+		}
+  }	
+}
