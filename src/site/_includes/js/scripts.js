@@ -93,84 +93,27 @@ function toggleMute(){
 }
 
 // Dynamically change theme-color on scroll
-// Incredibly janky bad code but I don't have a lot of time to experiment right now 😅
+// It's looking for a "data-theme-color" attribute in the HTML to define it as a section
 var theme = document.querySelector('meta[name="theme-color"]'),
-secSuperlist = document.getElementById('superlist'),
-secNetlify = document.getElementById("netlify"),
-secHandMirror = document.getElementById("handmirror"),
-secThwip = document.getElementById("thwip"),
-secLayout = document.getElementById("layout"),
-secBreak = document.getElementById("breakthissafe"),
-secOther = document.getElementById("other-stuff");
+sections = document.querySelectorAll("[data-theme-color]");
 
-var hue = 0;
-var saturation = 0;
-var lightness = 100;
- 
-function animateColor(h,s,l) {
-  
-  var delay = 10;
-  
-  if (h != hue || s != saturation || l != lightness ) {
-    if (h != hue) {
-      if (h < 180) {
-        hue--;
-      } else {
-        hue++;
-      }
-   
-      if (hue == 361) {
-        hue = 0;
-      }
-  
-    } else if (s != saturation) {
-      saturation++;
-   
-      if (saturation == 101) {
-        saturation = 0;
-      }
-    } else if (l != lightness) {
-      if (l < 50) {
-        lightness--;
-      } else {
-        lightness++;
-      }
-      if (lightness == 101) {
-        lightness = 0;
-      }
+const options = {
+  // These values make the intersecting area just the top part of the viewport
+  // I only want to change the theme-color when a section hits the top
+  // Given the unreliable nature of my stupid page layout, with the waves and such, it's not a straight forward approach and requires some manual tweaking until it "feels" right
+  threshold: 0.1,
+  rootMargin: "0px 0px -80% 0px"
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+     var color = entry.target.getAttribute('data-theme-color');
+     theme.setAttribute("content", color); 
     }
-    
-    setTimeout(function() {
-        theme.setAttribute("content", 'hsl(' + parseInt(hue) + ',' + parseInt(saturation) + '%,' + parseInt(lightness) + '%)');
-        
-        animateColor(h, s, l);
-      }, delay);
-  }
-}
+  });
+}, options);
 
-window.addEventListener('scroll', function() {
-  var coordSuperlist = secSuperlist.getBoundingClientRect(),
-  coordNetlify = secNetlify.getBoundingClientRect(),
-  coordHandMirror = secHandMirror.getBoundingClientRect(),
-  coordThwip = secThwip.getBoundingClientRect(),
-  coordLayout = secLayout.getBoundingClientRect(),
-  coordBreak = secBreak.getBoundingClientRect(),
-  coordOther = secOther.getBoundingClientRect();
-  
-  if (coordSuperlist.top < 150 && coordSuperlist.top > 0 - coordSuperlist.height) {
-    animateColor(0, 0, 5);
-  } else if (coordNetlify.top < 0 && coordNetlify.top > -30 - coordNetlify.height) {
-    animateColor(0, 0, 100);
-  } else if (coordHandMirror.top < 200 && coordHandMirror.top > 100 - coordHandMirror.height) {
-    animateColor(0, 0, 0);
-  } else if (coordThwip.top < 100 && coordThwip.top > 50 - coordThwip.height) {
-    animateColor(279, 90, 92);
-  } else if (coordLayout.top < 100 && coordLayout.top > -50 - coordLayout.height) {
-    animateColor(135, 100, 39);
-  } else if (coordBreak.top < 150 && coordBreak.top > 0 - coordBreak.height) {
-    animateColor(0, 0, 0);
-  } else {
-    animateColor(0, 0, 100);
-  }
-});
-
+sections.forEach(section => {
+  observer.observe(section);
+})
