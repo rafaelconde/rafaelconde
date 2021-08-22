@@ -1,15 +1,15 @@
 .boobyTrack {
 	font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 	position: relative;
-  z-index: 1;
-  margin-top: -56px;
-  background: #fcfcfc;
+	z-index: 1;
+	margin-top: -56px;
+	background: #fcfcfc;
 
-  .tint-color {
-	color: #AF3B52;
-  }
+	.tint-color {
+		color: #AF3B52;
+	}
   
-  .wave-bottom {
+  	.wave-bottom {
 	z-index: 1;
 	
 	path {
@@ -107,7 +107,7 @@
 		  left: -140px;
 		  height: 300px;
 		  width: 300px;
-		  border-radius: 50%;
+		  border-radius: 22%;
 		  background-image: url(/assets/booby-track-app-icon.png);
 		  background-color: transparent;
 		}
