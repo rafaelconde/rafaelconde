@@ -28,3 +28,8 @@
   from = "/monterey"
   to = "/assets/monterey.zip"
   status = 301
+  
+[[redirects]]
+  from = "/snow"
+  to = "/assets/SnowLeopard6KP3.jpg"
+  status = 301
