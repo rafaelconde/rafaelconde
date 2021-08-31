@@ -33,3 +33,8 @@
   from = "/snow"
   to = "/assets/SnowLeopard6KP3.jpg"
   status = 301
+  
+[[redirects]]
+  from = "/mountainlion"
+  to = "/assets/MountainLion6KP3.jpg"
+  status = 301
