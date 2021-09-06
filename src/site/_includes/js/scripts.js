@@ -18,7 +18,6 @@ function meetingSomeone() {
 
 meetingSomeone();
 
-
 var mySwiper = new Swiper('.swiper-container', {
 	// Optional parameters
 	direction: 'horizontal',
@@ -39,6 +38,7 @@ function startTime() {
 	h + ":" + m;
 	var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
 	if (i < 10) {i = "0" + i};	// add zero in front of numbers < 10
 	return i;
