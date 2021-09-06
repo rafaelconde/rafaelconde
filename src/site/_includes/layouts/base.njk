@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="/css/{{ stylesheet }}"/>
     {% else %}
     <link rel="stylesheet" href="/css/styles.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
     {% endif %}
   </head>
   <body>
     {{ content | safe }}
     {% set js %}{% include "js/scripts.js" %}{% endset %}
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script>{{ js | jsmin | safe }}</script>
   </body>
 </html>
