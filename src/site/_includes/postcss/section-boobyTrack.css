@@ -50,17 +50,6 @@
   .showcase {
 	position: relative;
 	
-	@media (max-width: 975px) {
-		
-	}
-	
-	.apple-watch-my-back {
-		position: relative;
-		left: -164px;
-		z-index: 1;
-		transform: scale(.8, .8) rotate(-12deg);
-	}
-	
 	.video-card {
 		position: absolute;
 		width: auto;
