@@ -86,6 +86,15 @@ a.external-link {
   }
 }
 
+.timestamp {
+  position: relative;
+  bottom: -8px;
+  font-size: 14px;
+  opacity: 0.3;
+  margin: 0 0 -8px 2px ;
+  font-weight: 500;
+}
+
 .whole-thang-is-a-target {
   display: block;
   height: 100%;

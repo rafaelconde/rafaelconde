@@ -18,6 +18,10 @@
             fill: #f7fafb;
         }
     }
+    
+    .timestamp {
+      left: 4px;
+    }
 
   .external-link {
       background: linear-gradient(to right, #CA02FF, #6704FF);
