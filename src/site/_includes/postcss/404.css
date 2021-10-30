@@ -14,7 +14,7 @@
 	}
 	
 	h1 {
-		font-family: ui-rounded;
+		font-family: ui-rounded, "SF-Pro-Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
 		font-size: 40px;
 		text-align: center;
 	}
