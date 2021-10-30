@@ -1,0 +1,60 @@
+.forohfor {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: #262527;
+	color: #fff;
+	
+	.rapper {
+		display: flex;
+		flex-grow: 1;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	h1 {
+		font-family: ui-rounded;
+		font-size: 40px;
+		text-align: center;
+	}
+	
+	.footer {
+		position: relative;
+		height: 104px;
+		background: #1F1D1F;
+		display: flex;
+		width: 100%;
+		align-items: center;
+	}
+	
+	a {
+		width: 100%;
+		text-align: center;
+		color: inherit;
+		text-decoration: none;
+		z-index: 2;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	.video-rapper {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		width: 100%;
+		height: 280px;
+		top: -199px;
+		z-index: 1;
+	}
+	
+	video {
+		position: absolute;
+	    display: block;
+	    margin: 0 auto;
+	    height: 100%;
+	}
+	
+}

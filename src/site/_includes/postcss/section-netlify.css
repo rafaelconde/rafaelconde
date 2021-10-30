@@ -16,10 +16,10 @@
   
   .wave-bottom {
     z-index: 1;
-    margin-bottom: -64px;
     
     path {
-      fill: #0b0b0c;
+      fill: #FF5043;
+      fill: color(display-p3 0.755 0.143 0.071);
     }
   }
 

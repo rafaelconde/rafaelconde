@@ -5,6 +5,7 @@
 
   .tint-color {
     color: #50C54C;
+    color: color(display-p3 0.296 0.738 0.28);
   }
   
   .wave-bottom {
@@ -13,6 +14,7 @@
 
   .external-link:hover {
     border-color: #50C54C;
+    border-color: color(display-p3 0.296 0.738 0.28);
   }
 
   .main-content-wrapper {

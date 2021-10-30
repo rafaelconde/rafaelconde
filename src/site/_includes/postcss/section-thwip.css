@@ -7,6 +7,7 @@
 
   .tint-color {
 	color: #8700f3;
+	color: color(display-p3 0.458 0.003 0.953);
   }
   
   .wave-bottom {
@@ -19,6 +20,7 @@
 
   .external-link:hover {
 	border-color: #8700f3;
+	border-color: color(display-p3 0.458 0.003 0.953);
   }
 
   .main-content-wrapper {

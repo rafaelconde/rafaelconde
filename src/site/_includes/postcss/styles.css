@@ -1,5 +1,6 @@
 @import url('normalize.css');
 @import url('hero.css');
+@import url('section-along.css');
 @import url('section-superlist.css');
 @import url('section-netlify.css');
 @import url('section-handmirror.css');
@@ -8,6 +9,7 @@
 @import url('section-layout.css'); 
 @import url('section-breakthissafe.css');
 @import url('section-other.css');
+@import url('404.css');
 
 * {
   box-sizing: border-box;
@@ -82,6 +84,15 @@ a.external-link {
   &:hover {
     border-color: rgba(0, 179, 229, 1);
   }
+}
+
+.timestamp {
+  position: relative;
+  bottom: -8px;
+  font-size: 14px;
+  opacity: 0.4;
+  margin: 0 0 -8px 2px ;
+  font-weight: 500;
 }
 
 .whole-thang-is-a-target {
