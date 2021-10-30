@@ -1,93 +1,95 @@
 .along {
-	font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-	position: relative;
-	z-index: 1;
-	margin-top: -56px;
-	background: #0d0d0d;
-	color: #fff;
+    font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    position: relative;
+    z-index: 1;
+    margin-top: -56px;
+    background: #0d0d0d;
+    color: #fff;
 
-	.tint-color {
-		color: #c503ff;
-	}
+    .tint-color {
+        color: #c503ff;
+        color: color(display-p3 0.685 0 1);
+    }
   
-  	.wave-bottom {
-		z-index: 1;
-		
-		path {
-			fill: #f7fafb;
-		}
+      .wave-bottom {
+        z-index: 1;
+        
+        path {
+            fill: #f7fafb;
+        }
     }
 
   .external-link {
-  	background: linear-gradient(to right, #CA02FF, #6704FF);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+      background: linear-gradient(to right, #CA02FF, #6704FF);
+      background: linear-gradient(to right, color(display-p3 0.685 0 1), color(display-p3 0.337 0 1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-  	&:hover {
-	  border-color: #CA02FF;
-	}
+      &:hover {
+      border-color: #CA02FF;
+    }
   }
   
   p a {
-	border-color: rgba(199, 1, 255, 0.3);  
-	  
-	  &:hover {
-		border-color: rgba(199, 1, 255, 1);
-	  }
+    border-color: rgba(199, 1, 255, 0.3);  
+      
+      &:hover {
+        border-color: rgba(199, 1, 255, 1);
+      }
   }
 
   .main-content-wrapper {
-	align-items: center;
-	padding-bottom: 30px;
-	min-height: 640px;
-	margin-top: -40px;
-	z-index: 2;
+    align-items: center;
+    padding-bottom: 30px;
+    min-height: 640px;
+    margin-top: -40px;
+    z-index: 2;
 
-	@media (max-width: 975px) {
-	  flex-direction: column;
-	  align-items: center;
-	  min-height: 720px;
-	  margin-top: 64px;
-	  margin-bottom: 140px;
-	  padding-bottom: 164px;
-	}
+    @media (max-width: 975px) {
+      flex-direction: column;
+      align-items: center;
+      min-height: 720px;
+      margin-top: 64px;
+      margin-bottom: 140px;
+      padding-bottom: 164px;
+    }
 
-	@media (max-width: 469px) {
-	  min-height: 840px;
-	  padding-bottom: 240px;
-	}
+    @media (max-width: 469px) {
+      min-height: 840px;
+      padding-bottom: 240px;
+    }
   }
 
   .showcase {
-	position: relative;
-	
-	.along-player {
-		position: absolute;
-		width: 390px;
-		height: 693px;
-		overflow: hidden;
-		top: -340px;
-		right: -124px;
-		
-		border-radius: 33px;
-		border: 4px solid #fff;
-		
-		transform: scale(.8, .8) rotate(6deg);
-		box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
-		transition: transform 0.3s ease-out;
-		z-index: 2;
-		
-		&:hover {
-			transform: scale(.8, .8) translateY(-16px) rotate(2deg);
-		} 
-		
-		@media (max-width: 975px) {
-		  right: -164px;
-		}
-		
-		@media (max-width: 469px) {
-		  right: -164px;
-		}
-	}
+    position: relative;
+    
+    .along-player {
+        position: absolute;
+        width: 390px;
+        height: 693px;
+        overflow: hidden;
+        top: -340px;
+        right: -124px;
+        
+        border-radius: 33px;
+        border: 8px solid #fff;
+        
+        transform: scale(.8, .8) rotate(6deg);
+        box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
+        transition: transform 0.3s ease-out;
+        z-index: 2;
+        
+        &:hover {
+            transform: scale(.8, .8) translateY(-16px) rotate(2deg);
+        } 
+        
+        @media (max-width: 975px) {
+          right: -164px;
+        }
+        
+        @media (max-width: 469px) {
+          right: -164px;
+        }
+    }
   }
 }

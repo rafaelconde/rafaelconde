@@ -64,7 +64,9 @@
 
   .checked .tick {
     border: 2px solid #219653;
+    border: 2px solid color(display-p3 0.056 0.567 0.169);
     background: rgba(33, 150, 83, 0.17);
+    background: color(display-p3 0.086 0.578 0.195 / 0.17);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDExIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQuMTMzMDUgNC43ODUxNUwyLjQ4MDYgMy4xMzI3QzEuOTEzMTMgMi41NjUyMiAwLjk5MzA3NiAyLjU2NTIyIDAuNDI1NjA0IDMuMTMyN0MtMC4xNDE4NjggMy43MDAxNyAtMC4xNDE4NjggNC42MjAyMiAwLjQyNTYwNCA1LjE4NzY5TDMuMDc5NzQgNy44NDE4MkMzLjQ2MjQ2IDguMjI0NTUgNC4wMDU1NiA4LjM0OTE1IDQuNDkyNzEgOC4yMTU2M0M0Ljc1MzE2IDguMTU3NzEgNS4wMDA3NiA4LjAyNzQzIDUuMjAzNDEgNy44MjQ3OUwxMC41NDc2IDIuNDgwNkMxMS4xMTUxIDEuOTEzMTMgMTEuMTE1MSAwLjk5MzA3NiAxMC41NDc2IDAuNDI1NjA0QzkuOTgwMTIgLTAuMTQxODY4IDkuMDYwMDcgLTAuMTQxODY4IDguNDkyNiAwLjQyNTYwNEw0LjEzMzA1IDQuNzg1MTVaIiBmaWxsPSIjMjE5NjUzIi8+PC9zdmc+);
     background-repeat: no-repeat;
     background-position: 4px 5px;
@@ -72,6 +74,7 @@
 
   .checked a {
     color: #219653;
+    color: color(display-p3 0.056 0.567 0.169);
   }
 
   li {
@@ -91,6 +94,7 @@
 
     &:hover {
       border-bottom: 2px solid #219653;
+      border-bottom: 2px solid color(display-p3 0.056 0.567 0.169);
     }
   }
 }

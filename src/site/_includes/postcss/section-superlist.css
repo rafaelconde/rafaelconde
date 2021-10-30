@@ -1,7 +1,8 @@
 .superlist {
   position: relative;
   z-index: 2;
-  background: #0e0e0e;
+  background: #FF5043;
+  background: color(display-p3 0.833 0.109 0.024);
   color: #fff;
   
   .wave-bottom {
@@ -9,7 +10,7 @@
   }
 
   .tint-color {
-	color: #ff5043;
+	color: #fff;
   }
 
   .external-link:hover,
@@ -19,7 +20,7 @@
 
   .main-content-wrapper {
 	align-items: center;
-	padding: 0 0 186px 0;
+	padding: 104px 0 186px 0;
 
 	@media (max-width: 975px) {
 	  flex-direction: column;
@@ -46,6 +47,6 @@
   }
   
   .wave path {
-	  fill: #f7fafb;
+	  fill: #0B0B0C;
   }
 }
