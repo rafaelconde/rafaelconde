@@ -59,8 +59,8 @@
     }
 
     @media (max-width: 469px) {
-      min-height: 840px;
-      padding-bottom: 180px;
+      min-height: 764px;
+      padding-bottom: 120px;
     }
   }
 

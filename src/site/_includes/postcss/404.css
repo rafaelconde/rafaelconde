@@ -48,6 +48,11 @@
 		height: 280px;
 		top: -199px;
 		z-index: 1;
+		
+		@media (max-width: 463px) {
+			height: 220px;	
+			top: -157px;
+		}	
 	}
 	
 	video {
@@ -56,5 +61,4 @@
 	    margin: 0 auto;
 	    height: 100%;
 	}
-	
 }

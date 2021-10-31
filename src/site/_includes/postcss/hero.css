@@ -90,6 +90,7 @@
 @media (max-width: 780px) {
   .big-hero-six {
     color: #0e1e25;
+    z-index: 2;
    
     .background {
       background: #fff;
@@ -102,6 +103,7 @@
 }
 
 @media (max-width: 900px) {
+  
   .big-hero-six .background {
     bottom: -64px;
   }
