@@ -18,6 +18,7 @@
     &:last-of-type {
       position: relative;
       left: 3px;
+      top: 4px;
 
       @media (minx-width: 520px) {
         top: 8px;
@@ -60,11 +61,11 @@
     top: 445px;
     width: 100vw;
     height: 400px;
-    background: #0e0e0e;
+    background: white;
     
     path,
     rect {
-      fill: #0e0e0e;
+      fill: white;
       }
     }
 }
@@ -76,7 +77,7 @@
 }
 
 #unecessary-part-of-name {
-  animation: 10s ease-in-out 3s fade-away;
+  animation: 10s ease-in-out 1s fade-away;
   animation-fill-mode: forwards;
 }
 

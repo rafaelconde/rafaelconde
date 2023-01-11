@@ -1,8 +1,7 @@
 .along {
     font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     position: relative;
-    z-index: 1;
-    margin-top: -56px;
+    z-index: 3;
     background: #0d0d0d;
     color: #fff;
 
@@ -22,17 +21,7 @@
     .timestamp {
       left: 4px;
     }
-
-  .external-link {
-      background: linear-gradient(to right, #CA02FF, #6704FF);
-      background: linear-gradient(to right, color(display-p3 0.685 0 1), color(display-p3 0.337 0 1));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      &:hover {
-      border-color: #CA02FF;
-    }
-  }
+  
   
   p a {
     border-color: rgba(199, 1, 255, 0.3);  
