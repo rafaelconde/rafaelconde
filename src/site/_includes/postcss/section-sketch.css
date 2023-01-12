@@ -2,8 +2,13 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     position: relative;
     z-index: 1;
+    margin-top: -4px;
     background: #FFA000;
     color: #030303;
+    
+    @media (max-width: 975px) {
+      z-index: 3;
+    }
 
     .tint-color {
         color: #FFA000;

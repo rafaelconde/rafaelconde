@@ -51,6 +51,7 @@
     z-index: 1;
     width: 101%;
     flex: none;
+    background: linear-gradient(to top, #FFA000, #FFA000 25% , #fff 25%, #fff 25%);
   }
   
   .custom-wave {

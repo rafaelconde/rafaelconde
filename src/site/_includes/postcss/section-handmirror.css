@@ -3,7 +3,10 @@
   z-index: 2;
   background: #EAE9EA;
   color: #202124;
-  /* margin-top: 64px; */
+  
+  @media (max-width: 975px) {
+    z-index: 2;
+  }
   
   .wave-bottom {
     z-index: 1;
@@ -46,13 +49,16 @@
     position: relative;
     margin-top: 40px;
     left: -20px;
-    transform: scale(.6, .6);
+    transform: scale(.8);
     transform-origin: top left;
-    top: 24px;
+    top: 100px;
+    min-height: 460px;
     
     @media (min-width: 475px) {
-      transform: scale(.8);
-      top: 64px;
+      transform: scale(0.9);
+      top: 100px;
+      left: 40px;
+      min-height: auto;
     }
 
     @media (min-width: 975px) {

@@ -4,6 +4,10 @@
     z-index: 3;
     background: #0d0d0d;
     color: #fff;
+    
+    @media (max-width: 975px) {
+      z-index: 1;
+    }
 
     .tint-color {
         color: #c503ff;
@@ -55,6 +59,10 @@
 
   .showcase {
     position: relative;
+    
+    @media (max-width: 975px) {
+      left: 80px;
+    }
     
     .video-card {
       position: absolute;
