@@ -68,7 +68,7 @@
       &:nth-child(1) {
         width: 512px;
         height: 512px;
-        top: 60px;
+        top: 84px;
         left: 100px;
         background-image: url(/assets/sketch-app-icon.png);
         background-color: transparent;
@@ -76,11 +76,16 @@
         
         &:hover {
           transform: scale(1, 1) translateY(-16px) rotate(0deg);
+          
+          @media (max-width: 975px) {
+            transform: scale(0.7, 0.7) translateY(-16px) rotate(0deg);
+          }
         }
         
         @media (max-width: 975px) {
           left: 0;
-          top: -20px;
+          top: -60px;
+          transform: scale(0.6, 0.6) translateY(-16px) rotate(10deg);
         }
       }
     }
