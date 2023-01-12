@@ -147,7 +147,7 @@ a.external-link {
   background: #fff;
   border-radius: 16px;
 
-  transition: transform .1s ease-in-out;
+  transition: transform 0.3s cubic-bezier(.83, 0, .17, 1);
 }
 
 .depth-level-1 {

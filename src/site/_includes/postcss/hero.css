@@ -57,11 +57,10 @@
     display: block;
     position: absolute;
     z-index: 1;
-    /* top: 514px; */
     top: 445px;
     width: 100vw;
     height: 400px;
-    background: white;
+    background: #FFA000;
     
     path,
     rect {
