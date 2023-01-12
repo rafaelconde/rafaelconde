@@ -18,6 +18,7 @@
     &:last-of-type {
       position: relative;
       left: 3px;
+      top: 4px;
 
       @media (minx-width: 520px) {
         top: 8px;
@@ -50,21 +51,21 @@
     z-index: 1;
     width: 101%;
     flex: none;
+    background: linear-gradient(to top, #FFA000, #FFA000 25% , #fff 25%, #fff 25%);
   }
   
   .custom-wave {
     display: block;
     position: absolute;
     z-index: 1;
-    /* top: 514px; */
     top: 445px;
     width: 100vw;
     height: 400px;
-    background: #0e0e0e;
+    background: #FFA000;
     
     path,
     rect {
-      fill: #0e0e0e;
+      fill: white;
       }
     }
 }
@@ -76,7 +77,7 @@
 }
 
 #unecessary-part-of-name {
-  animation: 10s ease-in-out 3s fade-away;
+  animation: 10s ease-in-out 1s fade-away;
   animation-fill-mode: forwards;
 }
 

@@ -1,0 +1,93 @@
+.sketch {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    position: relative;
+    z-index: 1;
+    margin-top: -4px;
+    background: #FFA000;
+    color: #030303;
+    
+    @media (max-width: 975px) {
+      z-index: 3;
+    }
+
+    .tint-color {
+        color: #FFA000;
+        color: color(display-p3 1 0.675 0.229);
+    }
+  
+      .wave-bottom {
+        z-index: 1;
+        
+        path {
+            fill: #EAE9EA;
+        }
+    }
+    
+    .timestamp {
+      left: 4px;
+    }
+
+  .external-link {
+      color: #131314;
+
+      &:hover {
+      border-color: #131314;
+    }
+  }
+
+  .main-content-wrapper {
+    align-items: center;
+    padding-bottom: 30px;
+    max-height: 300px;
+    margin-top: -80px;
+    margin-bottom: 100px;
+    z-index: 2;
+    top: -20px;
+
+    @media (max-width: 975px) {
+      flex-direction: column;
+      align-items: center;
+      min-height: 400px;
+      margin-top: 0;
+      margin-bottom: 140px;
+    }
+  }
+
+  .showcase {
+    position: relative;
+    
+    .card {
+      position: absolute;
+      background-size: cover;
+      background-color: transparent;
+      
+      &:first-of-type {
+        position: relative;
+      }
+      
+      &:nth-child(1) {
+        width: 512px;
+        height: 512px;
+        top: 84px;
+        left: 100px;
+        background-image: url(/assets/sketch-app-icon.png);
+        background-color: transparent;
+        transform: scale(0.8, 0.8) translateY(-16px) rotate(10deg);
+        
+        &:hover {
+          transform: scale(1, 1) translateY(-16px) rotate(0deg);
+          
+          @media (max-width: 975px) {
+            transform: scale(0.7, 0.7) translateY(-16px) rotate(0deg);
+          }
+        }
+        
+        @media (max-width: 975px) {
+          left: 0;
+          top: -60px;
+          transform: scale(0.6, 0.6) translateY(-16px) rotate(10deg);
+        }
+      }
+    }
+  }
+}
