@@ -16,6 +16,15 @@
     border-color: #50C54C;
     border-color: color(display-p3 0.296 0.738 0.28);
   }
+  
+  p, a {
+    border-color: rgba(80, 197, 76, 0.3);
+    
+    &:hover {
+     border-color: #50C54C;
+     border-color: color(display-p3 0.296 0.738 0.28);
+    }
+  }
 
   .main-content-wrapper {
     align-items: center;

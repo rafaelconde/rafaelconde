@@ -19,6 +19,14 @@
   .tint-color {
     color: #C60000;
   }
+  
+  p, a {
+    border-color: rgba(198, 0, 0, 0.3);
+    
+    &:hover {
+     border-color: rgba(198, 0, 0, 1); 
+    }
+  }
 
   .external-link:hover {
     border-color: #C60000;
