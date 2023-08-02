@@ -77,10 +77,23 @@
         width: 400px;
       }
       
-      &:nth-child(2) {
+      &:nth-child(1) {
         top: -80px;
-        right: 0;
-        z-index: 0;
+        right: -80px;
+        z-index: 1;
+        
+        transform: scale(1.3, 1.3) rotate(3deg);
+        box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
+        
+        &:hover {
+          transform: scale(1.4, 1.4) translateY(-16px) rotate(2deg);
+        } 
+      }
+      
+      &:nth-child(2) {
+        top: 64px;
+        right: -280px;
+        z-index: 2;
         
         transform: scale(.8, .8) rotate(-10deg);
         box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
@@ -91,11 +104,11 @@
       }
       
       &:nth-child(3) {
-        top: -280px;
-        right: -40px;
+        top: -320px;
+        right: -240px;
         z-index: 0;
         
-        transform: scale(.8, .8) rotate(4deg);
+        transform: scale(.8, .8) rotate(14deg);
         box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
         
         &:hover {
@@ -104,34 +117,27 @@
       }
     }
     
-    .along-player {
-        position: absolute;
-        width: 390px;
-        height: 693px;
-        overflow: hidden;
-        top: -340px;
-        right: -224px;
-        z-index: 1;
+    .card {
+      position: absolute;
+      background-size: cover;
+      
+      &:nth-child(4) {
+        top: -280px;
+        right: 220px;
+        z-index: 0;
+        height: 200px;
+        width: 200px;
+        border-radius: 25%;
+        background-image: url(/assets/along-app-icon.png);
+        background-color: transparent;
         
-        border-radius: 33px;
-        border: 8px solid #fff;
-        
-        transform: scale(.8, .8) rotate(6deg);
+        transform:rotate(-6deg);
         box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
-        transition: transform 0.3s cubic-bezier(.83, 0, .17, 1);
-        z-index: 2;
         
         &:hover {
-            transform: scale(.8, .8) translateY(-16px) rotate(2deg);
+          transform: translateY(-16px) rotate(2deg);
         } 
-        
-        @media (max-width: 975px) {
-          right: -164px;
-        }
-        
-        @media (max-width: 469px) {
-          right: -164px;
-        }
-    }
+      }
+    }	
   }
 }
