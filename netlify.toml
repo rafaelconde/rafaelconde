@@ -18,28 +18,33 @@
   from = "/uber"
   to = "https://preview.pitch.com/app/presentation/link/33adc313-8a30-4d3f-a18a-7d331b5e2615/29abb619-77fe-4d43-a4d5-604ba6aaaa3f"
   status = 301
-  
+
 [[redirects]]
   from = "/imac"
   to = "/assets/hello-iMac-2021-desktop-pictures.zip"
   status = 301
-  
+
 [[redirects]]
   from = "/monterey"
   to = "/assets/monterey.zip"
   status = 301
-  
+
 [[redirects]]
   from = "/snow"
   to = "/assets/SnowLeopard6KP3.jpg"
   status = 301
-  
+
 [[redirects]]
   from = "/mountainlion"
   to = "/assets/MountainLion6KP3.jpg"
   status = 301
-  
+
 [[redirects]]
   from = "/studio"
   to = "/assets/studio_wallpaper_6k_p3.jpg"
+  status = 301
+
+[[redirects]]
+  from = "/materials"
+  to = "/assets/Materials_1.0.zip"
   status = 301
