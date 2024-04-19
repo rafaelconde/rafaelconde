@@ -1,9 +1,3 @@
-[build]
-  command = "yarn run build"
-
-[build.environment]
-  NODE_VERSION = "16.13.0"
-
 [[redirects]]
   from = "/talk1"
   to = "/blog/how-being-a-developer-makes-me-a-better-designer"
