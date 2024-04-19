@@ -13,7 +13,7 @@
 	z-index: 1;
 
 	path {
-		fill: #f7fafb;
+		fill: #1C051D;
 	}
   }
 
@@ -91,4 +91,41 @@
 		  background-color: transparent;
 		}
   }
+}
+
+.apple-watch-my-back {
+	position: relative;
+	width: 265px;
+	height: 440px;
+	background-image: url("../assets/apple-watch.png");
+	background-size: 100% 100%;
+	cursor: url(../assets/cursor.svg) 20 20, pointer;
+	text-align: center;
+	font-family:
+		"SFCompactText-Medium",
+		ui-sans-serif,
+		-apple-system,
+		BlinkMacSystemFont,
+		Segoe UI,
+		Helvetica,
+		Arial,
+		sans-serif,
+		Apple Color Emoji,
+		Segoe UI Emoji;
+	z-index: 99;
+}
+
+.viewport {
+	position: absolute;
+	display: flex;
+	height: 225px;
+	width: 185px;
+	top: 107px;
+	left: 40px;
+	margin-left: 0;
+	margin-right: 0;
+	border-radius: 33px;
+	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(white, black);
+	background: black;
 }

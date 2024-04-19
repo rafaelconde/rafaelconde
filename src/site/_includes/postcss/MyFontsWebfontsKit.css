@@ -1,0 +1,31 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4175828, 2021-09-04T14:05:27-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: MyriadPro-Regular by Adobe
+ * URL: https://www.myfonts.com/fonts/adobe/myriad/regular/
+ *
+ * Webfont: MyriadPro-Semibold by Adobe
+ * URL: https://www.myfonts.com/fonts/adobe/myriad/semibold/
+ *
+ *
+ * Webfonts copyright: © 1992, 1994, 1997, 2000, 2004 Adobe Systems Incorporated. All rights reserved.
+ *
+ * © 2021 MyFonts Inc
+*/
+
+@font-face {
+  font-family: "MyriadPro-Semibold";
+  src: url('../assets/fonts/MyriadProSemibold/font.woff2') format('woff2'), url('../assets/fonts/MyriadProSemibold/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url('../assets/fonts/MyriadProRegular/font.woff2') format('woff2'), url('../assets/fonts/MyriadProRegular/font.woff') format('woff');
+}
