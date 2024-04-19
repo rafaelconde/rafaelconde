@@ -51,6 +51,7 @@
 	@media (max-width: 975px) {
 		min-height: 200px;
 		top: -70px;
+		left: 75px;
 	}
 
 	.video-card {

@@ -62,7 +62,7 @@
     }
 
     @media (max-width: 469px) {
-      min-height: 500px;
+      min-height: 600px;
       padding-bottom: 10px;
     }
   }
@@ -80,7 +80,6 @@
       transform: scale(0.9);
       top: 20px;
       left: -40px;
-      min-height: auto;
     }
 
     @media (min-width: 975px) {

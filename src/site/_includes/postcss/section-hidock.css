@@ -4,14 +4,14 @@
   background-image: linear-gradient(180deg, #D431D6 0%, #D42ED6 8%, #BE28C9 27%, #672389 80%, #581F86 94%, #571F86 100%);
   background-image: linear-gradient(180deg, color(display-p3 0.798 0.117 0.861) 0%, color(display-p3 0.765 0.123 0.824) 8%, color(display-p3 0.668 0.06 0.768) 27%, color(display-p3 0.331 0.025 0.535) 80%, color(display-p3 0.283 0.015 0.559) 94%, color(display-p3 0.246 0.01 0.498) 100%);
   color: #fff;
-  
+
   @media (max-width: 975px) {
     z-index: 1;
   }
-  
+
   .wave-bottom {
     z-index: 1;
-    
+
     path {
       fill: #0d0d0d;
     }
@@ -20,12 +20,12 @@
   .tint-color {
     color: #fff;
   }
-  
+
   p, a {
     border-color: rgba(198, 0, 0, 0.3);
-    
+
     &:hover {
-     border-color: rgba(198, 0, 0, 1); 
+     border-color: rgba(198, 0, 0, 1);
     }
   }
 
@@ -62,11 +62,11 @@
     transform-origin: top left;
     top: 100px;
     min-height: 460px;
-    
+
     @media (min-width: 475px) {
       transform: scale(0.9);
       top: 20px;
-      left: -40px;
+      left: -100px;
       min-height: auto;
     }
 
@@ -83,11 +83,11 @@
     overflow: hidden;
     background-size: cover;
     background-color: transparent;
-    
+
     &:first-of-type {
       position: relative;
     }
-  
+
     &:nth-child(1) {
       top: 120px;
       left: 100px;
@@ -97,10 +97,10 @@
       background-size: auto 100%;
       background-repeat: no-repeat;
       background-position: center;
-      
+
       transform: scale(1, 1) rotate(4deg);
       box-shadow: none;
-      
+
       &:hover {
         transform: scale(1.1, 1.1) translateY(-16px) rotate(0deg);
       }
@@ -115,7 +115,7 @@
       background-position: center;
     }
   }
-  
+
   .hero-card {
     box-shadow: none;
     transform: scale(1);
