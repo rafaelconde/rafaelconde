@@ -2,12 +2,13 @@
 @import url('hero.css');
 @import url('section-sketch.css');
 @import url('section-handmirror.css');
+@import url('section-spatialtycoffee.css');
 @import url('section-hidock.css');
 @import url('section-along.css');
 @import url('section-netlify.css');
 @import url('section-boobyTrack.css');
 @import url('section-thwip.css');
-@import url('section-layout.css'); 
+@import url('section-layout.css');
 @import url('section-breakthissafe.css');
 @import url('section-other.css');
 @import url('404.css');
@@ -148,6 +149,10 @@ a.external-link {
   background: #fff;
   border-radius: 16px;
 
+  transition: transform 0.3s cubic-bezier(.83, 0, .17, 1);
+}
+
+.not-actually-a-card {
   transition: transform 0.3s cubic-bezier(.83, 0, .17, 1);
 }
 

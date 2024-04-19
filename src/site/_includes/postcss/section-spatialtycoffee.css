@@ -1,0 +1,185 @@
+.spatialty-coffee {
+  position: relative;
+  z-index: 2;
+  background: #DEC19A;
+  color: #2D1005;
+
+  @media (max-width: 975px) {
+    z-index: 2;
+  }
+
+  .wave-bottom {
+    z-index: 1;
+
+    path {
+      fill: #D431D6;
+      fill: color(display-p3 0.798 0.117 0.861);
+    }
+  }
+
+  .tint-color {
+    color: #723118;
+  }
+
+  h2 {
+    font-family: ui-serif;
+  }
+
+  .timestamp {
+    font-family: system-ui;
+  }
+
+  p, a {
+    border-color: rgba(198, 0, 0, 0.3);
+
+    &:hover {
+     border-color: rgba(198, 0, 0, 1);
+    }
+  }
+
+  .external-link:hover {
+    border-color: #C60000;
+  }
+
+  .main-content-wrapper {
+    align-items: center;
+    padding: 64px 0 186px 0;
+
+    @media (max-width: 975px) {
+      flex-direction: column;
+      align-items: center;
+      min-height: 900px;
+      padding-bottom: 150px;
+    }
+
+    @media (max-width: 780px) {
+      align-items: flex-start;
+    }
+
+    @media (max-width: 469px) {
+      min-height: 860px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .content {
+    z-index: 2;
+    max-width: 550px;
+  }
+
+  .showcase {
+    position: relative;
+    margin-top: 40px;
+    left: -20px;
+    transform: scale(.8);
+    transform-origin: top left;
+    top: 100px;
+    min-height: 460px;
+    z-index: 1;
+
+    @media (min-width: 475px) {
+      transform: scale(0.9);
+      top: 100px;
+      left: 40px;
+      min-height: auto;
+    }
+
+    @media (min-width: 975px) {
+      transform: scale(1, 1);
+      top: 0;
+    }
+  }
+
+  .appIcon {
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 100px;
+    z-index: 9;
+
+    display: block;
+    transition: transform 200ms ease-out;
+    transform-style: preserve-3d;
+  }
+
+  .icon-back {
+    position: absolute;
+    background-image: url("../assets/spatialty-appIcon-back.png");
+    background-size: 100%;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .icon-middle {
+    position: absolute;
+    background-image: url("../assets/spatialty-appIcon-middle.png");
+    background-size: 100%;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transition: all 250ms ease-out;
+    z-index: 2;
+  }
+
+  .icon-front {
+    position: absolute;
+    background-image: url("../assets/spatialty-appIcon-front.png");
+    background-size: 100%;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transition: all 250ms ease-out;
+    z-index: 3;
+  }
+
+  .appIcon:hover .icon-back {
+      filter: drop-shadow(1px 2px 4px hsl(0deg 0% 0% / 0.42));
+  }
+
+  .appIcon:hover .icon-middle {
+    transform: translateZ(40px);
+    filter: drop-shadow(1px 2px 4px hsl(0deg 0% 0% / 0.42));
+  }
+
+  .appIcon:hover .icon-front {
+    transform: translateZ(60px);
+    filter: drop-shadow(1px 4px 8px hsl(0deg 0% 0% / 0.42));
+  }
+
+  .not-actually-a-card {
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-color: transparent;
+
+    &:first-of-type {
+      position: relative;
+    }
+
+    &:nth-child(2) {
+      height: 452px;
+      width: 330px;
+      top: -0px;
+      left: -180px;
+      z-index: 2;
+
+      background-image: url(/assets/spatialty-window-1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(3) {
+      height: 368px;
+      width: 588px;
+      top: 20px;
+      left: 64px;
+      z-index: 1;
+
+      background-image: url(/assets/spatialty-window-2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
