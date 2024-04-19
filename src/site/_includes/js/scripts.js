@@ -18,101 +18,6 @@ function meetingSomeone() {
 
 meetingSomeone();
 
-var mySwiper = new Swiper('.swiper-container', {
-	// Optional parameters
-	direction: 'horizontal',
-
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-	}
-})
-
-function startTime() {
-	var today = new Date();
-	var h = today.getHours();
-	var m = today.getMinutes();
-	m = checkTime(m);
-	h = h % 12;
-	document.getElementById('clock').innerHTML =
-	h + ":" + m;
-	var t = setTimeout(startTime, 500);
-}
-
-function checkTime(i) {
-	if (i < 10) {i = "0" + i};	// add zero in front of numbers < 10
-	return i;
-}
-
-startTime()
-
-function playSound(id) {
-	var sound = document.getElementById(id),
-	toolbarColor = "rgb(184, 1, 1)";
-	sound.play();
-	
-	if (id == "audio-airhorn") {
-		toolbarColor = "rgb(184, 1, 1)"; 
-	} else if (id == "audio-rimshot") {
-		toolbarColor = "rgb(161, 0, 253)"; 
-	} else if (id == "audio-inception") {
-		toolbarColor = "rgb(0, 137, 245)"; 
-	} else if (id == "audio-tada") {
-		toolbarColor = "rgb(167, 252, 3)"; 
-	} else if (id == "audio-trombone") {
-		toolbarColor = "rgb(245, 167, 0)"; 
-	} else if (id == "audio-bell") {
-		toolbarColor = "rgb(245, 114, 0)"; 
-	} else if (id == "audio-crickets") {
-		toolbarColor = "rgb(128, 198, 0)"; 
-	} else if (id == "audio-rangers") {
-		toolbarColor = "rgb(215, 1, 187)"; 
-	}
-	
-	startColorFade(60, 4, toolbarColor, currentThemeColor);
-}
-
-function playSound_Webshooter() {
-	var soundFiles = document.getElementsByClassName('webshooter');
-	const index = getRandomInt(soundFiles.length)
-
-	soundFiles[index].play();
-}
-
-function getRandomInt(max) {
-	return Math.floor(Math.random() * Math.floor(max));
-}
-
-function presentHelp() {
-	document.getElementById("WKMainView").style.transform = "translateX(-184px)";
-}
-
-function presentAbout() {
-	document.getElementById("WKMainView").style.transform = "translateX(-184px)";
-	document.getElementById("WKHelpView").style.zIndex = "2";
-	document.getElementById("WKAboutView").style.zIndex = "3";
-}
-
-function backToMain() {
-	document.getElementById("WKMainView").style.transform = "translateX(0px)";
-	document.getElementById("WKHelpView").style.zIndex = "3";
-	document.getElementById("WKAboutView").style.zIndex = "2";
-}
-
-var video = document.getElementById('demo-video');
-
-function toggleMute(){
-	video.muted = !video.muted;
-
-	if (video.muted) {
-		document.getElementById("mute-switch-button").classList.remove("mute-switch-on");
-		document.getElementById("mute-switch-button").classList.add("mute-switch-off");
-	} else {
-		document.getElementById("mute-switch-button").classList.remove("mute-switch-off");
-		document.getElementById("mute-switch-button").classList.add("mute-switch-on");
-	}
-}
-
 // Dynamically change theme-color on scroll
 // It's looking for a "data-theme-color" attribute in the HTML to define it as a section
 var theme = document.querySelector('meta[name="theme-color"]'),
@@ -190,27 +95,27 @@ function animateColor( duration, currentColorArray, targetColorArray, increment,
       currentThemeColor = "rgb(" + currentColorArray + ")";
     }
 	}
-	
+
   step();
 }
 
 function colorTransition(currentColorArray, targetColorArray, increment) {
-	
+
   // Checking R (from RGB)
 	if (currentColorArray[0] > targetColorArray[0]) {
     currentColorArray[0] -= increment[0];
-    
+
     if (currentColorArray[0] <= targetColorArray[0]) {
       increment[0] = 0;
 		}
 	} else {
 		currentColorArray[0] += increment[0];
-		
+
     if (currentColorArray[0] >= targetColorArray[0]) {
 			increment[0] = 0;
 		}
 	}
-	
+
   // Checking G (from RGB)
 	if (currentColorArray[1] > targetColorArray[1]) {
     currentColorArray[1] -= increment[1];
@@ -229,18 +134,18 @@ function colorTransition(currentColorArray, targetColorArray, increment) {
 	// Checking B (from RGB)
 	if (currentColorArray[2] > targetColorArray[2]) {
 		currentColorArray[2] -= increment[2];
-	
+
   	if (currentColorArray[2] <= targetColorArray[2]) {
 			increment[2] = 0;
 		}
 	} else {
 		currentColorArray[2] += increment[2];
-	
+
 		if (currentColorArray[2] >= targetColorArray[2]) {
 			increment[2] = 0;
 		}
 	}
-	
+
   // Apply the new modified color
 	theme.setAttribute("content", "rgb(" + currentColorArray + ")");
 
@@ -250,23 +155,23 @@ function getElementBG(elmBGColor) {
   var bg	= elmBGColor; // i.e: RGB(255, 0, 0)
 			bg	= bg.match(/\((.*)\)/)[1];
 			bg	= bg.split(",");
-	
+
   for (var i = 0; i < bg.length; i++) {
 		bg[i] = parseInt(bg[i], 10);
 	}
-	
+
   if (bg.length > 3) { bg.pop(); }
-	
+
   return bg; // return array
 }
 
 function calculateDistance(colorArray1, colorArray2) {
 	var distance = [];
-	
+
   for (var i = 0; i < colorArray1.length; i++) {
 		distance.push(Math.abs(colorArray1[i] - colorArray2[i]));
 	}
-	
+
   return distance;
 }
 
@@ -279,6 +184,17 @@ function calculateIncrement(distanceArray, fps, duration) {
 			increment[i]++;
 		}
 	}
-  
+
 	return increment;
 }
+
+// Mute/unmute video on hover
+const video = document.getElementById('thwip-video');
+
+video.addEventListener('mouseover', function() {
+	video.muted = false;
+});
+
+video.addEventListener('mouseout', function() {
+	video.muted = true;
+});

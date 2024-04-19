@@ -2,19 +2,20 @@
 	font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   position: relative;
   z-index: 0;
-  margin-top: -56px;
-  background: #f0d8fd;
+  margin-top: 0px;
+  background: #060606;
+  color: #fff;
 
   .tint-color {
-	color: #8700f3;
-	color: color(display-p3 0.458 0.003 0.953);
+	color: #f0d8fd;
   }
-  
+
   .wave-bottom {
 	z-index: 1;
-	
+
 	path {
-		fill: #f7fafb;
+		fill: #D431D6;
+	    fill: color(display-p3 0.798 0.117 0.861);
 	}
   }
 
@@ -46,398 +47,126 @@
 
   .showcase {
 	position: relative;
-	
+
 	@media (max-width: 975px) {
-		
+
 	}
-	
+
 	.video-card {
 		position: absolute;
 		width: auto;
 		height: auto;
 		overflow: hidden;
-		top: -50px;
-		right: -124px;
-		z-index: 2;
-		
+		top: -140px;
+		right: -184px;
+		z-index: 9;
+
 		video {
 			position: relative;
-			padding: 8px 8px 4px 8px;
 			border-radius: 16px;
 			width: 224px;
 		}
-	}
-	
-	.annotation {
-		position: absolute;
-		width: 200px;
-		left: -164px;
-		z-index: 999;
-		
-		@media (max-width: 577px) {
-			left: -64px;	
+
+		transform: scale(.8, .8) rotate(6deg);
+	    box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
+
+	    &:hover {
+			transform: scale(1, 1) translateY(-16px) rotate(0deg);
 		}
 	}
   }
-  
+
   .card {
 	  position: absolute;
+	  width: auto;
+	  height: auto;
+	  overflow: hidden;
 	  background-size: cover;
-	  
-	  &:nth-child(4) {
-		  top: 240px;
-		  left: 100px;
-		  height: 300px;
-		  width: 300px;
-		  border-radius: 50%;
-		  background-image: url(/assets/thwip-app-icon.png);
-		  background-color: transparent;
+	  background-color: transparent;
+
+	  &:nth-child(1) {
+		top: -120px;
+		left: -200px;
+		height: 256px;
+		width: 256px;
+		border-radius: 22%;
+		z-index: 99;
+
+		transform: scale(.8, .8);
+		box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
+
+		&:hover {
+		  transform: scale(1, 1) translateY(-16px);
 		}
-  }	
-}
 
-/* ============================================
-Interactive Apple Watch Demo
-============================================ */
+		background-image: url(/assets/thwip-app-icon.png);
+	  }
 
-.thwip {
-	.button {
-		display: flex;
-		align-items: center;
-		position: relative;
-		width: 100%;
-		border-radius: 15px;
-		min-height: 58px;
-		background: #2D2D2D;
-	}
-	
-	.button:before {
-		content: '';
-		position: absolute;
-		top: 0; right: 0; left: 0;
-		min-height: 54px;
-		height: calc(100% - 4px);
-		border-radius: inherit;
-		background-image: linear-gradient(#131313, #454545);
-		z-index: 1;
-	}
-	
-	.button:after {
-		content: '';
-		position: absolute;
-		top: 2px; right: 2px; left: 2px;
-		min-height: 50px;
-		height: calc(100% - 8px);
-		border-radius: 13px;
-		background-image: linear-gradient(#282728, #181718);
-		z-index: 2;
-	}
-	
-	.button a {
-		display: block;
-		position: absolute;
-		top: 0; right: 0; left: 0; bottom: 0;
-		line-height: 50px;
-		width: 100%;
-		color: white;
-		text-decoration: none;
-		z-index: 3;
-	}
-	
-	.button:hover.button:after {
-		filter: brightness(1.25);
-	}
-	
-	.button:active.button:after {
-		filter: brightness(1);
-		top: 2px; right: 2px; left: 2px;
-		height: calc(100% - 4px);
-		background-image: linear-gradient(180deg, #181718 0%, #282728 100%);
-	}
-	
-	.button:active.button:before {
-		height: 100%;
-		background-image: linear-gradient(180deg, #454545 0%, #131313 100%);
-	}
-	
-	.button:active a {
-		top: 2px;
-	}
-	
-	.subdued {
-		opacity: .5;
-	}	
-}
+	  &:nth-child(2) {
+		  top: -280px;
+		  left: -130px;
+		  height: 260px;
+		  width: 400px;
+		  z-index: 3;
 
-.apple-watch-my-back {
-	position: relative;
-	width: 265px;
-	height: 440px;
-	background-image: url("../assets/apple-watch.png");
-	background-size: 100% 100%;
-	cursor: url(../assets/cursor.svg) 20 20, pointer;
-	text-align: center;
-	font-family: 
-		"SFCompactText-Medium",
-		ui-sans-serif,
-		-apple-system,
-		BlinkMacSystemFont,
-		Segoe UI,
-		Helvetica,
-		Arial,
-		sans-serif,
-		Apple Color Emoji,
-		Segoe UI Emoji;
-	z-index: 99;
-}
+		  transform: scale(.8, .8) rotate(6deg);
+		  box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
 
-.viewport {
-	position: absolute;
-	display: flex;
-	height: 225px;
-	width: 185px;
-	top: 107px;
-	left: 40px;
-	margin-left: 0;
-	margin-right: 0;
-	border-radius: 33px;
-	overflow: hidden;
-	-webkit-mask-image: -webkit-radial-gradient(white, black);
-	background: black;
-}
+		  &:hover {
+			transform: scale(1, 1) translateY(-16px) rotate(0deg);
+		  }
 
-.thwip-screen {
-	position: absolute;
-	display: flex;
-	height: 100%;
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-}
+		  background-image: url(/assets/thwip-demo-1.jpg);
+		}
 
-.thwip-screen .content {
-	display: flex;
-	flex-direction: row;
-}
+		&:nth-child(3) {
+		  top: 120px;
+		  left: -100px;
+		  height: 260px;
+		  width: 400px;
 
-#WKRoot,
-#WKMainView,
-#WKHelpView,
-#WKAboutView { background: black; }
+		  transform: scale(.8, .8) rotate(-8deg);
+		  box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
 
-#WKRoot      		{ z-index: 1; }
-#WKAboutView 		{ z-index: 2; }
-#WKHelpView			{ z-index: 3; }
-#WKMainView  		{ z-index: 4; }
-#clock       		{ z-index: 5; }
+		  &:hover {
+			transform: scale(1, 1) translateY(-16px) rotate(0deg);
+		  }
 
-#WKMainView {
-	transition: transform 0.2s ease-in-out;
-}
+		  background-image: url(/assets/thwip-demo-2.jpg);
+		}
 
-#WKHelpView,
-#WKAboutView {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	background: black;
-}
+		&:nth-child(4) {
+		  top: -240px;
+		  left: -380px;
+		  height: 260px;
+		  width: 400px;
+		  z-index: 1;
 
-#WKAboutView h4 {
-	font-size: 38px;
-	font-family: 
-		ui-rounded,
-		"SF Pro Rounded",
-		-apple-system,
-		BlinkMacSystemFont,
-		Segoe UI,
-		Helvetica,
-		Arial,
-		sans-serif,
-		Apple Color Emoji,
-		Segoe UI Emoji;
-	font-weight: 800;
-	margin: -10px auto 25px auto;
-}
+		  transform: scale(.8, .8) rotate(4deg);
+		  box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
 
-#WKAboutView .ScrollView,
-#WKHelpView .ScrollView {
-	padding: 4px;
-}
+		  &:hover {
+			transform: scale(1, 1) translateY(-16px) rotate(0deg);
+		  }
 
-#WKAboutView .ScrollView {
-	padding-top: 50px;
-}
+		  background-image: url(/assets/thwip-demo-3.jpg);
+		}
 
-#WKHelpView .ScrollView {
-	padding-top: 65px;
-	text-align: left
-}
+		&:nth-child(5) {
+		  top: -40px;
+		  left: -380px;
+		  height: 260px;
+		  width: 400px;
+		  z-index: 1;
 
-#WKHelpView .ScrollView section,
-#WKAboutView .ScrollView section {
-	margin-bottom: 20px;
-}
+		  transform: scale(.8, .8) rotate(-16deg);
+		  box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
 
-#WKHelpView .ScrollView section p:first-of-type,
-#WKAboutView .ScrollView section p {
-	font-size: 16px;
-	font-weight: 700;
-	color: white;
-}
+		  &:hover {
+			transform: scale(1, 1) translateY(-16px) rotate(0deg);
+		  }
 
-#WKHelpView .ScrollView section p,
-#WKAboutView .ScrollView section p:first-of-type {
-	font-size: 16px;
-	font-weight: 500;
-	color: #9BA0AA;
-	margin-bottom: 5px;
-}
-
-#WKAboutView .app-logo {
-	width: 60px;
-}
-
-#WKHelpView .ScrollView img {
-	width: 100%;
-}
-
-.page {
-	position: relative;
-	min-height: 224px;
-	min-width: 184px;
-	padding-top: 30px;
-}
-
-.page-3 .button-grid {
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-}
-
-.ScrollView {
-	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-.navigation-bar {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	padding: 6px 8px;
-	display: flex;
-	font-size: 17px;
-	align-items: center;
-	color: #7F7F7F;
-	background: black;
-}
-
-.navigation-bar img {
-	margin-right: 3px;
-}
-
-.button-grid {
-	display: grid;
-	column-gap: 9px;
-	row-gap: 9px;
-	margin: auto;
-	padding: 4px;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	justify-items: stretch;
-	align-items: stretch;
-}
-
-.button.sound-effect {
-	width: 82px;
-	height: 82px;
-}
-
-.button.button-webshooter {
-	width: 176px;
-	height: 173px;
-}
-
-.button.sound-effect img {
-	z-index: 99;
-	margin: auto;
-	width: 48px;
-	filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.5));
-}
-
-.button.button-webshooter img {
-	width: 96px;
-}
-
-.WKList {
-	display: flex;
-	flex-direction: column;
-	padding: 4px;
-}
-
-.WKButton {
-	display: flex;
-	width: 100%;
-	height: 45px;
-	margin-bottom: 9px;
-	padding: 15px;
-	border-radius: 20px;
-	background: #262626;
-	align-items: center;
-	color: white;
-	font-size: 17px;
-}
-
-.WKButton img {
-	width: 25px;
-	height: 25px;
-	margin-right: 6px;
-	filter: grayscale(100%);
-}
-
-.thwip {
-	
-	.swiper-container-horizontal>.swiper-pagination-bullets, 
-	.swiper-pagination-custom, .swiper-pagination-fraction {
-	  bottom: -5px;
-	}
-	
-	.swiper-pagination-bullet {
-	  width: 6px;
-	  height: 6px;
-	  background: white;
-	  opacity: 0.2;
-	}
-	
-	.swiper-pagination-bullet-active {
-	  opacity: 1;
-	}
-	
-	.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-	  margin: 0 2px;
-	}
-}
-
-#clock {
-	position: absolute;
-	top: 6px;
-	right: 9px;
-	font-size: 17px;
-	font-weight: 600;
-	color: #FFF;
-}
-
-.simulator {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	min-width: 100vw;
-	min-height: 100vh;
-	min-height: -webkit-fill-available;
-	margin: 0;
-	background: black;
-	color: #7F7F7F;
+		  background-image: url(/assets/thwip-demo-4.jpg);
+		}
+  }
 }

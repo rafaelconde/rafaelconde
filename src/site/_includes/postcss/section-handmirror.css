@@ -3,29 +3,28 @@
   z-index: 2;
   background: #EAE9EA;
   color: #202124;
-  
+
   @media (max-width: 975px) {
     z-index: 2;
   }
-  
+
   .wave-bottom {
     z-index: 1;
-    
+
     path {
-      fill: #D431D6;
-      fill: color(display-p3 0.798 0.117 0.861);
+      fill: #060606;
     }
   }
 
   .tint-color {
     color: #C60000;
   }
-  
+
   p, a {
     border-color: rgba(198, 0, 0, 0.3);
-    
+
     &:hover {
-     border-color: rgba(198, 0, 0, 1); 
+     border-color: rgba(198, 0, 0, 1);
     }
   }
 
@@ -62,7 +61,7 @@
     transform-origin: top left;
     top: 100px;
     min-height: 460px;
-    
+
     @media (min-width: 475px) {
       transform: scale(0.9);
       top: 100px;
@@ -83,25 +82,25 @@
     overflow: hidden;
     background-size: cover;
     background-color: transparent;
-    
+
     &:first-of-type {
       position: relative;
     }
-      
+
     video {
       position: relative;
       width: 400px;
       height: auto;
     }
-  
+
     &:nth-child(1) {
       top: -170px;
       left: -20px;
       height: 294px;
-      
+
       transform: scale(.8, .8) rotate(-6deg);
       box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
-      
+
       &:hover {
         transform: scale(1, 1) translateY(-16px) rotate(0deg);
       }
@@ -111,10 +110,10 @@
       top: -130px;
       left: 220px;
       height: 294px;
-      
+
       transform: scale(.8, .8) rotate(4deg);
       box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
-      
+
       &:hover {
         transform: scale(1, 1) translateY(-16px) rotate(0deg);
       }
@@ -133,10 +132,10 @@
       top: 100px;
       left: 240px;
       height: 294px;
-      
+
       transform: scale(.8, .8) rotate(16deg);
       box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
-      
+
       &:hover {
         transform: scale(1, 1) translateY(-16px) rotate(0deg);
       }
@@ -146,16 +145,16 @@
       top: 230px;
       left: 50px;
       height: 294px;
-      
+
       transform: scale(.8, .8) rotate(-8deg);
       box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
-      
+
       &:hover {
         transform: scale(1, 1) translateY(-16px) rotate(0deg);
       }
     }
   }
-  
+
   .hero-card {
     box-shadow: none;
     transform: scale(1);
