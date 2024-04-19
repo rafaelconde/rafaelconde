@@ -246,3 +246,12 @@ a.external-link {
 .hide {
   display: none;
 }
+
+video {
+  pointer-events: none;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}

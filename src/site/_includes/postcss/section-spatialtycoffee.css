@@ -80,6 +80,10 @@
       min-height: 0;
     }
 
+    @media (max-width: 780px) {
+      left: 150px;
+    }
+
     @media (min-width: 975px) {
       transform: scale(1, 1);
       top: 0;
