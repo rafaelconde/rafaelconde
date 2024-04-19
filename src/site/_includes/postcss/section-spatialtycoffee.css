@@ -33,23 +33,22 @@
     border-color: rgba(198, 0, 0, 0.3);
 
     &:hover {
-     border-color: rgba(198, 0, 0, 1);
+     border-color: rgba(220, 190, 150, 1);
     }
   }
 
   .external-link:hover {
-    border-color: #C60000;
+    border-color: #DEC19A;
   }
 
   .main-content-wrapper {
     align-items: center;
-    padding: 64px 0 186px 0;
+    padding: 64px 0 80px 0;
 
     @media (max-width: 975px) {
       flex-direction: column;
       align-items: center;
-      min-height: 900px;
-      padding-bottom: 150px;
+      min-height: 400px;
     }
 
     @media (max-width: 780px) {
@@ -57,7 +56,6 @@
     }
 
     @media (max-width: 469px) {
-      min-height: 860px;
       padding-bottom: 10px;
     }
   }
@@ -73,15 +71,13 @@
     left: -20px;
     transform: scale(.8);
     transform-origin: top left;
-    top: 100px;
-    min-height: 460px;
+    min-height: 400px;
     z-index: 1;
 
     @media (min-width: 475px) {
       transform: scale(0.9);
-      top: 100px;
       left: 40px;
-      min-height: auto;
+      min-height: 0;
     }
 
     @media (min-width: 975px) {

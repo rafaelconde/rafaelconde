@@ -26,6 +26,7 @@
   .main-content-wrapper {
 	align-items: center;
 	padding-bottom: 30px;
+	min-height: 0;
 	min-height: 730px;
 	margin-top: -40px;
 	z-index: 2;
@@ -33,13 +34,13 @@
 	@media (max-width: 975px) {
 	  flex-direction: column;
 	  align-items: center;
-	  min-height: 0;
+	  min-height: 900px;
 	  margin-top: 64px;
 	  margin-bottom: 104px;
 	}
 
 	@media (max-width: 469px) {
-	  min-height: 790px;
+	  min-height: 980px;
 	  padding-bottom: 10px;
 	}
   }
@@ -48,7 +49,8 @@
 	position: relative;
 
 	@media (max-width: 975px) {
-
+		min-height: 200px;
+		top: -70px;
 	}
 
 	.video-card {
