@@ -12,8 +12,8 @@
     z-index: 1;
 
     path {
-      fill: #D431D6;
-      fill: color(display-p3 0.798 0.117 0.861);
+      fill: rgb(48, 24, 0);
+      fill: color(display-p3 0.175 0.099 0.004);
     }
   }
 
