@@ -42,3 +42,8 @@
   from = "/materials"
   to = "/assets/Materials_1.0.zip"
   status = 301
+  
+[[redirects]]
+  from = "/glasshole"
+  to = "/assets/Glasshole_1.0.zip"
+  status = 301
