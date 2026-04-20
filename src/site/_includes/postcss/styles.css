@@ -35,6 +35,32 @@ body {
   background: #f7fafb;
 }
 
+.skip-link {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: #0e1e25;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+  z-index: 9999;
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex="0"]:focus-visible,
+[tabindex="-1"]:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
 h1 {
   font-family: var(--rounded);
   font-size: 72px;
@@ -101,7 +127,7 @@ a.external-link {
   position: relative;
   bottom: -8px;
   font-size: 14px;
-  opacity: 0.4;
+  opacity: 0.58;
   margin: 0 0 -8px 2px ;
   font-weight: 500;
 }
@@ -111,6 +137,10 @@ a.external-link {
   height: 100%;
   width: 100%;
   text-decoration: none;
+
+  &:focus-visible {
+    border-radius: inherit;
+  }
 }
 
 .ninja-links {
@@ -216,6 +246,28 @@ a.external-link {
   max-width: 1024px;
   margin: auto;
   z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .depth-level-1:hover,
+  .not-actually-a-card:hover {
+    transform: none !important;
+  }
+
+  .depth-level-2:hover {
+    transform: scale(.8, .8) !important;
+  }
+
+  .depth-level-3:hover {
+    transform: scale(.7, .7) !important;
+  }
 }
 
 .content {

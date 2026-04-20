@@ -21,6 +21,30 @@ body {
   font-size: 17px;
 }
 
+.skip-link {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: var(--textColor);
+  color: var(--background);
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+  z-index: 9999;
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
+a:focus-visible,
+[tabindex="-1"]:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
 .article p,
 .article li {
   font-family: "Merriweather", serif;
@@ -50,7 +74,7 @@ code {
 span.date {
   font-size: 14px;
   font-weight: 500;
-  opacity: 0.5;
+  opacity: 0.72;
 }
 
 em.aside {
@@ -113,7 +137,7 @@ hr {
     font-weight: 600;
     width: 100%;
 
-    opacity: 0.5;
+    opacity: 0.72;
     transition: opacity 0.2s;
 
     &:hover {
@@ -147,4 +171,13 @@ hr {
   width: 100%;
   margin: 24px auto 40px;
   border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

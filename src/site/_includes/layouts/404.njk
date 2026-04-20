@@ -5,24 +5,25 @@
     <title>Rafa Not Found</title>
     <meta name="description" content="That's probably the wrong URL I don't know">
     <meta name="author" content="Rafael Conde">
-    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="rgb(255 255 255)">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/styles.css?v={{ build.assetVersion }}"/>
   </head>
   <body>
-    <div class="forohfor">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main id="main-content" class="forohfor" tabindex="-1">
        <div class="rapper">
         <h1>Rafa Not Found</h1>
        </div>
        <div class="footer">
-         <a href="https://rafa.design">Back to the site →</a>
+         <a href="/">Back to the site →</a>
          <div class="video-rapper">
-          <video preload autoplay playsinline muted>
+          <video preload autoplay playsinline muted aria-hidden="true" tabindex="-1">
              <source src="/assets/error-footer-peak.mp4" type="video/mp4" />
              </video>
          </div>
        </div>
-   </div>
+   </main>
   </body>
 </html>

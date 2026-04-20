@@ -5,7 +5,7 @@
     <title>{%- if title -%}{{ title }}{%- else -%}Rafa's website{%- endif -%}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Personal website of Rafael Conde{%- endif -%}">
     <meta name="author" content="Rafael Conde">
-    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="rgb(255 255 255)">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     {% if stylesheet %}
@@ -15,7 +15,10 @@
     {% endif %}
   </head>
   <body>
-    {{ content | safe }}
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main id="main-content" tabindex="-1">
+      {{ content | safe }}
+    </main>
     <script defer src="/js/scripts.js?v={{ build.assetVersion }}"></script>
   </body>
 </html>
