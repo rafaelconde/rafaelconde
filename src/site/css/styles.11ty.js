@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');
+const CleanCSS = require('clean-css');
 
 const fileName = "styles.css";
 
@@ -22,7 +23,6 @@ module.exports = class {
       require('autoprefixer')
     ])
     .process(rawCss, { from: rawFilepath })
-    .then(result => result.css);
+    .then(result => new CleanCSS().minify(result.css).styles);
   };
 }
-

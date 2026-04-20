@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-asset-version="{{ build.assetVersion }}">
   <head>
     <meta charset="utf-8" />
     <title>{%- if title -%}{{ title }}{%- else -%}Rafa's website{%- endif -%}</title>
@@ -8,9 +8,9 @@
     <meta name="viewport" content="initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     {% if stylesheet %}
-    <link rel="stylesheet" href="/css/{{ stylesheet }}"/>
+    <link rel="stylesheet" href="/css/{{ stylesheet }}?v={{ build.assetVersion }}"/>
     {% else %}
-    <link rel="stylesheet" href="/css/blogpost.css"/>
+    <link rel="stylesheet" href="/css/blogpost.css?v={{ build.assetVersion }}"/>
     {% endif %}
   </head>
   <body>

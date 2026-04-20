@@ -5,7 +5,7 @@ layout: layouts/base.njk
     <div class="papa-wrapper">
       <div class="section big-hero-six" data-theme-color="rgb(255, 255, 255)">
         <div class="background">
-          <video preload playsinline muted autoplay poster="/assets/poster.jpg" src="/assets/background-video.mp4" fetchpriority="high">
+          <video preload="auto" playsinline muted autoplay poster="/assets/poster.jpg?v={{ build.assetVersion }}" src="/assets/background-video.mp4?v={{ build.assetVersion }}" fetchpriority="high">
           </video>
         </div>
         <div class="main-content-wrapper">
@@ -18,16 +18,23 @@ layout: layouts/base.njk
         <div class="custom-wave"></div>
       </div>
 
-      <div class="section sketch" data-theme-color="rgb(255, 160, 0)">
+      <div class="section retro" data-theme-color="rgb(0, 0, 0)">
         <div class="main-content-wrapper">
           <div class="content">
-            <h2><span class="timestamp">2023–Present</span><br />Sketch</h2>
-            <p>I started the year of 2023 by joining the Product Design team at Sketch, an app that has meant so much for me both personally and professionally.</p>
-            <a href="https://sketch.com" target="_blank" class="external-link tint-color">Visit our landing page</a>
+            <h2><span class="timestamp">2026–Present</span><br />Retro</h2>
+            <p>I joined the team behind the app Retro as a Design Engineer, one of the few "feel good" apps that still bring me so much joy to use daily.</p>
+            <a href="https://apps.apple.com/app/retro-feel-good-social/id6443709020" target="_blank" class="external-link tint-color">Download from the App Store</a>
           </div>
           <div class="showcase">
             <div class="card">
-              <a href="https://sketch.com" target="_blank" class="whole-thang-is-a-target">
+              <img
+                src="/assets/retro-app-icon.webp?v={{ build.assetVersion }}"
+                alt="Retro app icon"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://apps.apple.com/app/retro-feel-good-social/id6443709020" target="_blank" class="whole-thang-is-a-target"></a>
             </div>
           </div>
         </div>
@@ -51,26 +58,151 @@ layout: layouts/base.njk
           </div>
           <div class="showcase">
             <div class="card video-card depth-level-3">
-              <video preload playsinline muted autoplay loop src="/assets/handmirror-demo-4.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/handmirror-details-meet-dev.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/handmirror-details-meet-dev.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
             <div class="card video-card depth-level-3">
-              <video preload playsinline muted autoplay loop src="/assets/handmirror-demo-2.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/handmirror-details-box.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/handmirror-details-box.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
-            <div class="card depth-level-1 hero-card"><a href="https://handmirror.app" target="_blank" class="whole-thang-is-a-target"></a></div>
-            <div class="card video-card depth-level-2">
-              <video preload playsinline muted autoplay loop src="/assets/handmirror-demo-3.mp4">
-              </video>
+            <div class="card depth-level-1 hero-card">
+              <img
+                src="/assets/hand-mirror-app-icon.webp?v={{ build.assetVersion }}"
+                alt="Hand Mirror app icon"
+                class="card-media card-media-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://handmirror.app" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card depth-level-2">
+              <img
+                src="/assets/hand-mirror-screenshot-2.webp?v={{ build.assetVersion }}"
+                alt="Hand Mirror screenshot"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://handmirror.app" target="_blank" class="whole-thang-is-a-target"></a>
             </div>
             <div class="card video-card depth-level-2">
-              <video preload playsinline muted autoplay loop src="/assets/handmirror-demo-1.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/handmirror-snaps-demo.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/handmirror-snaps-demo.mp4?v={{ build.assetVersion }}"
+              >
               </video>
+            </div>
+            <div class="card depth-level-2">
+              <img
+                src="/assets/hand-mirror-plus-icon.webp?v={{ build.assetVersion }}"
+                alt="Hand Mirror Plus icon"
+                class="card-media card-media-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://handmirror.app" target="_blank" class="whole-thang-is-a-target"></a>
             </div>
           </div>
         </div>
         <svg class="wave wave-bottom" width="4323" height="700" viewBox="0 0 4323 700" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4323 34.5566C4323 252.392 4225.5 548.808 3509.5 548.808C3135 548.808 3153.5 368.696 2564.5 393C2119.77 411.351 1139.99 506.534 733.498 548.808C327.002 591.082 0 561.739 0 561.739V700H4323C4323 700 4323 -183.279 4323 34.5566Z" fill="#fcfcfc"/>
+        </svg>
+      </div>
+
+      <div class="section knightnight" data-theme-color="rgb(0, 0, 0)">
+        <div class="main-content-wrapper">
+          <div class="content">
+            <h2><span class="timestamp">Side Project</span><br />Night Knight</h2>
+            <p>I was out on holidays with my family and realized I'd forgotten to bring my kids' night clock, so I built this — it's a night light, noise machine, and wake aid that turns to a different color at a certain time of day.</p>
+            <a href="https://apps.apple.com/us/app/night-knight-sleep-aid/id6756669012" target="_blank" class="external-link tint-color">Free on the App Store</a>
+          </div>
+          <div class="showcase">
+            <div class="card depth-level-1 hero-card">
+              <img
+                src="/assets/knight-night-app-icon.webp?v={{ build.assetVersion }}"
+                alt="Night Knight app icon"
+                class="card-media card-media-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://apps.apple.com/us/app/night-knight-sleep-aid/id6756669012" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card video-card depth-level-2">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/knight-night-promo.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/knight-night-promo.mp4?v={{ build.assetVersion }}"
+              >
+              </video>
+            </div>
+          </div>
+        </div>
+        <svg class="wave wave-bottom" width="4323" height="250" viewBox="0 0 4323 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4323 149.091C4091.5 100.525 3848.5 186.994 3412 202.614C2750.36 226.291 2638.5 40.8657 2124.5 4.04682C1683.02 -27.5776 1127.5 135.797 721 159.38C314.504 182.963 0 128.418 0 128.418V250H4323C4323 250 4323 27.5687 4323 149.091Z"/>
+        </svg>
+      </div>
+
+      <div class="section sketch" data-theme-color="rgb(255, 160, 0)">
+        <div class="main-content-wrapper">
+          <div class="content">
+            <h2><span class="timestamp">2023–2026</span><br />Sketch</h2>
+            <p>I started the year of 2023 by joining the Product Design team at Sketch, an app that has meant so much for me both personally and professionally.</p>
+            <a href="https://sketch.com" target="_blank" class="external-link tint-color">Visit our landing page</a>
+          </div>
+          <div class="showcase">
+            <div class="card depth-level-2">
+              <img
+                src="/assets/sketch-ui.webp?v={{ build.assetVersion }}"
+                alt="Sketch UI"
+                class="card-media card-media-contain card-media-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://sketch.com" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card depth-level-1 hero-card">
+              <img
+                src="/assets/sketch-app-icon.webp?v={{ build.assetVersion }}"
+                alt="Sketch app icon"
+                class="card-media card-media-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://sketch.com" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
+          </div>
+        </div>
+        <svg class="wave wave-bottom" width="4323" height="250" viewBox="0 0 4323 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4323 149.091C4091.5 100.525 3848.5 186.994 3412 202.614C2750.36 226.291 2638.5 40.8657 2124.5 4.04682C1683.02 -27.5776 1127.5 135.797 721 159.38C314.504 182.963 0 128.418 0 128.418V250H4323C4323 250 4323 27.5687 4323 149.091Z"/>
         </svg>
       </div>
 
@@ -86,14 +218,69 @@ layout: layouts/base.njk
 
           </div>
           <div class="showcase">
-            <div class="card depth-level-1"><a href="https://thwip.app" class="whole-thang-is-a-target"></a></div>
-            <div class="card depth-level-2"><a href="https://thwip.app" class="whole-thang-is-a-target"></a></div>
-            <div class="card depth-level-3"><a href="https://thwip.app" class="whole-thang-is-a-target"></a></div>
-            <div class="card depth-level-2"><a href="https://thwip.app" class="whole-thang-is-a-target"></a></div>
-            <div class="card depth-level-3"><a href="https://thwip.app" class="whole-thang-is-a-target"></a></div>
+            <div class="card depth-level-1">
+              <img
+                src="/assets/thwip-app-icon.webp?v={{ build.assetVersion }}"
+                alt="Thwip app icon"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://thwip.app" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card depth-level-2">
+              <img
+                src="/assets/thwip-demo-1.webp?v={{ build.assetVersion }}"
+                alt="Thwip demo"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://thwip.app" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card depth-level-3">
+              <img
+                src="/assets/thwip-demo-2.webp?v={{ build.assetVersion }}"
+                alt="Thwip soundboard"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://thwip.app" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card depth-level-2">
+              <img
+                src="/assets/thwip-demo-3.webp?v={{ build.assetVersion }}"
+                alt="Thwip watch interface"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://thwip.app" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card depth-level-3">
+              <img
+                src="/assets/thwip-demo-4.webp?v={{ build.assetVersion }}"
+                alt="Thwip custom board"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://thwip.app" class="whole-thang-is-a-target"></a>
+            </div>
             <div class="card depth-level-1 video-card">
               <a href="/assets/thwip-video.mp4" target="_blank" class="whole-thang-is-a-target">
-              <video preload playsinline muted autoplay loop src="/assets/thwip-video.mp4" id="thwip-video">
+              <video
+                id="thwip-video"
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/thwip-video.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/thwip-video.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
           </div>
@@ -122,8 +309,26 @@ layout: layouts/base.njk
               </div>
             </a>
 
-            <div class="not-actually-a-card"><a href="https://spatialty.coffee" target="_blank" class="whole-thang-is-a-target"></a></div>
-            <div class="not-actually-a-card"><a href="https://spatialty.coffee" target="_blank" class="whole-thang-is-a-target"></a></div>
+            <div class="not-actually-a-card">
+              <img
+                src="/assets/spatialty-window-1.webp?v={{ build.assetVersion }}"
+                alt="Spatialty Coffee recipe window"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://spatialty.coffee" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="not-actually-a-card">
+              <img
+                src="/assets/spatialty-window-2.webp?v={{ build.assetVersion }}"
+                alt="Spatialty Coffee interface"
+                class="card-media card-media-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://spatialty.coffee" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
 
           </div>
         </div>
@@ -143,9 +348,27 @@ layout: layouts/base.njk
 
           </div>
           <div class="showcase">
-            <div class="card depth-level-2"><a href="https://docktor.site" target="_blank" class="whole-thang-is-a-target"></a></div>
+            <div class="card depth-level-2">
+              <img
+                src="/assets/docktor-app-icon.webp?v={{ build.assetVersion }}"
+                alt="Docktor app icon"
+                class="card-media card-media-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://docktor.site" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
             <div class="card video-card">
-              <video preload playsinline muted autoplay loop src="/assets/docktor-demo.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/docktor-demo.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/docktor-demo.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
           </div>
@@ -166,8 +389,26 @@ layout: layouts/base.njk
 
           </div>
           <div class="showcase">
-            <div class="card depth-level-2"><a href="https://hidock.app" target="_blank" class="whole-thang-is-a-target"></a></div>
-            <div class="card depth-level-1 hero-card"><a href="https://hidock.app" target="_blank" class="whole-thang-is-a-target"></a></div>
+            <div class="card depth-level-2">
+              <img
+                src="/assets/hidock-screenshot.webp?v={{ build.assetVersion }}"
+                alt="HiDock screenshot"
+                class="card-media card-media-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://hidock.app" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
+            <div class="card depth-level-1 hero-card">
+              <img
+                src="/assets/hidock-app-icon.webp?v={{ build.assetVersion }}"
+                alt="HiDock app icon"
+                class="card-media card-media-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <a href="https://hidock.app" target="_blank" class="whole-thang-is-a-target"></a>
+            </div>
           </div>
         </div>
         <svg class="wave wave-bottom" width="4324" height="202" viewBox="0 0 4324 202" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,17 +424,44 @@ layout: layouts/base.njk
           </div>
           <div class="showcase">
             <div class="card video-card">
-              <video preload playsinline muted autoplay loop src="/assets/along-reel.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/along-reel.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/along-reel.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
             <div class="card video-card">
               <a href="https://dribbble.com/shots/17536865--Beta-Tape-Onboarding" target="_blank" class="whole-thang-is-a-target">
-              <video preload playsinline muted autoplay loop src="/assets/Dribbble-Along-Onboarding-Optimized.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/along-onboarding.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/Dribbble-Along-Onboarding-Optimized.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
             <div class="card video-card">
               <a href="https://dribbble.com/shots/17720645-Camera-Roll-Dynamic-Icon" target="_blank" class="whole-thang-is-a-target">
-              <video preload playsinline muted autoplay loop src="/assets/camera-roll-dribbble-shorter.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/camera-roll-dribbble.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/camera-roll-dribbble-shorter.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
             <div class="card depth-level-2"></div>
@@ -236,12 +504,21 @@ layout: layouts/base.njk
           <a href="https://boobytrack.app" target="_blank" class="external-link tint-color">Landing page</a>
 
         </div>
-        <div class="showcase">
-          <div class="card video-card">
-            <a href="https://boobytrack.app" target="_blank" class="whole-thang-is-a-target">
-            <video preload playsinline muted autoplay loop src="/assets/booby-track-promo.mp4">
-            </video>
-          </div>
+          <div class="showcase">
+            <div class="card video-card">
+              <a href="https://boobytrack.app" target="_blank" class="whole-thang-is-a-target">
+	            <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/booby-track-promo.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/booby-track-promo.mp4?v={{ build.assetVersion }}"
+              >
+	            </video>
+	          </div>
           <div class="apple-watch-my-back">
             <div class="viewport">
             </div>
@@ -305,14 +582,32 @@ layout: layouts/base.njk
           </div>
           <div class="showcase">
             <div class="watch-wrapper">
-              <img src="/assets/watch-open.png" class="watch-frame-open">
-              <img src="/assets/watch-closed.png" class="watch-frame-closed">
-              <video preload muted loop autoplay src="/assets/gameplayVideo.mp4" type="video/mp4">
+              <img src="/assets/watch-open.png?v={{ build.assetVersion }}" class="watch-frame-open" loading="lazy" decoding="async" alt="Apple Watch frame open">
+              <img src="/assets/watch-closed.png?v={{ build.assetVersion }}" class="watch-frame-closed" loading="lazy" decoding="async" alt="Apple Watch frame closed">
+              <video
+                class="lazy-video"
+                preload="none"
+                muted
+                loop
+                autoplay
+                poster="/assets/posters/gameplay-video.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/gameplayVideo.mp4?v={{ build.assetVersion }}"
+                type="video/mp4"
+              >
               </video>
             </div>
             <div class="card video-card">
               <a href="https://dribbble.com/shots/15213165-Break-this-Safe-2-Early-iPhone-Concept" target="_blank" class="whole-thang-is-a-target">
-              <video preload playsinline muted autoplay loop src="/assets/dribbble-break-this-safe-2.mp4">
+              <video
+                class="lazy-video"
+                preload="none"
+                playsinline
+                muted
+                autoplay
+                loop
+                poster="/assets/posters/dribbble-break-this-safe-2.jpg?v={{ build.assetVersion }}"
+                data-video-src="/assets/dribbble-break-this-safe-2.mp4?v={{ build.assetVersion }}"
+              >
               </video>
             </div>
           </div>
@@ -331,7 +626,7 @@ layout: layouts/base.njk
               <li class="frames">
                 <div class="flexing-like-a-douche">
                   <div class="detail">
-                    <img src="/assets/frames-icon.png"/>
+                    <img src="/assets/frames-icon.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Frames icon"/>
                   </div>
                   <div class="wrapper">
                     <h4>Frames</h4>
@@ -343,7 +638,7 @@ layout: layouts/base.njk
               <li class="sketchcasts">
                 <div class="flexing-like-a-douche">
                   <div class="detail">
-                    <img src="/assets/sketchcasts-icon.png"/>
+                    <img src="/assets/sketchcasts-icon.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="SketchCasts icon"/>
                   </div>
                   <div class="wrapper">
                     <h4>SketchCasts</h4>
@@ -355,7 +650,7 @@ layout: layouts/base.njk
               <li class="print">
                 <div class="flexing-like-a-douche">
                   <div class="detail">
-                    <img src="/assets/published.png"/>
+                    <img src="/assets/published.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Writing icon"/>
                   </div>
                   <div class="wrapper">
                     <h4>Writing</h4>
@@ -366,7 +661,7 @@ layout: layouts/base.njk
               <li class="talks">
                 <div class="flexing-like-a-douche">
                   <div class="detail">
-                    <img src="/assets/talk-icon.png"/>
+                    <img src="/assets/talk-icon.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Talk icon"/>
                   </div>
                   <div class="wrapper">
                     <h4>How Being a Developer Makes Me a Better Designer</h4>
@@ -379,7 +674,7 @@ layout: layouts/base.njk
               <li class="talks">
                 <div class="flexing-like-a-douche">
                   <div class="detail">
-                    <img src="/assets/talk-icon.png"/>
+                    <img src="/assets/talk-icon.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Talk icon"/>
                   </div>
                   <div class="wrapper">
                     <h4>The Rise of the JAMstack (DJ set)</h4>
@@ -495,7 +790,7 @@ layout: layouts/base.njk
             <li class="mastodon">
               <div class="flexing-like-a-douche">
                 <div class="detail">
-                  <img src="/assets/social-mastodon.png"/>
+                  <img src="/assets/social-mastodon.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Mastodon icon"/>
                 </div>
                 <div class="wrapper">
                   <h4>Mastodon</h4>
@@ -507,7 +802,7 @@ layout: layouts/base.njk
             <li class="twitter">
               <div class="flexing-like-a-douche">
                 <div class="detail">
-                  <img src="/assets/social-twitter.png"/>
+                  <img src="/assets/social-twitter.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Twitter icon"/>
                 </div>
                 <div class="wrapper">
                   <h4>Twitter</h4>
@@ -519,7 +814,7 @@ layout: layouts/base.njk
             <li class="letterboxd">
               <div class="flexing-like-a-douche">
                 <div class="detail">
-                  <img src="/assets/social-letterboxd.png"/>
+                  <img src="/assets/social-letterboxd.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Letterboxd icon"/>
                 </div>
                 <div class="wrapper">
                   <h4>Letterboxd</h4>
@@ -531,7 +826,7 @@ layout: layouts/base.njk
             <li class="dribbble">
               <div class="flexing-like-a-douche">
                 <div class="detail">
-                  <img src="/assets/social-dribbble.png"/>
+                  <img src="/assets/social-dribbble.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Dribbble icon"/>
                 </div>
                 <div class="wrapper">
                   <h4>Dribbble</h4>
@@ -543,7 +838,7 @@ layout: layouts/base.njk
             <li class="github">
               <div class="flexing-like-a-douche">
                 <div class="detail">
-                  <img src="/assets/social-github.png"/>
+                  <img src="/assets/social-github.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="GitHub icon"/>
                 </div>
                 <div class="wrapper">
                   <h4>GitHub</h4>
@@ -555,7 +850,7 @@ layout: layouts/base.njk
             <li class="apple-music">
               <div class="flexing-like-a-douche">
                 <div class="detail">
-                  <img src="/assets/social-apple-music.png"/>
+                  <img src="/assets/social-apple-music.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="Apple Music icon"/>
                 </div>
                 <div class="wrapper">
                   <h4>Apple Music</h4>
@@ -567,7 +862,7 @@ layout: layouts/base.njk
             <li class="psn">
               <div class="flexing-like-a-douche">
                 <div class="detail">
-                  <img src="/assets/social-psn.png"/>
+                  <img src="/assets/social-psn.png?v={{ build.assetVersion }}" loading="lazy" decoding="async" alt="PlayStation icon"/>
                 </div>
                 <div class="wrapper">
                   <h4>PSN</h4>
@@ -587,5 +882,5 @@ layout: layouts/base.njk
           <p>… and if you're looking for a simple tool to test Liquid Glass on macOS Tahoe, <a target="_blank" href="/assets/Glasshole_1.0.zip">here</a>.</p>
       </div>
     </div>
-    <img src="/assets/not-how-this-works.png" id="easterNope" class="easter not-how-this-works" />
+    <img src="/assets/not-how-this-works.png?v={{ build.assetVersion }}" id="easterNope" class="easter not-how-this-works" loading="lazy" decoding="async" alt="Not how this works easter egg" />
   </div>

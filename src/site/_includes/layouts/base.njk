@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-asset-version="{{ build.assetVersion }}">
   <head>
     <meta charset="utf-8" />
     <title>{%- if title -%}{{ title }}{%- else -%}Rafa's website{%- endif -%}</title>
@@ -9,16 +9,13 @@
     <meta name="theme-color" content="rgb(255 255 255)">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     {% if stylesheet %}
-    <link rel="stylesheet" href="/css/{{ stylesheet }}"/>
+    <link rel="stylesheet" href="/css/{{ stylesheet }}?v={{ build.assetVersion }}"/>
     {% else %}
-    <link rel="stylesheet" href="/css/styles.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/styles.css?v={{ build.assetVersion }}"/>
     {% endif %}
   </head>
   <body>
     {{ content | safe }}
-    {% set js %}{% include "js/scripts.js" %}{% endset %}
-    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-    <script>{{ js | jsmin | safe }}</script>
+    <script defer src="/js/scripts.js?v={{ build.assetVersion }}"></script>
   </body>
 </html>

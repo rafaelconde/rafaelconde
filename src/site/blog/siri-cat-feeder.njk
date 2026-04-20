@@ -23,9 +23,9 @@ date: 2020-12-22
 
 <p>If you have an Apple Silicon based Mac, then that&#39;s the only device we&#39;ll need, otherwise we need an iOS device to run the Petkit app… oh yeah and we need the Petkit feeder and app. I should&#39;ve start there.</p>
 
-<img src="/assets/petfeeder/mac-gallery.png" alt="Screenshot of a Mac running Charles, Terminal, Paw, Petkit, and Home." />
+<img src="/assets/petfeeder/mac-gallery.png?v={{ build.assetVersion }}" alt="Screenshot of a Mac running Charles, Terminal, Paw, Petkit, and Home." loading="lazy" decoding="async" />
 
-<img src="/assets/petfeeder/mac-app-store.png" alt="Screenshot of petkit in the Mac App Store on Apple Silicon Macs" />
+<img src="/assets/petfeeder/mac-app-store.png?v={{ build.assetVersion }}" alt="Screenshot of petkit in the Mac App Store on Apple Silicon Macs" loading="lazy" decoding="async" />
 
 <p>I&#39;ve only tested this with the <a href="https://petkit.co.uk/product/petkit-element-mini-auto-feeder/">Petkit Element Mini</a>, but I see no reason why it wouldn&#39;t work with the other Petkit devices.</p>
 
@@ -44,7 +44,7 @@ date: 2020-12-22
 
 <p>Let&#39;s start by opening the Petkit app, make sure you&#39;re logged in and everything is already set up and proceed to the screen that would trigger a new feeding… AND STOP, NO TOUCHING!</p>
 
-<img src="/assets/petfeeder/petkit-app.png" alt="Screenshot of an iPad running the petkit app, in the manual feeding view" />
+<img src="/assets/petfeeder/petkit-app.png?v={{ build.assetVersion }}" alt="Screenshot of an iPad running the petkit app, in the manual feeding view" loading="lazy" decoding="async" />
 
 <p>Let&#39;s now open Charles, make sure the status is set to Active, tap Current Session, and let&#39;s hit the little Clear Session icon in the bottom to make it easier to find the right one.</p>
 
@@ -52,7 +52,7 @@ date: 2020-12-22
 
 <p>Cool, let&#39;s now go back to Charles, and BOOM, it should have a bunch of new items in that list… it should look something like this:</p>
 
-<img src="/assets/petfeeder/charles-api.png" alt="Screenshot of Charles with the right API call selected" />
+<img src="/assets/petfeeder/charles-api.png?v={{ build.assetVersion }}" alt="Screenshot of Charles with the right API call selected" loading="lazy" decoding="async" />
 
 <p>Tap the one that says <code>http://api.petkt.com</code> and then look for the first one that says <code>latest/feedermini/save_dailyfeed</code> — that&#39;s the one, that&#39;s our booger! Keep that thing around, we&#39;re gonna need it very soon.</p>
 
@@ -66,11 +66,11 @@ date: 2020-12-22
 
 <ol>
     <li>Start by adding a &quot;Text&quot; block, and paste the &quot;Response Body&quot; content in there.</li>
-    <img src="/assets/petfeeder/view-body.png" alt="Screenshot of Charles highlighting the body section" />
+    <img src="/assets/petfeeder/view-body.png?v={{ build.assetVersion }}" alt="Screenshot of Charles highlighting the body section" loading="lazy" decoding="async" />
     <li>Next add a &quot;URL&quot; block with the right URL content from the API call.</li>
     <li>And finally, add a &quot;Get contents of URL&quot; block. Hit &quot;Show more&quot; and here you&#39;re going to add all the Request Headers… it&#39;ll take some time, but make sure you get all of these right. For the Request Body section add the Text block we just created.</li>
-    <img src="/assets/petfeeder/shortcut-final-1.png" alt="Screenshots of Shortcuts with the right configurations" />
-    <img src="/assets/petfeeder/shortcut-final-2.png" alt="Screenshots of Shortcuts with the right configurations" />
+    <img src="/assets/petfeeder/shortcut-final-1.png?v={{ build.assetVersion }}" alt="Screenshots of Shortcuts with the right configurations" loading="lazy" decoding="async" />
+    <img src="/assets/petfeeder/shortcut-final-2.png?v={{ build.assetVersion }}" alt="Screenshots of Shortcuts with the right configurations" loading="lazy" decoding="async" />
 </ol>
 
 <p>That&#39;s hit, run the Shortcut and the your feeder should dispense food!</p>
@@ -82,12 +82,12 @@ date: 2020-12-22
 <ol>
     <li>Follow the <a href="https://github.com/Supereg/homebridge-http-switch">instructions to install and setup the plugin</a></li>
     <li>In your <code>config.json</code> add the appropriate Request Headers</li>
-    <img src="/assets/petfeeder/config-example.png" alt="Screenshot of my config.json file" />
+    <img src="/assets/petfeeder/config-example.png?v={{ build.assetVersion }}" alt="Screenshot of my config.json file" loading="lazy" decoding="async" />
     <li>Save your changes and run <code>homebridge</code></li>
     <li>You should now see the new device in your Home app, it&#39;s a simple switch/button</li>
-    <img src="/assets/petfeeder/home-switch.png" alt="Screenshots of the Home app with the new switch" />
+    <img src="/assets/petfeeder/home-switch.png?v={{ build.assetVersion }}" alt="Screenshots of the Home app with the new switch" loading="lazy" decoding="async" />
     <li>Optionally, you can create a Scene that just triggers the device for an easier Siri trigger (just call the scene something like &quot;Feed the Cat&quot;).</li>
-    <img src="/assets/petfeeder/home-app.png" alt="Screenshots of the Home app with the scene and device" />
+    <img src="/assets/petfeeder/home-app.png?v={{ build.assetVersion }}" alt="Screenshots of the Home app with the scene and device" loading="lazy" decoding="async" />
 </ol>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
@@ -97,6 +97,5 @@ date: 2020-12-22
 <hr>
 
 <p>There you go, a convoluted and complicated way of achieving something pretty nerdy that will definitely break in a couple weeks. </p>
-
 
 

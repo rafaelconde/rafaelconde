@@ -23,9 +23,11 @@
 @font-face {
   font-family: "MyriadPro-Semibold";
   src: url('../assets/fonts/MyriadProSemibold/font.woff2') format('woff2'), url('../assets/fonts/MyriadProSemibold/font.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MyriadPro-Regular";
   src: url('../assets/fonts/MyriadProRegular/font.woff2') format('woff2'), url('../assets/fonts/MyriadProRegular/font.woff') format('woff');
+  font-display: swap;
 }

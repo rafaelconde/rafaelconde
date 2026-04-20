@@ -51,7 +51,6 @@
     z-index: 1;
     width: 101%;
     flex: none;
-    background: linear-gradient(to top, #FFA000, #FFA000 25% , #fff 25%, #fff 25%);
     opacity: 0.99 // Helps with blending the video with the section below
   }
   
@@ -62,11 +61,11 @@
     top: 445px;
     width: 100vw;
     height: 400px;
-    background: #FFA000;
+    background: #0e0e0e;
     
     path,
     rect {
-      fill: white;
+      fill: #0e0e0e;
       }
     }
 }

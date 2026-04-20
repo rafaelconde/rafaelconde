@@ -12,7 +12,7 @@
     z-index: 1;
 
     path {
-      fill: #060606;
+      fill: #050505;
     }
   }
 
@@ -34,44 +34,30 @@
 
   .main-content-wrapper {
     align-items: center;
-    padding: 64px 0 186px 0;
+    padding: 0px 0 120px 0;
 
     @media (max-width: 975px) {
       flex-direction: column;
       align-items: center;
-      min-height: 900px;
-      padding-bottom: 150px;
     }
 
     @media (max-width: 780px) {
       align-items: flex-start;
-    }
-
-    @media (max-width: 469px) {
-      min-height: 860px;
-      padding-bottom: 10px;
     }
   }
 
   .showcase {
     position: relative;
     margin-top: 40px;
-    left: -20px;
-    transform: scale(.8);
-    transform-origin: top left;
-    top: 100px;
-    min-height: 460px;
+    transform-origin: center center;
 
     @media (min-width: 475px) {
-      transform: scale(0.9);
-      top: 100px;
-      left: 40px;
       min-height: auto;
     }
 
     @media (min-width: 975px) {
       transform: scale(1, 1);
-      top: -70px;
+      left: 20px;
     }
   }
 
@@ -87,18 +73,28 @@
       position: relative;
     }
 
+    &.video-card {
+      width: 360px;
+      height: 265px;
+      border-radius: 20px;
+      background: transparent;
+    }
+
     video {
       position: relative;
-      width: 400px;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 20px;
+      display: block;
     }
 
     &:nth-child(1) {
-      top: -170px;
-      left: -20px;
-      height: 294px;
+      top: -100px;
+      left: -80px;
 
-      transform: scale(.8, .8) rotate(-6deg);
+      transform: scale(.8, .8) rotate(-8deg);
       box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
 
       &:hover {
@@ -107,11 +103,10 @@
     }
 
     &:nth-child(2) {
-      top: -130px;
-      left: 220px;
-      height: 294px;
+      top: -110px;
+      left: 120px;
 
-      transform: scale(.8, .8) rotate(4deg);
+      transform: scale(.8, .8) rotate(6deg);
       box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
 
       &:hover {
@@ -122,18 +117,27 @@
     &:nth-child(3) {
       top: 0px;
       left: 40px;
-      background-image: url(/assets/hand-mirror-app-icon.png);
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     &:nth-child(4) {
-      top: 100px;
-      left: 240px;
-      height: 294px;
+      top: 140px;
+      left: 120px;
+      height: 270px;
+      width: 420px;
 
-      transform: scale(.8, .8) rotate(16deg);
+      transform: scale(.82, .82) rotate(8deg);
+      box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
+
+      &:hover {
+        transform: scale(0.92, 0.92) translateY(-16px) rotate(0deg);
+      }
+    }
+
+    &:nth-child(5) {
+      top: 160px;
+      left: -100px;
+
+      transform: scale(.8, .8) rotate(-10deg);
       box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
 
       &:hover {
@@ -141,13 +145,14 @@
       }
     }
 
-    &:nth-child(5) {
-      top: 230px;
-      left: 50px;
-      height: 294px;
+    &:nth-child(6) {
+      top: 260px;
+      left: 120px;
+      height: 180px;
+      width: 180px;
 
-      transform: scale(.8, .8) rotate(-8deg);
-      box-shadow: 0px 4px 24px 2px rgba(14, 30, 37, 0.16);
+      transform: scale(.92, .92) rotate(10deg);
+      box-shadow: none;
 
       &:hover {
         transform: scale(1, 1) translateY(-16px) rotate(0deg);
@@ -160,5 +165,34 @@
     transform: scale(1);
     height: 320px;
     width: 320px;
+  }
+
+  @media (max-width: 975px) {
+    .content {
+      z-index: 2;
+    }
+
+    .showcase {
+      width: 640px;
+      max-width: none;
+      margin: 32px 0 0;
+      left: 50%;
+      top: 36px;
+      transform: translateX(-50%) scale(0.68);
+      transform-origin: top center;
+      /* min-height: 620px; */
+    }
+  }
+
+  @media (max-width: 469px) {
+    .main-content-wrapper {
+      min-height: 720px;
+      padding-bottom: 24px;
+    }
+
+    .showcase {
+      padding: 40px 0;
+      transform: translateX(-35%) scale(0.8);
+    }
   }
 }

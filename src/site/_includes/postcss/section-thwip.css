@@ -100,8 +100,6 @@
 		&:hover {
 		  transform: scale(1, 1) translateY(-16px);
 		}
-
-		background-image: url(/assets/thwip-app-icon.png);
 	  }
 
 	  &:nth-child(2) {
@@ -117,8 +115,6 @@
 		  &:hover {
 			transform: scale(1, 1) translateY(-16px) rotate(0deg);
 		  }
-
-		  background-image: url(/assets/thwip-demo-1.jpg);
 		}
 
 		&:nth-child(3) {
@@ -133,8 +129,6 @@
 		  &:hover {
 			transform: scale(1, 1) translateY(-16px) rotate(0deg);
 		  }
-
-		  background-image: url(/assets/thwip-demo-2.jpg);
 		}
 
 		&:nth-child(4) {
@@ -150,8 +144,6 @@
 		  &:hover {
 			transform: scale(1, 1) translateY(-16px) rotate(0deg);
 		  }
-
-		  background-image: url(/assets/thwip-demo-3.jpg);
 		}
 
 		&:nth-child(5) {
@@ -167,8 +159,6 @@
 		  &:hover {
 			transform: scale(1, 1) translateY(-16px) rotate(0deg);
 		  }
-
-		  background-image: url(/assets/thwip-demo-4.jpg);
 		}
   }
 }

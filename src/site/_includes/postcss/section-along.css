@@ -128,7 +128,7 @@
         height: 200px;
         width: 200px;
         border-radius: 25%;
-        background-image: url(/assets/along-app-icon.png);
+        background-image: url(/assets/along-app-icon.webp);
         background-color: transparent;
         
         transform:rotate(-6deg);

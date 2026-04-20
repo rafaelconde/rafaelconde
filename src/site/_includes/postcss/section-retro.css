@@ -1,0 +1,142 @@
+.retro {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  position: relative;
+  z-index: 1;
+  margin-top: -4px;
+  background: #050505;
+  color: #fff;
+
+  @media (max-width: 975px) {
+    z-index: 3;
+  }
+
+  .wave-bottom {
+    z-index: 1;
+
+    path {
+      fill: #EAE9EA;
+    }
+  }
+
+  .timestamp {
+    left: 4px;
+  }
+
+  .tint-color {
+    color: #fff;
+  }
+  
+  h2 {
+    font-family: -apple-system-ui-serif, ui-serif;
+  }
+
+  p a {
+    border-color: rgba(255, 255, 255, 0.18);
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .external-link {
+    color: #fff;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  .main-content-wrapper {
+    align-items: center;
+    padding-bottom: 30px;
+    max-height: 300px;
+    margin-top: -80px;
+    margin-bottom: 100px;
+    z-index: 2;
+    top: -20px;
+
+    @media (max-width: 975px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+
+  .showcase {
+    position: relative;
+
+    .card {
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      background-color: #fff;
+      border-radius: 48px;
+
+      &:first-of-type {
+        position: relative;
+      }
+
+      &:nth-child(1) {
+        width: 240px;
+        height: 240px;
+        top: 60px;
+        left: -80px;
+        transform: scale(0.78, 0.78) translateY(-16px) rotate(8deg);
+
+        &:hover {
+          transform: scale(0.92, 0.92) translateY(-16px) rotate(0deg);
+
+          @media (max-width: 975px) {
+            transform: scale(0.68, 0.68) translateY(-16px) rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 975px) {
+    .main-content-wrapper {
+      max-height: none;
+      min-height: 0;
+      padding: 40px 0 120px 0;
+      top: 0;
+    }
+
+    .content {
+      z-index: 2;
+    }
+
+    .showcase {
+      width: 100%;
+      min-height: 220px;
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .showcase .card:nth-child(1) {
+      width: 224px;
+      height: 224px;
+      top: 0;
+      left: 0;
+      transform: rotate(7deg);
+    }
+  }
+
+  @media (max-width: 469px) {
+    .main-content-wrapper {
+      padding: 24px 0 40px 0;
+      margin-bottom: 0;
+    }
+
+    .showcase {
+      min-height: 188px;
+    }
+
+    .showcase .card:nth-child(1) {
+      width: 208px;
+      height: 208px;
+      transform: rotate(6deg);
+    }
+  }
+}

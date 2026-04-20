@@ -43,7 +43,7 @@
   }
 
   .viewport {
-	  background-image: url(/assets/boobyTrack-screenshot.png);
+	  background-image: url(/assets/boobyTrack-screenshot.webp);
 	  background-size: cover;
   }
 
@@ -87,7 +87,7 @@
 		  height: 300px;
 		  width: 300px;
 		  border-radius: 22%;
-		  background-image: url(/assets/booby-track-app-icon.png);
+		  background-image: url(/assets/booby-track-app-icon.webp);
 		  background-color: transparent;
 		}
   }

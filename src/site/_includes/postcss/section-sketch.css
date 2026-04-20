@@ -2,12 +2,11 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     position: relative;
     z-index: 1;
-    margin-top: -4px;
     background: #FFA000;
     color: #030303;
     
     @media (max-width: 975px) {
-      z-index: 3;
+      z-index: 2;
     }
 
     .tint-color {
@@ -19,7 +18,7 @@
         z-index: 1;
         
         path {
-            fill: #EAE9EA;
+            fill: #060606;
         }
     }
     
@@ -37,57 +36,152 @@
 
   .main-content-wrapper {
     align-items: center;
-    padding-bottom: 30px;
-    max-height: 300px;
-    margin-top: -80px;
-    margin-bottom: 100px;
-    z-index: 2;
-    top: -20px;
+    padding: 0 0 40px 0;
+
+    @media (min-width: 976px) {
+      .content {
+        flex: 0 0 500px;
+        max-width: 500px;
+      }
+
+      .showcase {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+    }
 
     @media (max-width: 975px) {
       flex-direction: column;
       align-items: center;
-      min-height: 400px;
-      margin-top: 0;
-      margin-bottom: 140px;
+      min-height: 300px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 780px) {
+      align-items: flex-start;
+    }
+
+    @media (max-width: 469px) {
+      min-height: 580px;
+      padding-bottom: 40px;
     }
   }
 
   .showcase {
     position: relative;
+    margin-top: 40px;
+    left: -20px;
+    transform-origin: top left;
+    top: 80px;
+    min-height: 500px;
+
+    @media (min-width: 975px) {
+      transform: scale(1, 1);
+      top: 0;
+    }
     
     .card {
       position: absolute;
       background-size: cover;
       background-color: transparent;
+      overflow: hidden;
+      box-shadow: none;
       
       &:first-of-type {
         position: relative;
       }
       
       &:nth-child(1) {
-        width: 512px;
-        height: 512px;
-        top: 84px;
-        left: 100px;
-        background-image: url(/assets/sketch-app-icon.png);
-        background-color: transparent;
-        transform: scale(0.8, 0.8) translateY(-16px) rotate(10deg);
+        width: 680px;
+        height: 480px;
+        top: 0px;
+        left: -0px;
+        transform: scale(0.82, 0.82) rotate(-4deg);
         
         &:hover {
-          transform: scale(1, 1) translateY(-16px) rotate(0deg);
-          
-          @media (max-width: 975px) {
-            transform: scale(0.7, 0.7) translateY(-16px) rotate(0deg);
-          }
-        }
-        
-        @media (max-width: 975px) {
-          left: 0;
-          top: -60px;
-          transform: scale(0.6, 0.6) translateY(-16px) rotate(10deg);
+          transform: scale(0.88, 0.88) translateY(-16px) rotate(0deg);
         }
       }
+
+      &:nth-child(2) {
+        width: 300px;
+        height: 300px;
+        top: -20px;
+        left: 240px;
+        transform: rotate(8deg);
+        border-radius: 56px;
+
+        &:hover {
+          transform: scale(1.06, 1.06) translateY(-16px) rotate(0deg);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 975px) {
+    .main-content-wrapper {
+      min-height: 620px;
+      padding-bottom: 100px;
+    }
+
+    .content {
+      z-index: 2;
+    }
+
+    .showcase {
+      align-self: center;
+      width: 100%;
+      max-width: 360px;
+      min-height: 360px;
+      margin: 24px auto 0;
+      left: 0;
+      top: 0;
+      transform: none;
+    }
+
+    .showcase .card:nth-child(1) {
+      width: 340px;
+      height: 240px;
+      top: 78px;
+      left: 0;
+      background-position: center;
+      transform: rotate(-3deg);
+    }
+
+    .showcase .card:nth-child(2) {
+      width: 156px;
+      height: 156px;
+      top: 0;
+      left: 190px;
+      transform: rotate(8deg);
+      border-radius: 34px;
+    }
+  }
+
+  @media (max-width: 469px) {
+    .main-content-wrapper {
+      min-height: 520px;
+      padding-bottom: 32px;
+    }
+
+    .showcase {
+      max-width: 320px;
+      min-height: 320px;
+    }
+
+    .showcase .card:nth-child(1) {
+      width: 300px;
+      height: 212px;
+      top: 70px;
+      left: 0;
+    }
+
+    .showcase .card:nth-child(2) {
+      width: 132px;
+      height: 132px;
+      top: 0;
+      left: 176px;
+      border-radius: 28px;
     }
   }
 }

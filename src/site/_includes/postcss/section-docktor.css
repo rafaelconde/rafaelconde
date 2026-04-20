@@ -111,10 +111,6 @@
       left: 200px;
       height: 316px;
       width: 500px;
-      background-image: url(/assets/docktor-app-icon.png);
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
 
       transform: scale(1, 1) rotate(4deg);
       box-shadow: none;

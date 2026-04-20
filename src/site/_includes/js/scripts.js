@@ -1,221 +1,244 @@
-function meetingSomeone() {
+function initMeetingTicks() {
+  const ticks = document.querySelectorAll(".tick");
+  const easterEgg = document.getElementById("easterNope");
 
-	var ticks = document.querySelectorAll (".tick");
-	var rafa = document.getElementById('easterNope');
+  if (!ticks.length || !easterEgg) {
+    return;
+  }
 
-	for (var i = 0; i < ticks.length; ++i) {
-		var tick = ticks[i];
-		popout = function() {
-			rafa.className = 'popout';
-		}
-		tick.onclick = function() {
-			rafa.className = 'popin';
-			console.log('If you can make this happen though, or if you are this person, lets TALK ON TWITTER;');
-			setTimeout(popout, 3000);
-		}
-	}
+  const popOut = () => {
+    easterEgg.className = "popout";
+  };
+
+  ticks.forEach((tick) => {
+    tick.addEventListener("click", () => {
+      easterEgg.className = "popin";
+      window.setTimeout(popOut, 3000);
+    });
+  });
 }
 
-meetingSomeone();
-
-// Dynamically change theme-color on scroll
-// It's looking for a "data-theme-color" attribute in the HTML to define it as a section
-var theme = document.querySelector('meta[name="theme-color"]'),
-sections = document.querySelectorAll("[data-theme-color]"),
-currentThemeColor = "rgb(255,255,255)";
-
-const options = {
-	// These values make the intersecting area just the top part of the viewport
-	// I only want to change the theme-color when a section hits the top
-	// Given the unreliable nature of my stupid page layout, with the waves and such, it's not a straight forward approach and requires some manual tweaking until it "feels" right
-	threshold: 0.1,
-	rootMargin: "10% 0px -90% 0px"
-};
-
-// Creates an Observer for all the sections and triggers the color change when it intersects
-const observer = new IntersectionObserver(function(entries, observer) {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
- 		var color = entry.target.getAttribute('data-theme-color');
- 		startColorFade(60, 0.3, currentThemeColor, color);
-		}
-	});
-}, options);
-
-// Fire the observers up and let them go wild
-sections.forEach(section => {
-	observer.observe(section);
-})
-
-// Here's the code to transition/animate the color change — it's a lot.
-// TL;DR, we have to calculate each "frame" and update the <meta> tag as you go.
-// This was remixed from a Stack Overflow answer by the user "ffdigital"
-// https://stackoverflow.com/a/38381724/4746353
-
-function startColorFade(fps, duration, currentColor, targetColor) {
-	var stop = false;
-	var fpsInterval = 1000 / fps;
-	var now;
-	var then = Date.now();
-	var elapsed;
-	var startTime = then;
-	var currentColorArray = getElementBG(currentColor);
-	var targetColorArray	= getElementBG(targetColor);
-	var distance = calculateDistance(currentColorArray, targetColorArray);
-	var increment = calculateIncrement(distance, fps, duration);
-	animateColor(duration, currentColorArray, targetColorArray, increment, stop, fpsInterval, now, then, elapsed, startTime);
+function parseColor(color) {
+  return color
+    .match(/\((.*)\)/)[1]
+    .split(",")
+    .slice(0, 3)
+    .map((value) => parseInt(value, 10));
 }
 
-function animateColor( duration, currentColorArray, targetColorArray, increment, stop, fpsInterval, now, then, elapsed, startTime ) {
-	var step = function() {
-		if (stop) {
-			return;
-		}
-		// Request another frame
-		requestAnimationFrame(function() { //arguments can passed on the callback by an anonymous function
-			animateColor(duration, currentColorArray, targetColorArray, increment, stop, fpsInterval, now, then, elapsed, startTime);
-			colorTransition( currentColorArray, targetColorArray, increment);
-		});
+function initThemeColorObserver() {
+  const theme = document.querySelector('meta[name="theme-color"]');
+  const sections = document.querySelectorAll("[data-theme-color]");
 
-		// Calculate the elapsed time since last loop
-		now = Date.now();
-		elapsed = now - then;
+  if (!theme || !sections.length) {
+    return;
+  }
 
-    // If enough time has elapsed, draw the next frame
-    if (elapsed > fpsInterval) {
-      // Get ready for next frame by setting then=now, but...
-      // Also, adjust for fpsInterval not being multiple of 16.67
-      then = now - (elapsed % fpsInterval);
-      var sinceStart = now - startTime;
+  let currentThemeColor = "rgb(255,255,255)";
+  let activeFrame = 0;
+  let activeTarget = currentThemeColor;
+
+  const startColorFade = (duration, targetColor) => {
+    if (targetColor === currentThemeColor || targetColor === activeTarget) {
+      return;
     }
 
-    if (sinceStart / 1000 * 100 >= duration * 100) {
-      stop = true;
-      // Update the currentThemeColor for the next transition
-      currentThemeColor = "rgb(" + currentColorArray + ")";
+    const from = parseColor(currentThemeColor);
+    const to = parseColor(targetColor);
+    const start = performance.now();
+
+    activeTarget = targetColor;
+
+    if (activeFrame) {
+      cancelAnimationFrame(activeFrame);
     }
-	}
 
-  step();
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const next = from.map((value, index) => Math.round(value + (to[index] - value) * progress));
+      theme.setAttribute("content", "rgb(" + next.join(",") + ")");
+
+      if (progress < 1) {
+        activeFrame = requestAnimationFrame(step);
+        return;
+      }
+
+      currentThemeColor = targetColor;
+      activeTarget = targetColor;
+      activeFrame = 0;
+    };
+
+    activeFrame = requestAnimationFrame(step);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        startColorFade(300, entry.target.getAttribute("data-theme-color"));
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: "10% 0px -90% 0px"
+  });
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
 }
 
-function colorTransition(currentColorArray, targetColorArray, increment) {
+function initLazyVideos() {
+  const videos = document.querySelectorAll("video[data-video-src]");
 
-  // Checking R (from RGB)
-	if (currentColorArray[0] > targetColorArray[0]) {
-    currentColorArray[0] -= increment[0];
+  if (!videos.length) {
+    return;
+  }
 
-    if (currentColorArray[0] <= targetColorArray[0]) {
-      increment[0] = 0;
-		}
-	} else {
-		currentColorArray[0] += increment[0];
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (currentColorArray[0] >= targetColorArray[0]) {
-			increment[0] = 0;
-		}
-	}
+  const loadVideo = (video) => {
+    if (video.dataset.loaded === "true") {
+      return;
+    }
 
-  // Checking G (from RGB)
-	if (currentColorArray[1] > targetColorArray[1]) {
-    currentColorArray[1] -= increment[1];
+    video.src = video.dataset.videoSrc;
+    video.load();
+    video.dataset.loaded = "true";
+  };
 
-		if (currentColorArray[1] <= targetColorArray[1]) {
-			increment[1] = 0;
-		}
-	} else {
-		currentColorArray[1] += increment[1];
+  const playVideo = (video) => {
+    if (prefersReducedMotion && video.dataset.allowMotion !== "true") {
+      return;
+    }
 
-    if (currentColorArray[1] >= targetColorArray[1]) {
-			increment[1] = 0;
-		}
-	}
+    const playAttempt = video.play();
 
-	// Checking B (from RGB)
-	if (currentColorArray[2] > targetColorArray[2]) {
-		currentColorArray[2] -= increment[2];
+    if (playAttempt && typeof playAttempt.catch === "function") {
+      playAttempt.catch(() => {});
+    }
+  };
 
-  	if (currentColorArray[2] <= targetColorArray[2]) {
-			increment[2] = 0;
-		}
-	} else {
-		currentColorArray[2] += increment[2];
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
 
-		if (currentColorArray[2] >= targetColorArray[2]) {
-			increment[2] = 0;
-		}
-	}
+      if (entry.isIntersecting) {
+        loadVideo(video);
+        playVideo(video);
+        return;
+      }
 
-  // Apply the new modified color
-	theme.setAttribute("content", "rgb(" + currentColorArray + ")");
+      if (!video.paused) {
+        video.pause();
+      }
+    });
+  }, {
+    threshold: 0.01,
+    rootMargin: "400px 0px"
+  });
 
+  videos.forEach((video) => {
+    observer.observe(video);
+  });
 }
 
-function getElementBG(elmBGColor) {
-  var bg	= elmBGColor; // i.e: RGB(255, 0, 0)
-			bg	= bg.match(/\((.*)\)/)[1];
-			bg	= bg.split(",");
+function initThwipHoverAudio() {
+  const video = document.getElementById("thwip-video");
 
-  for (var i = 0; i < bg.length; i++) {
-		bg[i] = parseInt(bg[i], 10);
-	}
+  if (!video) {
+    return;
+  }
 
-  if (bg.length > 3) { bg.pop(); }
+  video.addEventListener("mouseenter", () => {
+    video.muted = false;
+  });
 
-  return bg; // return array
+  video.addEventListener("mouseleave", () => {
+    video.muted = true;
+  });
 }
 
-function calculateDistance(colorArray1, colorArray2) {
-	var distance = [];
+function initMyriadLoader() {
+  const galaxySection = document.querySelector(".section.galaxy");
 
-  for (var i = 0; i < colorArray1.length; i++) {
-		distance.push(Math.abs(colorArray1[i] - colorArray2[i]));
-	}
+  if (!galaxySection) {
+    return;
+  }
 
-  return distance;
+  const assetVersion = document.documentElement.dataset.assetVersion;
+  let loaded = false;
+
+  const loadMyriad = () => {
+    if (loaded) {
+      return;
+    }
+
+    loaded = true;
+
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "/css/myriad.css" + (assetVersion ? "?v=" + assetVersion : "");
+    document.head.appendChild(link);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        loadMyriad();
+        observer.disconnect();
+      }
+    });
+  }, {
+    rootMargin: "600px 0px"
+  });
+
+  observer.observe(galaxySection);
 }
 
-function calculateIncrement(distanceArray, fps, duration) {
-	var increment = [];
-	for (var i = 0; i < distanceArray.length; i++) {
-		increment.push(Math.abs(Math.floor(distanceArray[i] / (fps * duration))));
-
-		if (increment[i] == 0) {
-			increment[i]++;
-		}
-	}
-
-	return increment;
+function minMaxValue(value, min, max) {
+  return Math.min(Math.max(value, min), max);
 }
 
-// Mute/unmute video on hover
-const video = document.getElementById('thwip-video');
+function initSpatialtyParallax() {
+  const element = document.querySelector(".appIcon");
 
-video.addEventListener('mouseover', function() {
-	video.muted = false;
-});
+  if (!element || !window.matchMedia("(hover: hover)").matches) {
+    return;
+  }
 
-video.addEventListener('mouseout', function() {
-	video.muted = true;
-});
+  const degrees = 8;
+  let pendingPointer = null;
+  let frame = 0;
 
-// Spatialty Coffee Parallax Effect
-const degrees = 8;
-const element = document.querySelector('.appIcon');
+  const update = () => {
+    frame = 0;
 
-const onPointerMove = (pointer) => {
-  const icon = element.getBoundingClientRect();
-  const halfSize = icon.width / 2;
+    if (!pendingPointer) {
+      return;
+    }
 
-  const xDist = minMaxValue(-(icon.x - pointer.x + halfSize), -halfSize, halfSize);
-  const yDist = minMaxValue(icon.y - pointer.y + halfSize, -halfSize, halfSize);
+    const icon = element.getBoundingClientRect();
+    const halfSize = icon.width / 2;
+    const xDist = minMaxValue(-(icon.x - pendingPointer.x + halfSize), -halfSize, halfSize);
+    const yDist = minMaxValue(icon.y - pendingPointer.y + halfSize, -halfSize, halfSize);
+    const x = Math.round(xDist / (halfSize / 100)) / 100;
+    const y = Math.round(yDist / (halfSize / 100)) / 100;
 
-  const x = Math.round(xDist / (halfSize / 100)) / 100;
-  const y = Math.round(yDist / (halfSize / 100)) / 100;
+    element.style.transform = "rotateX(" + (y * degrees) + "deg) rotateY(" + (x * degrees) + "deg)";
+  };
 
-  element.style.transform = `rotateX(${y * degrees}deg) rotateY(${x * degrees}deg)`;
-};
+  window.addEventListener("pointermove", (pointer) => {
+    pendingPointer = pointer;
 
-const minMaxValue = (value, min, max) => Math.min(Math.max(value, min), max);
+    if (!frame) {
+      frame = requestAnimationFrame(update);
+    }
+  }, { passive: true });
+}
 
-window.addEventListener('pointermove', onPointerMove);
+initMeetingTicks();
+initThemeColorObserver();
+initLazyVideos();
+initThwipHoverAudio();
+initMyriadLoader();
+initSpatialtyParallax();

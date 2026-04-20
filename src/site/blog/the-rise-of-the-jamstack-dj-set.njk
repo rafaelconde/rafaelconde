@@ -37,7 +37,7 @@ date: 2018-10-05
 
       <p>CSS and JavaScript wasn&#8217;t a thing.</p>
 
-      <img src="/assets/first-website.png" alt="Screengrab of the first website ever, still live." />
+      <img src="/assets/first-website.png?v={{ build.assetVersion }}" alt="Screengrab of the first website ever, still live." loading="lazy" decoding="async" />
 
       <p>Earlier this year, I met <a href="https://en.wikipedia.org/wiki/Bert_Bos">Bert Bos</a>, one of the fathers of CSS, and he was commenting on the fact that this language was written as a way to style a document, and now we are using it to build complex user interfaces for web applications. It&#8217;s a miracle that it still holds up honestly.</p>
 
@@ -45,19 +45,19 @@ date: 2018-10-05
 
       <p>So, back in the day the web as very simple: you had a browser, that pinged a server, that delivered a document to you.</p>
 
-      <img src="/assets/step1.png" alt="Simply a browser talking to a server" />
+      <img src="/assets/step1.png?v={{ build.assetVersion }}" alt="Simply a browser talking to a server" loading="lazy" decoding="async" />
 
       <p>But of course that wasn&#8217;t enough, so eventually we decided to add a program, that the server would ping, it would run and build your website, send it back to the server, which would send it back to the browser.</p>
 
-      <img src="/assets/step2.png" alt="Simply a browser talking to a server… and that server talking to a program" />
+      <img src="/assets/step2.png?v={{ build.assetVersion }}" alt="Simply a browser talking to a server… and that server talking to a program" loading="lazy" decoding="async" />
 
       <p>And then we needed more, so we added databases, which became an essential part of how websites ran.</p>
 
-      <img src="/assets/step3.png" alt="Add a database to that" />
+      <img src="/assets/step3.png?v={{ build.assetVersion }}" alt="Add a database to that" loading="lazy" decoding="async" />
 
       <p>Of course, all of this started to get real slow, so we just added caches everywhere.</p>
 
-      <img src="/assets/step4.png" alt="Add cache to all steps" />
+      <img src="/assets/step4.png?v={{ build.assetVersion }}" alt="Add cache to all steps" loading="lazy" decoding="async" />
 
       <p>And this, this is the current state of how most of the web works, and there&#8217;s at least three major problems with this approach:</p>
 
@@ -81,13 +81,13 @@ date: 2018-10-05
 
       <p>We at Netlify started looking at a different way of doing this, of building websites, and by how popular static site generators are getting, it seems that a lot of web developers around the world are too.</p>
 
-      <img src="/assets/step5.png" alt="Simply a browser talking to a global CDN" />
+      <img src="/assets/step5.png?v={{ build.assetVersion }}" alt="Simply a browser talking to a global CDN" loading="lazy" decoding="async" />
 
       <p>Ideally, we would have our website, built as a static version, on a global CDN, and just like in the old days, the browser would ask for a site, and the server would deliver it.</p>
 
       <p>And if you need a bit more functionality, you would just plug in a bunch of those APIs we just talked about.</p>
 
-      <img src="/assets/step6.png" alt="Add external APIs if needed" />
+      <img src="/assets/step6.png?v={{ build.assetVersion }}" alt="Add external APIs if needed" loading="lazy" decoding="async" />
 
       <p>An important part of this, and what makes this stack possible, is that we are decoupling the building and the hosting, decoupling frontend and the backend — which means that we wouldn&#8217;t have to build a whole new website someone pings the server, the website is built, it&#8217;s there, it&#8217;s static.</p>
 
@@ -149,7 +149,7 @@ date: 2018-10-05
 
       <p>This is the most fun part of this all, and here&#8217;s a demo of how fun and powerful it can be to work as a modern web developer:</p>
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/irq7Lzz8ptI?rel=0&amp;showinfo=0&amp;start=795" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/irq7Lzz8ptI?rel=0&amp;showinfo=0&amp;start=795" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
 
       <p><a href="http://mic-drop.netlify.com/?drop" class="ninja" target="_blank">👋🎤</a></p>
     </div>

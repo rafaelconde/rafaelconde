@@ -104,7 +104,7 @@
 
   .icon-back {
     position: absolute;
-    background-image: url("../assets/spatialty-appIcon-back.png");
+    background-image: url("../assets/spatialty-appIcon-back.webp");
     background-size: 100%;
     top: 0; right: 0; bottom: 0; left: 0;
     border-radius: 50%;
@@ -113,7 +113,7 @@
 
   .icon-middle {
     position: absolute;
-    background-image: url("../assets/spatialty-appIcon-middle.png");
+    background-image: url("../assets/spatialty-appIcon-middle.webp");
     background-size: 100%;
     top: 0; right: 0; bottom: 0; left: 0;
     transform-origin: 50% 50%;
@@ -124,7 +124,7 @@
 
   .icon-front {
     position: absolute;
-    background-image: url("../assets/spatialty-appIcon-front.png");
+    background-image: url("../assets/spatialty-appIcon-front.webp");
     background-size: 100%;
     top: 0; right: 0; bottom: 0; left: 0;
 
@@ -164,10 +164,6 @@
       top: -0px;
       left: -180px;
       z-index: 2;
-
-      background-image: url(/assets/spatialty-window-1.png);
-      background-size: cover;
-      background-repeat: no-repeat;
     }
 
     &:nth-child(3) {
@@ -176,10 +172,6 @@
       top: 20px;
       left: 64px;
       z-index: 1;
-
-      background-image: url(/assets/spatialty-window-2.png);
-      background-size: cover;
-      background-repeat: no-repeat;
     }
   }
 }

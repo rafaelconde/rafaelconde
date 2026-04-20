@@ -93,10 +93,6 @@
       left: 100px;
       height: 316px;
       width: 500px;
-      background-image: url(/assets/hidock-screenshot.png);
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
 
       transform: scale(1, 1) rotate(4deg);
       box-shadow: none;
@@ -109,10 +105,6 @@
     &:nth-child(2) {
       top: -40px;
       left: 200px;
-      background-image: url(/assets/hidock-app-icon.png);
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 
