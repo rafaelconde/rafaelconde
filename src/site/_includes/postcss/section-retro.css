@@ -3,7 +3,7 @@
   position: relative;
   z-index: 1;
   margin-top: -4px;
-  background: #050505;
+  background: #0D0D0D;
   color: #fff;
 
   @media (max-width: 975px) {
@@ -69,7 +69,7 @@
       position: absolute;
       background-size: cover;
       background-position: center;
-      background-color: #fff;
+      background-color: transparent;
       border-radius: 48px;
 
       &:first-of-type {
